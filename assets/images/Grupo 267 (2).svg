@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 41 41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: url(#Gradiente_sem_nome_6);
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#Gradiente_sem_nome_6-2);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_6" data-name="Gradiente sem nome 6" x1="0" y1="20.5" x2="41" y2="20.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4d0053"/>
+      <stop offset=".14" stop-color="#4f0455"/>
+      <stop offset=".29" stop-color="#55105d"/>
+      <stop offset=".43" stop-color="#61246a"/>
+      <stop offset=".58" stop-color="#70407c"/>
+      <stop offset=".73" stop-color="#846593"/>
+      <stop offset=".87" stop-color="#9c91af"/>
+      <stop offset="1" stop-color="#b6bfcd"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_6-2" data-name="Gradiente sem nome 6" x1="6.29" y1="22.34" x2="27.62" y2="18.25" xlink:href="#Gradiente_sem_nome_6"/>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g id="Grupo_267" data-name="Grupo 267">
+      <g id="Grupo_89-6" data-name="Grupo 89-6">
+        <circle id="Elipse_1-7" data-name="Elipse 1-7" class="cls-1" cx="20.5" cy="20.5" r="20"/>
+      </g>
+      <path class="cls-2" d="M16.6,25.07v-11.09c0-.81.66-1.46,1.46-1.46h0c.81,0,1.46.66,1.46,1.46v11.09c0,.81-.66,1.46-1.46,1.46h0c-.81,0-1.46-.66-1.46-1.46ZM23.91,26.53h0c.81,0,1.46-.66,1.46-1.46v-11.09c0-.81-.66-1.46-1.46-1.46h0c-.81,0-1.46.66-1.46,1.46v11.09c0,.81.66,1.46,1.46,1.46Z"/>
+    </g>
+  </g>
+</svg>

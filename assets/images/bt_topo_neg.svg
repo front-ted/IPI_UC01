@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 41 41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: url(#Gradiente_sem_nome_6);
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#Gradiente_sem_nome_6-2);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_6" data-name="Gradiente sem nome 6" x1="0" y1="20.5" x2="41" y2="20.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4d0053"/>
+      <stop offset=".14" stop-color="#4f0455"/>
+      <stop offset=".29" stop-color="#55105d"/>
+      <stop offset=".43" stop-color="#61246a"/>
+      <stop offset=".58" stop-color="#70407c"/>
+      <stop offset=".73" stop-color="#846593"/>
+      <stop offset=".87" stop-color="#9c91af"/>
+      <stop offset="1" stop-color="#b6bfcd"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_6-2" data-name="Gradiente sem nome 6" x1="8.17" y1="18.37" x2="33.19" y2="18.37" xlink:href="#Gradiente_sem_nome_6"/>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g>
+      <circle id="Elipse_17-2" data-name="Elipse 17-2" class="cls-1" cx="20.5" cy="20.5" r="20"/>
+      <polygon class="cls-2" points="33.19 27.46 20.68 17.73 8.17 27.46 8.17 19.01 20.68 9.28 33.19 19.01 33.19 27.46"/>
+    </g>
+  </g>
+</svg>
