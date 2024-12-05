@@ -31,6 +31,24 @@
     background-repeat: no-repeat;
 }
 
+.bt-form1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat,no-repeat;
+    opacity: 0; 
+    transition: opacity 0.4s;
+}
+
+.bt-form1:hover::before{
+    opacity: 1;
+    animation: rotate 2s linear infinite;
+}
+
 .bt-form1::after {
     content: '';
     position: absolute;
@@ -38,15 +56,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../img/bt-form1.png'), url('../img/hover.png');
-    background-repeat: no-repeat,no-repeat;
-    opacity: 0; 
+    background: url('../img/bt-form1.png');
+    background-repeat: no-repeat;
+    opacity: 1; 
     transition: opacity 0.5s ease-in;
 }
 
-.bt-form1:hover::after {
-    opacity: 1;
-}
 
 .bt2{
     background: url('../img/bt2.png') no-repeat;
@@ -65,12 +80,35 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../img/bt2.png'), url('../img/hover.png');
+    background: url('../img/bt2.png');
     background-repeat: no-repeat,no-repeat;
-    opacity: 0; 
-    transition: opacity 0.5s ease-in;
+    opacity: 1; 
 }
 
-.bt2:hover::after {
+
+.bt2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat,no-repeat;
+    opacity: 0; 
+    transition: opacity 0.4s;
+}
+
+.bt2:hover::before{
     opacity: 1;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
