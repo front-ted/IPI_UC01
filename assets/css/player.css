@@ -33,20 +33,21 @@
 .audio-player::before{
     content:'';
     background: url('../images/podcast_homem.svg') no-repeat;
-    height: 213px;
-    width: 220px;
+    height: 220px;
+    width: 257px;
     position: absolute;
     left: -8px;
-    bottom: -57px;
+    bottom: -38px;
+
 }
 .audio-player::after{
     content:'';
     background: url('../images/podcast_mulher.svg') no-repeat;
-    height: 217px;
-    width: 235px;
+    height: 220px;
+    width: 240px;
     position: absolute;
     right: -12px;
-    bottom: -32px;
+    bottom: -34px;
     z-index: 2;
 }
 .audio-player .timestamp{
