@@ -46,7 +46,7 @@
 
 .bt-form1:hover::before{
     opacity: 1;
-    animation: rotate 2s linear infinite;
+    animation: rotate 4s linear infinite;
 }
 
 .bt-form1::after {
@@ -101,7 +101,7 @@
 
 .bt2:hover::before{
     opacity: 1;
-    animation: rotate 2s linear infinite;
+    animation: rotate 4s linear infinite;
 }
 
 @keyframes rotate {
