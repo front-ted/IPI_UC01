@@ -1,33 +1,34 @@
-.ilustracao01{
+.ilustracao{
     border-radius: 20px;
     filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2));  
 }
 
 .elemento{
     background: url('../img/elemento.png') no-repeat;
-    background-size: cover;
-    height: 774px;
-    width: 100%;
-    padding-top: 150px;
+    background-position: center top;
+    background-size: 100%;
+    height: 1029px;
+    padding-top: 190px;
     margin-top: -120px;
-    overflow: visible;
 }
 
 .pos-elemento{
-    margin-top: -440px;
+    margin-top: -650px;
 }
 
 .bt-form{
-    width: 375px;
-    height: 449px;
+    width: 440px;
+    height: 400px;
     background-color: transparent;
     color: transparent;
     border: none;
+    overflow: visible;
+
 }
 
 .bt-form1 {
     position: relative;     
-    background: url('../img/bt-form1.png');
+    background: url('../img/bt-form1.png') ;
     background-repeat: no-repeat;
 }
 
@@ -39,7 +40,9 @@
     width: 100%;
     height: 100%;
     background: url('../img/hover.png');
-    background-repeat: no-repeat,no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
+
     opacity: 0; 
     transition: opacity 0.4s;
 }
@@ -94,7 +97,8 @@
     width: 100%;
     height: 100%;
     background: url('../img/hover.png');
-    background-repeat: no-repeat,no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
     opacity: 0; 
     transition: opacity 0.4s;
 }
@@ -112,3 +116,185 @@
         transform: rotate(360deg);
     }
 }
+
+.divisor{
+    height: 370px;
+    background: url('../img/div.png') no-repeat;
+    background-size: cover;
+}
+
+
+.briefings{
+    color: #fff;
+    background: url('../img/bg.png') no-repeat;
+    background-size: auto;
+    height: 938px;
+}
+
+.briefings .container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+
+.bt-objeto2{
+    background-image: none;
+    height: 300px;
+    background-color: black;
+}
+
+.paragrafo1-mobile{
+    padding-right: 35%;
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 0;
+
+}
+
+.paragrafo1-mobile::after {
+    content: '';
+    position: absolute;
+    top: -88%;
+    left: 64%;
+    width: 30%;
+    height: 200%;
+    background: url('../img/elemento_dir_mobile.svg');
+    background-repeat: no-repeat;
+    opacity: 1; 
+}
+
+.paragrafo2-mobile{
+    margin-top: 100px;;
+    padding-left: 30%;
+    position: relative;
+    margin-bottom: 0;
+
+}
+
+.paragrafo2-mobile::after {
+    content: '';
+    position: absolute;
+    top: -94%;
+    left: 0%;
+    width: 30%;
+    height: 200%;
+    background: url('../img/elemento_esq_mobile.svg');
+    background-repeat: no-repeat;
+    opacity: 1; 
+}
+
+
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width:2000px) {
+   
+    .elemento{
+        padding-top: 180px;
+        margin-top: -110px;
+    }
+}
+
+
+@media screen and (max-width:1800px) {
+    .elemento{
+        background: none;
+
+    }
+}
+
+
+@media screen and (max-width:1500px) {
+
+  
+    .briefings .container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    
+    
+    .bt-objeto2{
+        background-image: none;
+        height: 350px;
+        background-color: black;
+    }
+    
+}
+
+
+@media screen and (max-width:950px) {
+
+    .painel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+   
+}
+@media screen and (max-width:600px) {
+
+   
+
+    .mobile{
+        display: block;
+
+    }
+    
+    .desktop{
+        display: none;
+    }
+} 
+
+
+@media screen and (max-width:520px) {
+
+    .paragrafo1-mobile{
+        margin-top: 10px;
+
+    }
+
+    .paragrafo1-mobile::after, .paragrafo2-mobile::after {
+        top: -33%
+    }
+} 
+
+@media screen and (max-width:420px) {
+
+
+    .paragrafo1-mobile::after, .paragrafo2-mobile::after {
+        top: 1%
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.elemento{
+    background: url('../img/elemento.png') no-repeat;
+    background-position: center top;
+    background-size: 90%;
+    height: 1029px;
+    padding-top: 190px;
+    margin-top: -120px;
+} */

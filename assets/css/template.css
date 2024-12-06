@@ -628,6 +628,11 @@ a.botao{text-decoration: none;}
     background: transparent;
 }
 
+.bg-escuro .accordion-item {
+    background-color: transparent;
+}
+
+
 .bg-escuro .layer-preta {
     display: block;
 }
