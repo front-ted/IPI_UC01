@@ -4,25 +4,152 @@ body{
 
 }
 
-
+.painel-tecnicas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 .btn-tecnicas{
     background-color: transparent;
+    position: relative;
+    width: 231px;
+    height: 299px;
+    border: transparent;
+    color: transparent;
+    overflow: visible;
 }
 
+.btn-brainstorming{
+    background: url('../img/bt_brainstorming.jpg');
+}
+
+
+.btn-brainstorming::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: -30%;
+    width: 396px;
+    height: 403px;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0; 
+    transition: opacity 0.4s;
+}
+
+.btn-brainstorming:hover::before{
+    opacity: 1;
+    animation: rotate 4s linear infinite;
+}
+
+.btn-brainstorming::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_brainstorming.jpg');
+    background-repeat: no-repeat;
+    opacity: 1; 
+    transition: opacity 5s ease-in;
+}
+
+.btn-mapas{
+    background: url('../img/bt_mapamental.jpg');
+}
+
+.btn-mapas::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: -30%;
+    width: 396px;
+    height: 403px;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0; 
+    transition: opacity 0.4s;
+}
+
+.btn-mapas:hover::before{
+    opacity: 1;
+    animation: rotate 4s linear infinite;
+}
+
+.btn-mapas::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_mapamental.jpg');
+    background-repeat: no-repeat;
+    opacity: 1; 
+    transition: opacity 5s ease-in;
+}
+
+.btn-semantico{
+    background: url('../img/bt_moodboard.jpg');
+}
+
+.btn-semantico::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: -30%;
+    width: 396px;
+    height: 403px;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0; 
+    transition: opacity 0.4s;
+}
+
+.btn-semantico:hover::before{
+    opacity: 1;
+    animation: rotate 4s linear infinite;
+}
+
+.btn-semantico::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_moodboard.jpg');
+    background-repeat: no-repeat;
+    opacity: 1; 
+    transition: opacity 5s ease-in;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 .footer{
- /*   height: 150px;
-    width: 100%; */
     position: fixed;
     bottom: 0;
-    /* background-color: blue; */
     opacity: 1;
     max-height: 50%;
-width: 100%;
-z-index: 2;
-pointer-events: none;
-
-
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .bordas_sombra{
