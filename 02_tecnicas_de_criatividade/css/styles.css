@@ -1,3 +1,15 @@
+body{
+    background: url('../img/lampada.png') 95% 30% fixed no-repeat,url('../img/bg_fundo.png') fixed no-repeat;
+    background-size: 15%, cover;
+
+}
+
+
+
+.btn-tecnicas{
+    background-color: transparent;
+}
+
 .footer{
  /*   height: 150px;
     width: 100%; */
