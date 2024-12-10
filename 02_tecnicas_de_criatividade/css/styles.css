@@ -19,10 +19,14 @@ body{
     border: transparent;
     color: transparent;
     overflow: visible;
+
+    
 }
 
 .btn-brainstorming{
     background: url('../img/bt_brainstorming.jpg');
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2)); 
 }
 
 
@@ -56,10 +60,14 @@ body{
     background-repeat: no-repeat;
     opacity: 1; 
     transition: opacity 5s ease-in;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2)); 
 }
 
 .btn-mapas{
     background: url('../img/bt_mapamental.jpg');
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2)); 
 }
 
 .btn-mapas::before {
@@ -92,10 +100,14 @@ body{
     background-repeat: no-repeat;
     opacity: 1; 
     transition: opacity 5s ease-in;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2)); 
 }
 
 .btn-semantico{
     background: url('../img/bt_moodboard.jpg');
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2)); 
 }
 
 .btn-semantico::before {
@@ -128,6 +140,8 @@ body{
     background-repeat: no-repeat;
     opacity: 1; 
     transition: opacity 5s ease-in;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2)); 
 }
 
 
