@@ -1,0 +1,28 @@
+.bloco1, .bloco3, .bloco5, .bloco7{
+ border: 3px solid red;
+}
+
+.bloco2, .bloco4, .bloco6, .bloco8{
+    border: 2px solid blue;
+}
+
+.bordas_sombra{
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2));  
+}
+
+.logo{
+    position: relative;
+}
+.img-hover::before {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: -15%;
+    width: 396px;
+    height: 403px;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1; 
+}
