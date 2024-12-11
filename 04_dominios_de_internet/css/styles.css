@@ -1,7 +1,15 @@
+body{
+    background: url('../img/bg_esq.png') no-repeat -1% top, 
+                url('../img/bg_direita.png') no-repeat right bottom, 
+                url('../img/bg1.png') no-repeat right 30%, 
+                url('../img/bg3.png') no-repeat right 80%, 
+                linear-gradient(180deg, #fff 0%, #b4bfce 100%);
+    background-size: 20%, 20%, 100%, 100%,100%;
+}
+
 .flip-card{
     width: 352px;
 }
-
 
 .flip-card-front{
     background: url('../img/card_frente.png') no-repeat;
@@ -24,4 +32,47 @@
     justify-content: center;
     font-weight: bolder;
     font-size: 30px;
+}
+
+.slide1{
+    background: url('../img/bg2.png') no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    height: auto;
+    padding: 100px 0px;
+}
+
+.slide1::before {
+    content: '';
+    height: 481px;
+    width: 481px;
+    position: absolute;
+    top: -480px;
+    right: 0;
+    background: url('../img/Ativo_3.png') no-repeat;
+    z-index: -1; 
+}
+
+.slide1::after {
+    content: '';
+    height: 481px;
+    width: 481px;
+    position: absolute;
+    bottom: -480px;
+    left: 0;
+    background: url('../img/Ativo_4.png') no-repeat;
+    z-index: -1; 
+}
+
+.slide1 .carousel-item{
+    background-color: #fff;
+}
+
+.slide1 .carousel-item p{
+    color: black;
+}
+
+.carousel-item{
+    background-color: #fff;
 }
