@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Inserir o tíutlo do conhecimento na tag title -->
+        <title>Domínios de internet: conceito, registro e disponibilidade de serviços</title>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.0.2 -->
+        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="../assets/css/animate.min.css" />
+        <!-- hover.css https://ianlunn.github.io/Hover/ -->
+        <link rel="stylesheet" href="../assets/css/hover-min.css" />
+        <!--Splide - slideshow-->
+        <link rel="stylesheet" href="../assets/css/splide.min.css">
+        <!-- Preloader -->
+        <link rel="stylesheet" href="../assets/css/preloader.css">
+        <!-- Áudio customizado -->
+        <link rel="stylesheet" href="../assets/css/player.css">
+        <!-- Estilos do template -->
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        <link rel="stylesheet" href="../print/print/print.css">
+        <link rel="stylesheet" href="../assets/css/template.css">
+        <!-- custom css -->
+         <link rel="stylesheet" href="css/styles.css">
+    
+    </head>
+    <body class="bg-claro">
+        <!-- Preloader OBRIGATÓRIO -->
+        <div class="preloader">
+            <div class="anim"></div>
+            <p>Aguarde enquanto o conteúdo é carregado.</p>
+        </div>
+        <!-- Marca d'água OBRIGATÓRIA -->
+        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+        <header id="topo">
+            <div class="topo-logo">
+                <div class="container">
+                    <h1 id="nome-curso" class="only-print">Informática para Internet</h1>  
+                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>
+                </div>
+            </div>
+        </header>
+        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
+        <section id="booklet">
+            <div class="layer-preta no-print"></div>
+            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+            <section class="paginas">
+                <div class="pagina">
+                    <div class="container">
+
+                        <h2>Domínios de internet: conceito, registro e disponibilidade de serviços</h2>
+
+                        <p>Para acessar um <i>site</i> na <i>web</i>, é necessário abrir o navegador e informar o endereço da URL desejada, em um processo semelhante ao pesquisar uma rua no GPS, informando seu nome para localizá-la. Entretanto, assim como as ruas têm um número chamado CEP para sua identificação, também existe uma sequência numérica para acessar um endereço na <i>web</i>, chamado endereço IP – <i>Internet Protocol</i>, porém, para facilitar sua memorização, utiliza-se seu nome de domínio. Neste conteúdo, você aprenderá o conceito desses domínios de internet, o <i>Domain Name System</i>, também conhecido como DNS. Além disso, verá como realizar o registro de um domínio e alguns serviços que são ofertados. </p>
+
+                        <h3>Conceito </h3>
+
+                        <p>O DNS é responsável por gerenciar e associar os nomes de domínio aos endereços IP. Por exemplo, ao digitar o endereço IP 172.217.29.67 na barra de endereços de um navegador, você será redirecionado ao <i>site</i> do Google. Confira na animação a seguir. </p>
+
+                        <figure class="my-5">
+                            <div class="figure-img  mb-4">
+                                <img class="img-fluid mx-auto d-block " src="images/figura4.png" alt="animacao">
+                            </div>
+                        </figure>
+
+                        <p class="acessivel no-print visually-hidden">
+                            Animação da tela de um navegador, no qual é digitado o endereço IP número 172.217.29.67, na barra de endereço. Ao pressionar o botão “Enter”, é exibida a página inicial do site do Google. 
+                        </p>
+
+                        <p>Um nome de domínio é composto basicamente por duas partes: o nome e a extensão. O nome é escolhido pelo usuário, porém este corre o risco de realizar uma escolha que não está disponível, pois o domínio é uma forma de identificar uma infraestrutura de servidores na internet e disponibilizar acesso com flexibilidade aos serviços ofertados ao público, devendo este ser único, ou seja, não é possível que existam dois domínios com o mesmo nome disponíveis na internet. Já a extensão vai indicar a natureza do <i>site</i>. As extensões mais conhecidas são “.com”, “.org” e/ou “.gov”, com as seguintes classificações, respectivamente: comercial, organização sem fins lucrativos e governos. </p>
+
+                        <p>Além de facilitar a memorização para o acesso a um <i>site</i>, um domínio é útil também em outros aspectos, como credibilidade, profissionalismo e endereços de <i>e-mail</i> personalizados com o domínio escolhido, comunicando, de modo eficiente, o marketing de uma empresa. Por fim, pode ser útil para SEO (<i>Search Engine Optimization</i>), pois, com palavras-chaves adequadas, o <i>site</i> pode subir no ranqueamento de pesquisa de um serviço de busca. Veja diferentes níveis de domínio a seguir. </p>
+
+
+                        <div class="accordion" id="accordionDominios">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Domínios de topo (<i>top-level domain</i> –TLD) 
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionDominios">
+                                    <div class="accordion-body">
+                                        <p>É o endereço presente no nível máximo da hierarquia do DNS. Há diversas opções, como “.com”, “.net”, entre outras. A IANA – Internet Assigned Numbers Authority é a organização responsável por gerenciar a disponibilidade. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Domínios de topo de código de país 
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionDominios">
+                                    <div class="accordion-body">
+                                        <p>É a parte do domínio que expressa que o <i>site</i> é de determinado país, composto pelas duas letras após o TLD. No Brasil, é usado o código “.br”. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        Domínios de topo genéricos  
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionDominios">
+                                    <div class="accordion-body">
+                                        <p>É semelhante a um TLD, no entanto, não precisa da sigla de identificação do país. É voltado a situações especificas, como, por exemplo, o “.edu”, pertencente a instituições educacionais, ou “.mil”, para uso militar. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Domínios de segundo nível  
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionDominios">
+                                    <div class="accordion-body">
+                                        <p>É o nome dado ao <i>site</i>, representando geralmente a marca ou o nome da empresa, sucedido pelo “.com”. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading5">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    Subdomínios 
+                                  </button>
+                              </h2>
+                              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionDominios">
+                                <div class="accordion-body">
+                                    <p>Subdomínios são vantajosos porque permitem aos administradores de site criarem seções distintas sem adquirir um novo domínio. Em vez disso, eles podem criar subdomínios direcionando-os a diretórios específicos no servidor. </p>
+                                </div>
+                              </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="heading6">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    Domínios grátis
+                                  </button>
+                              </h2>
+                              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionDominios">
+                                <div class="accordion-body">
+                                    <p>Ofertados por serviços de criações de <i>sites</i>, como, por exemplo, o WordPress e o Wix. </p>
+                                </div>
+                              </div>
+                            </div>
+                            
+                        </div>
+
+                        <h4>DNS</h4>
+
+                        <p>É um serviço que realiza a tradução do endereço IP para a nomenclatura dada ao domínio, conforme visto. O DNS autoritativo funciona como fonte oficial de informações sobre um domínio, com duas funções principais. Conheça-as a seguir. </p>
+
+                        <p class="no-print">Clique ou toque nos <i>cards</i> para visualizar o conteúdo. </p>
+
+                        <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                            <div class="flip-card">
+                                <div class="flip-card-inner radius">
+                                    <div class="flip-card-front">
+                                        <p>Atualização dos nomes de domínio</p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <p>Permite aos desenvolvedores realizarem alterações no nome de domínio, por meio do serviço DNS autoritativo. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flip-card">
+                                <div class="flip-card-inner radius">
+                                    <div class="flip-card-front">
+                                        <p>Resposta a consultas DNS</p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <p>Quando alguém na internet digita o endereço do <i>site</i>, esse serviço é o responsável por indicar o endereço IP associado a esse nome, para que o navegador possa encontrar o <i>site</i> correto. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acessivel visually-hidden">
+                            <ol>
+                                <li>Atualização dos nomes de domínio <p>Permite aos desenvolvedores realizarem alterações no nome de domínio, por meio do serviço DNS autoritativo. </p></li>
+                                <li>Resposta a consultas DNS <p>Quando alguém na internet digita o endereço do site, esse serviço é o responsável por indicar o endereço IP associado a esse nome, para que o navegador possa encontrar o site correto. </p></li>                             
+                            </ol>
+                        </div>
+
+                        <p>É chamado de “autoritativo” porque é a última palavra sobre o domínio. Outros servidores DNS, que atuam como “intermediários”, pedem as informações a ele para fornecer ao usuário final o caminho certo. O “recursivo” é outro serviço DNS conhecido, que possibilita o acesso ao endereço informado, caso já esteja em cache, no entanto, ao não encontrar informações em cache, é realizada uma requisição ao DNS autoritativo. Dessa forma, o DNS recursivo visa reduzir o tempo de acesso ao endereço buscado. </p>
+
+                        <h4>Funcionamento do DNS </h4>
+
+                        <p>O DNS funciona da seguinte maneira: o usuário abre o seu navegador e informa o endereço que deseja acessar. Ao confirmar o endereço, é enviada uma requisição para o resolvedor DNS através do provedor de serviços contratado. Ao receber a requisição, é feito um novo encaminhamento para um dos servidores de serviço TLD. O servidor, por sua vez, responde com a informação do nome associado ao domínio solicitado. Essa informação é enviada do resolvedor DNS para o usuário que solicitou o acesso com o endereço IP solicitado. Em posse do endereço IP, o navegador envia nova requisição a ele, que retorna com a página web para o navegador mostrar a página HTML. </p>
+
+                        <figure class="my-5">
+                            <div class="figure-img mb-4">
+                                <img class="img-fluid d-block borda-colorida mx-auto" src="img/">
+                            </div>
+                            <figcaption class="figure-caption text-center">Legenda e fonte</figcaption>
+                        </figure>
+
+
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- Paginação-->
+            <footer class="text-center no-print d-flex justify-content-center mx-auto">
+                <ul class="pagination">
+    
+                </ul>
+            </footer>   
+        </section>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+        <!--Splide - slideshow-->
+        <script src="../assets/js/splide.min.js"></script>
+        <!--Prog'n'roll - barra de progresso conforme rola a página-->
+        <script src="../assets/js/prognroll.min.js"></script>
+        <script src="../print/print/template.config.js"></script>
+        <!--Scripts gerais-->
+        <script src="../assets/js/geral.js"></script>
+
+        <script>
+            var splide = new Splide( '.splide', {
+                type   : 'slide',
+                perPage: 2,
+                trimSpace: false,
+                focus  : 'center'
+            } );
+
+            splide.mount();
+
+            $(function() {
+                $("body").prognroll();
+            });
+        </script>
+
+        <!-- Handtalk -->
+        <script>
+            var scriptElem=document.createElement("script");
+            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset="UTF-8",
+            scriptElem.onload=function(){
+                window.ht = new HT({
+                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
+                    align:"top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,           
+                    mobileConfig:{align:"right",
+                                    actionsAlign:"top",
+                                    customButtonStyle:{
+                                        borderRadius:"6px",
+                                        size:"38px",
+                                        horizontalMargin:"13px",
+                                        bottomMargin:"140px",
+                                        rightMargin:"40px"}
+                                    }
+                    });        
+                $('.ht-skip').attr("aria-hidden","true")
+            },
+        document.body.appendChild(scriptElem);
+        
+        </script>
+    </body>
+</html>

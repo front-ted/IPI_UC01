@@ -1,0 +1,27 @@
+.flip-card{
+    width: 352px;
+}
+
+
+.flip-card-front{
+    background: url('../img/card_frente.png') no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.flip-card-back{
+    background: url('../img/card_verso.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
