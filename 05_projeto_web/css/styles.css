@@ -1,0 +1,47 @@
+.btn-tecnologias{
+    width: 269px;
+    height: 129px;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+}
+
+.linha1{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-aws{
+    background: url('../img/bt_aws.png') no-repeat;
+}
+
+.btn-google{
+    background: url('../img/bt_gcloud.png') no-repeat;
+}
+
+.linha2{
+    display: flex;
+}
+
+.btn-azure{ 
+    background: url('../img/bt_azure.png') no-repeat;
+}
+
+.btn-front{
+    height: 129px;
+    width: 269px;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+}
+
+.btn-html{
+    background: url('../img/bt_html.png') no-repeat;
+}
+
+.btn-css{
+    background: url('../img/bt_css.png') no-repeat;
+}
+
+.btn-js{
+    background: url('../img/bt_javascript.png') no-repeat;
+}

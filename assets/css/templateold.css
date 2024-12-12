@@ -338,12 +338,12 @@ a.botao{text-decoration: none;}
 }
 .modal-dialog-centered .modal-content::before{
     content: '';
-    background: url('../images/losango_ripado.svg') no-repeat;
+    background: url('../images/asset_circulo.svg') no-repeat;
     height: 211px;
     width: 211px;
     position: absolute;
-    bottom: -90px;
-    left: -80px;
+    bottom: -50px;
+    left: -60px;
     z-index: -1;
 }
 .modal-footer{border-top: unset;}
@@ -628,6 +628,11 @@ a.botao{text-decoration: none;}
     background: transparent;
 }
 
+.bg-escuro .accordion-item {
+    background-color: transparent;
+}
+
+
 .bg-escuro .layer-preta {
     display: block;
 }
@@ -708,7 +713,7 @@ a.botao{text-decoration: none;}
     background-position: left top 5px;
 }
 .marcador-numeral li:first-child{
-    background-image: url('../images/marcador.png');
+    background-image: url('../images/marcador_1.svg');
 }
 .marcador-numeral li:nth-child(2){
     background-image: url('../images/marcador_2.svg');
