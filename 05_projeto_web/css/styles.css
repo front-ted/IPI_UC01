@@ -1,3 +1,17 @@
+body{
+    background: url('../img/bg.jpg') fixed;
+    color: #fff;
+}
+
+.modal-body{
+    background: url('../img/bg.jpg') fixed;
+}
+
+.accordion-body {
+    color: black;
+}
+
+
 .btn-tecnologias{
     width: 269px;
     height: 129px;
@@ -45,3 +59,4 @@
 .btn-js{
     background: url('../img/bt_javascript.png') no-repeat;
 }
+
