@@ -1,0 +1,92 @@
+body{
+    background: url('../img/bg_elemento3.png') no-repeat left 15%;
+}
+
+
+.bg1{
+    /* margin-top: -50px; */
+    background: url('../img/bg_elemento1.png') no-repeat left 0px,
+                url('../img/bg_elemento2.png') no-repeat right 0px;
+    border: 1px solid transparent; 
+    padding-bottom: 260px;
+}
+
+.parallax1 {
+    width: 100%;
+    height: 400px;
+    background: url(../img/parallax1.jpg);
+    background-size: cover;
+    background-attachment: fixed !important;
+    display: flex;
+    justify-content: center; 
+}
+
+.bg2{
+    background: url('../img/bg_lateral.png') no-repeat left fixed;
+    border: 1px solid transparent; 
+    padding-bottom: 40px;
+}
+
+.bg3{
+    background: url('../img/bg_lateral.png') no-repeat left fixed, url('../img/bg_lateral.png') no-repeat right fixed;
+
+    border: 1px solid transparent; 
+}
+
+.parallax2 {
+    width: 100%;
+    height: 400px;
+    background: url(../img/parallax2.jpg);
+    background-size: cover;
+    background-attachment: fixed !important;
+    display: flex;
+    justify-content: center; 
+}
+
+
+.parallax3 {
+    width: 100%;
+    height: 400px;
+    background: url(../img/parallax3.jpg);
+    background-size: cover;
+    background-attachment: fixed !important;
+    display: flex;
+    justify-content: center; 
+}
+
+
+.painel1{
+    height: 423px;
+    width: 504px;
+    margin: auto;
+    background: url('../img/painel1.jpg');
+    position: relative;
+}
+
+.btn_painel1{
+    position: absolute;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    width: 115px;
+}
+
+.btn-usuarios{
+    left: 39%;
+    top: 14%
+}
+
+.btn-conteudo{
+    left: 9%;
+    top: 58%
+}
+
+.btn-contexto{
+    
+    right: 9%;
+    top: 58%
+}
+
+.painelMobile{
+    display: none;
+}
