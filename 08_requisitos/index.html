@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Inserir o tíutlo do conhecimento na tag title -->
+        <title>Requisitos: conceitos e técnicas para análise e gerenciamento</title>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.0.2 -->
+        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="../assets/css/animate.min.css" />
+        <!-- hover.css https://ianlunn.github.io/Hover/ -->
+        <link rel="stylesheet" href="../assets/css/hover-min.css" />
+        <!--Splide - slideshow-->
+        <link rel="stylesheet" href="../assets/css/splide.min.css">
+        <!-- Preloader -->
+        <link rel="stylesheet" href="../assets/css/preloader.css">
+        <!-- Áudio customizado -->
+        <link rel="stylesheet" href="../assets/css/player.css">
+        <!-- Estilos do template -->
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        <link rel="stylesheet" href="../print/print/print.css">
+        <link rel="stylesheet" href="../assets/css/template.css">
+    
+    </head>
+    <body class="bg-claro">
+        <!-- Preloader OBRIGATÓRIO -->
+        <div class="preloader">
+            <div class="anim"></div>
+            <p>Aguarde enquanto o conteúdo é carregado.</p>
+        </div>
+        <!-- Marca d'água OBRIGATÓRIA -->
+        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+        <header id="topo">
+            <div class="topo-logo">
+                <div class="container">
+                    <h1 id="nome-curso" class="only-print">Informática para Internet</h1>  
+                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>  
+                </div>
+            </div>
+        </header>
+        <!--Menu lateral-->
+        <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Informática para Internet</h5>
+                <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav id="nav-offcanvas" class="offcanvas-body">
+                <ul>
+                    <li><a href="#titulo1">Lorem ipsum</a></li>
+                    <li><a href="#titulo2">Lorem ipsum</a></li>
+                    <li><a href="#titulo3">Lorem ipsum dolor sit amet dolor sit amet</a></li>
+                    <li><a href="#titulo4">Lorem ipsum</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
+        <section id="booklet">  
+            <div class="layer-preta no-print"></div>    
+            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+            <section class="paginas">
+                <div class="container pagina">
+                    
+                    <h2>Requisitos: conceitos e técnicas para análise e gerenciamento</h2>
+
+                    <h3>Introdução</h3>
+
+                    <p>O desenvolvimento de um <i>website</i> traz consigo também um processo trabalhoso de
+                        pós-produção, que inclui a análise de dados e o gerenciamento contínuo. Quando um
+                        <i>site</i> é colocado no ar, todas as suas páginas, as suas subpáginas, os seus
+                        documentos e afins são indexados na internet, mas apenas isso pode não ser o
+                        suficiente. Para manter um fluxo de visitação no <i>website</i>, é de suma importância
+                        conseguir obter números, cliques, <i>links</i> e o caminho que os usuários fazem enquanto
+                        navegam</p>
+
+                    <p>Na internet, o recurso mais importante e valioso é a informação, pois permite criar
+                        estratégias e promover melhorias por meio da análise de dados. Há duas formas de
+                        se obter informação: de maneira orgânica ou paga. Assim, neste material, serão
+                        exploradas algumas técnicas a fim de compreender como essas informações podem
+                        ser úteis e quais dados podem ser obtidos.</p>
+                    
+                    <h3>Técnicas para análise e gerenciamento</h3>
+
+                    <p>Para entender o modo de trabalhar com dados, você deve levar em consideração duas
+                        estratégias primárias: <b>o que</b> e <b>como</b>.</p>
+
+                    <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
+
+                    <ul class="nav nav-tabs no-print" id="myTab" role="tablist" aria-hidden="true">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><b>O que</b></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><b>Como</b></button>
+                        </li>
+                    </ul>
+                    <div class="tab-content no-print" id="myTabContent" aria-hidden="true">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h4 class="sr-only print"><b>O que</b></h4>
+                            Quais são os dados necessários? Quais são as métricas que o cliente ou você
+                            deseja buscar: o número de visitas em páginas específicas? As subpáginas
+                            mais visitadas? Os links mais clicados? Os arquivos mais baixados? Tudo isso
+                            tem que ser previsto para saber exatamente quais técnicas ou ferramentas
+                            serão usadas.
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <h4 class="sr-only print"><b>Como</b></h4>
+                            Será utilizada uma ferramenta gratuita ou paga? Será aplicada em todo o <i>site</i>
+                            ou em páginas específicas? Serão priorizadas <i>landing pages</i> ou tudo
+                            diretamente? Será utilizada a análise direta? Mapas de calor? Tráfego pago?
+                            Análise de ROI? São muitos pontos! A ideia do <b>como</b> é direcionar o foco na
+                            escolha de ferramentas.
+                        </div>
+                    </div>
+
+                    <div class="print acessivel visually-hidden">
+                        <ul class="marcador-padrao">
+                            <li><b>O que</b> <p>Quais são os dados necessários? Quais são as métricas que o cliente ou você
+                                deseja buscar: o número de visitas em páginas específicas? As subpáginas
+                                mais visitadas? Os <i>links</i> mais clicados? Os arquivos mais baixados? Tudo isso
+                                tem que ser previsto para saber exatamente quais técnicas ou ferramentas
+                                serão usadas.</p></li>
+                            <li><b>Como</b> <p>Será utilizada uma ferramenta gratuita ou paga? Será aplicada em todo o <i>site</i>
+                                ou em páginas específicas? Serão priorizadas <i>landing pages</i> ou tudo
+                                diretamente? Será utilizada a análise direta? Mapas de calor? Tráfego pago?
+                                Análise de ROI? São muitos pontos! A ideia do <b>como</b> é direcionar o foco na
+                                escolha de ferramentas.</p></li>
+                        </ul>
+                    </div>
+
+                    <p>A definição de estratégias ajuda a ter uma visão direcionada e retornar ao cliente os
+                        dados necessários. Além disso, utilizando esses dados, também é possível gerar
+                        relatórios e apontar melhorias. Você notou que apareceram alguns termos diferentes?
+                        Por exemplo, <i>landing pages</i>, mapas de calor, orgânico ou pago, ROI, mas o que é
+                        tudo isso? Durante a pós-produção de um <i>site</i>, esses serviços de análise podem ser
+                        oferecidos também, pois, em muitos casos, o cliente não tem esse tipo de acesso, e
+                        para tê-lo, precisaria usar plataformas não tão amigáveis. Então, mediante contratos
+                        e acertos com o cliente, você pode oferecer esses serviços após a entrega do <i>site</i>.
+                        Explore um pouco essas técnicas e veja como utilizá-las para analisar dados.</p>
+                    
+                    <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
+
+
+                    <div class="painelTecnicas no-print">
+
+                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modalAnalytics">
+                            Google Analytics
+                        </button>
+
+                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modalTrends">
+                            Google Trends
+                        </button>
+
+                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modalTagManager">
+                            Google Tag Manager
+                        </button>
+
+                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modalAdSense">
+                            Google AdSense
+                        </button>
+                    
+                    </div>
+
+                    <!-- modais painel -->
+
+                    <div class="modal fade" id="modalAnalytics" tabindex="-1" aria-labelledby="exampleModalLabel">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Google Analytics</b></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>Uma das melhores ferramentas para análise de dados, geração de relatórios e
+                                            acompanhamento de métricas é o Google Analytics. Lançado em novembro de 2005,
+                                            o Analytics se tornou rapidamente a ferramenta mais importante para buscar e
+                                            analisar métricas. O Analytics contém um painel de controle completo, que agrega as
+                                            informações mais necessárias para analisar os dados, oferecendo funções como:</p>
+                                        
+                                        <ul class="marcador-padrao">
+                                            <li><b>Automação integrada</b>: ao inserir o <i>script</i> que ativa o Analytics no seu
+                                                <i>website</i> as visitas, os cliques e afins serão registrados em tempo real, porém
+                                                o Analytics vai muito mais a fundo. Aplicando aprendizado de máquina, ele
+                                                é capaz de registrar e <b>prever as ações</b> que os usuários estão realizando,
+                                                como páginas que ele mais navega, por quanto tempo, se houve desistência
+                                                em alguma compra em caso de comercial digital, quais arquivos que mais
+                                                foram realizados <i>download</i> etc. Dessa forma, permite a você criar públicos-
+                                                alvo para gerar mais conversões. Além disso, dentro do painel de controle,
+                                                uma barra de busca ajuda a encontrar as métricas necessárias
+                                                rapidamente, como, por exemplo, qual é o dispositivo de acesso mais
+                                                utilizado, computador, celular, <i>tablet</i> ou outros, ajudando-o a direcionar
+                                                melhor suas técnicas de conversão ou criação de novas páginas e mídias.</li>
+
+                                            <li><b>Relatórios</b>: essa é uma das áreas onde o Analytics mais brilha. Pelo fato
+                                                de tudo ser em tempo real, qualquer atividade realizada no website permite
+                                                diversos tipos de relatórios. Conheça alguns deles a seguir.
+
+                                                <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
+
+
+                                                  
+                                                    <div class="accordion" id="accordionRelatorios">
+                                                  
+                                                      <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="headingOne">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                                Aquisição de usuários
+                                                              </button>
+                                                          </h2>
+                                                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionRelatorios">
+                                                              <div class="accordion-body">
+                                                                  <p>Gera um relatório que permite descobrir como os usuários chegaram a seu <i>site</i> ou a
+                                                                    alguma página específica, separando a origem em paga ou orgânica.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  
+                                                      <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="headingTwo">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                <b>Aquisição de tráfego</b>
+                                                              </button>
+                                                          </h2>
+                                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionRelatorios">
+                                                              <div class="accordion-body">
+                                                                  <p>Gera um relatório com base em sessões, quantas páginas um usuário visitou e quanto
+                                                                    tempo ele gastou em cada uma e o total, além de separar a origem em paga ou
+                                                                    orgânica.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  
+                                                      <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="headingThree">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                Engajamento
+                                                              </button>
+                                                          </h2>
+                                                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionRelatorios">
+                                                              <div class="accordion-body">
+                                                                  <p>Gera relatórios de eventos do sistema e erros, verificando se existe canais de
+                                                                    <i>marketing</i> e como está a interação dos usuários nesses canais.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  
+                                                      <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading4">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                                Monetização
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionRelatorios">
+                                                          <div class="accordion-body">
+                                                              <p>Gera um relatório com foco específico em atividades de compra, receita média geral
+                                                                ou por usuário, entre outros dados, nos casos de comércio digital, assinaturas e
+                                                                anúncios. Além disso, mostra diversas técnicas para melhorar essas estratégias com
+                                                                base nas escolhas dos usuários.</p>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                  
+                                                     
+                                                    </div>
+
+                                                    <p>Isso é só uma pequena amostra dos recursos do Google Analytics. A melhor forma de
+                                                        explorá-los é justamente desenvolvendo e aplicando técnicas diversas de conversão
+                                                        e tráfego nos seus produtos, e o melhor de tudo é que o Google Analytics é <b>gratuito</b>.
+                                                    </p>
+
+                                                    <figure class="my-5">
+                                                        <div class="figure-img mx-auto mb-4">
+                                                            <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                        </div>
+                                                        <figcaption class="figure-caption text-center">Exemplo do painel de controle do Google Analytics <br> Fonte: </figcaption>
+                                                    </figure>
+                                                    <p class="acessivel no-print visually-hidden">Captura de tela do Google Analytics 4. A interface mostra um painel com dados de um
+                                                    site de comércio eletrônico chamado Google Merch Shop. Os dados apresentados incluem o número
+                                                    total de usuários, novos usuários, tempo médio de engajamento, receita total e quantidade de usuários
+                                                    ativos nos últimos trinta minutos. Há um gráfico de linha mostrando a variação do número de usuários
+                                                    ao longo do tempo. Abaixo do gráfico, há uma tabela com os principais países de origem dos usuários.
+                                                    A seção lateral esquerda da tela contém um menu de navegação com opções como Realtime, Lifecycle,
+                                                    Engagement, Monetization e Retention.</p>
+                                                  
+                                             
+
+
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalTrends" tabindex="-1" aria-labelledby="exampleModalLabel">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Google Trends</b></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>Na internet, existe um fluxo imenso de informações geradas a cada segundo. Além
+                                            disso, usuários ao redor do mundo estão sempre fazendo pesquisas diferentes e
+                                            gerando diversos resultados. Então como checar quais são as tendências e as buscas
+                                            mais realizadas pelos usuários? É simples, basta usar o Google Trends.</p>
+
+                                        <p>Trends é uma ferramenta <i>on-line</i> e gratuita do Google que armazena as pesquisas
+                                            realizadas, podendo ser checadas por meio de palavras-chave específicas, como
+                                            data, região e outros filtros que o usuário considerar relevantes. Por exemplo, veja
+                                            uma pesquisa com a palavra-chave <b>Senac EAD</b> durante todo o ano de 2023 e entenda
+                                            um pouco o que ele retorna.
+                                            Commented [AV1]: Fonte diferente da imagem.</p>
+                                        
+                                            <figure class="my-5">
+                                                <div class="figure-img mx-auto mb-4">
+                                                    <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                </div>
+                                                <figcaption class="figure-caption text-center">Busca por “Senac EAD” no Google Trends <br> Fonte:
+                                                    https://trends.google.com (Acesso em 02 de out de
+                                                    2024) </figcaption>
+                                            </figure>
+                                            <p class="acessivel no-print visually-hidden">Gráfico de linhas mostrando o interesse na busca por “Senac EAD” no Google, no Brasil,
+                                                durante o ano de 2023. O eixo da vertical representa a quantidade de interesse, com picos e vales ao
+                                                longo do ano, em linha na horizontal. O eixo na parte inferior representa as datas, iniciando em 1º de
+                                                janeiro até 10 de setembro de 2023.</p>
+
+                                            <p>É possível analisar, no gráfico, que existiu uma consistência nas pesquisas em 2023,
+                                                apresentando “Senac EAD” com alguns picos de pesquisa no início de fevereiro e no
+                                                final do mês do maio. As informações adquiridas podem ser usadas para o
+                                                direcionamento de campanhas e tráfego pago, usando essas datas como norteadores.
+                                                Mas não para por aí, há mais informações nessa busca.</p>
+                                            
+                                                <figure class="my-5">
+                                                    <div class="figure-img mx-auto mb-4">
+                                                        <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                    </div>
+                                                    <figcaption class="figure-caption text-center">Interesse em “Senac EAD” por sub-região no Google Trends <br> Fonte:
+                                                        https://trends.google.com (Acesso em 02 de out de
+                                                        2024) </figcaption>
+                                                </figure>
+                                                <p class="acessivel no-print visually-hidden">Gráfico de interesse por sub-regiões do Brasil, na busca por “Senac EAD”, contendo
+                                                    barras horizontais com o mapa do Brasil ao lado. São Paulo é a sub-região com maior interesse,
+                                                    seguida por Roraima, Rio de Janeiro, Rio Grande do Sul e Espírito Santo. As barras horizontais variam
+                                                    em comprimento, representando visualmente a intensidade do interesse em cada sub-região. O mapa do Brasil destaca as cinco sub-regiões mais pesquisadas com uma cor mais intensa. As demais sub-
+                                                    regiões do país são mais claras.</p>
+                                                
+                                                <p>Mas o que são aqueles números? É simples de entender! O número 100, no estado
+                                                    de São Paulo, não significa que foram 100 pesquisas no período de um ano. Segundo
+                                                    o Google Trends, “Os valores são calculados em uma escala de 0 a 100, em que 100
+                                                    é o local com a maior popularidade como uma fração do total de pesquisas naquele
+                                                    local; 50 indica um local que tem metade da popularidade; e 0 indica um local em que
+                                                    não houve dados suficientes para o termo.” (Google Trends, 2024). Isto é, em São
+                                                    Paulo, a busca por “Senac EAD” teve mais incidências <b>
+                                                        comparada a outras sub-
+                                                        regiões
+                                                    </b>. Os outros números indicam incidências com base nesse número 100. Esse
+                                                    resultado é simples de se utilizar e analisar com um retorno direto do Google Trends.
+                                                    Além disso, há outra etapa que ajudará de maneira orgânica em futuras estratégias.</p>
+                                                
+                                                    <figure class="my-5">
+                                                        <div class="figure-img mx-auto mb-4">
+                                                            <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                        </div>
+                                                        <figcaption class="figure-caption text-center">Pesquisas relacionadas no Google Trends <br> Fonte:
+                                                            https://trends.google.com (Acesso em 02 de out de
+                                                            2024) </figcaption>
+                                                    </figure>
+                                                    <p class="acessivel no-print visually-hidden">Resultado das pesquisas relacionadas no Google Trends. A tela é dividida em duas
+                                                        colunas. À esquerda, há uma lista de “Assuntos relacionados”, com termos como Technical school,
+                                                        UniSenac - Campus Porto Alegre, certificado, entre outros. Ao lado de cada título, há um número
+                                                        indicando um aumento percentual significativo. A coluna da direita apresenta uma lista de “Pesquisas
+                                                        relacionadas”, com termos como Senac cursos gratuitos 2023, portal do aluno Senac EAD, entre outros.
+                                                        Assim como na coluna da esquerda, cada termo está acompanhado de um número indicando um
+                                                        aumento percentual significativo. Ambas as colunas contêm botões para ordenar os resultados e
+                                                        compartilhá-los.</p>
+                                                    
+                                                    <p>Os resultados apresentados nas duas colunas da imagem contêm duas questões
+                                                        importantes quando se trata de buscas de produtos: Assuntos relacionados e
+                                                        Pesquisas relacionadas. Essas estruturas que ajudam a entender como as pessoas
+                                                        chegam aos websites e quais são as palavras-chave que levam os websites a serem
+                                                        encontrados nos motores de pesquisa. Esse recurso é muito útil e gratuito também.
+                                                        Por fim, é possível comparar o uso de duas ou mais palavras-chave e ter mais idéias
+                                                        de como melhorar a estrutura do <i>front-end</i> e do <i>back-end</i> dos clientes. Por exemplo,
+                                                        veja uma simulação de buscas por “Marvel” e por “DC” no último ano, no Brasil.
+                                                    </p>
+                                        
+                                                    <figure class="my-5">
+                                                        <div class="figure-img mx-auto mb-4">
+                                                            <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                        </div>
+                                                        <figcaption class="figure-caption text-center">Comparação entre as buscas por Marvel e DC no Google Trends <br> Fonte:
+                                                            https://trends.google.com (Acesso em 02 de out de
+                                                            2024) </figcaption>
+                                                    </figure>
+                                                    <p class="acessivel no-print visually-hidden">Gráfico de linhas comparando o interesse de pesquisa on-line no Brasil entre “Universo
+                                                        Marvel” e “Universo DC”, nos últimos doze meses. O gráfico apresenta duas linhas, azul para Marvel e
+                                                        vermelha para DC, flutuando ao longo do eixo do tempo, indicando picos e quedas no interesse de
+                                                        pesquisa. A linha vermelha do DC inicia em um valor mais alto e apresenta flutuações mais acentuadas,
+                                                        enquanto a linha da Marvel inicia em um valor mais baixo e apresenta crescimento mais gradual. O
+                                                        gráfico também mostra a média de interesse para ambos os universos no período analisado.</p>
+
+                                                    <p>Esses recursos são gratuitos e de fácil acesso. Além disso, é possível gerar relatórios
+                                                        em formato PDF ou CSV para uma análise posterior ou, até mesmo, gerar novos
+                                                        gráficos. São muitas as possibilidades nessa ferramenta a um clique de distância.</p>
+                                            
+                                                     
+                                             
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalTagManager" tabindex="-1" aria-labelledby="exampleModalLabel">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Google Tag Manager</b></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+
+                                        <p>Foram muito abordadas as palavras-chave, mas não foi encontrado nenhum uso
+                                            prático delas em prol dos websites desenvolvidos, para que sejam mais visados e
+                                            fiquem no topo dos motores de pesquisa, principalmente o Google. O Tag Manager é
+                                            mais uma ferramenta do Google que trabalha diretamente com o Analytics para
+                                            melhorar as análises e a maneira que os sites são vistos dentro dos motores de busca.
+                                            Os desenvolvedores devem adicionar um script nas páginas do site que serão
+                                            utilizadas ou em todo o site, porém o ideal é colocar no site inteiro para acompanhar
+                                            todas as páginas. Mas será que o Tag Manager tem alguma função diferente do
+                                            Analytics? Sim! Ambos trabalham em conjunto, mas é justamente pelas palavras no
+                                            website. O conteúdo por si só ajuda a encontrar essas tags, que podem ser utilizadas
+                                            no painel de controle do Tag Manager, para checar o quanto essas palavras estão
+                                            ajudando no site.</p>
+                                        
+                                        <div class="grafismo">
+                                            <div class="destaque gradiente incone observacao">
+                                                <p>É importante citar que o Tag Manager funciona em conjunto com o Analytics,
+                                                    podendo ter o Analytics sem utilizar o Tag Manager.</p>
+                                            </div>
+                                        </div>
+
+                                        <p>Sempre estruture bem o conteúdo do website, solicite ao cliente que traga as palavras-
+                                            chave mais importantes sempre presentes nos conteúdos produzidos, gere relatórios
+                                            do Google Trends, mostre como as pessoas estão encontrando o site e como ele pode
+                                            direcionar esse conteúdo.</p>
+                                        
+                                             
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalAdSense" tabindex="-1" aria-labelledby="exampleModalLabel">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Google Tag Manager</b></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+
+                                        <p>Saindo um pouco das buscas orgânicas, há as buscas pagas. O AdSense é uma das
+                                            ferramentas mais antigas do Google. Surgido em 2003, ele ajuda a monetizar os
+                                            conteúdos presentes nos websites. Ao navegar por motores de busca e, até mesmo,
+                                            por páginas internas de alguns sites, você pode ter se deparado com alguns anúncios
+                                            deste tipo:
+                                            </p>
+                                        
+                                            <figure class="my-5">
+                                                <div class="figure-img mx-auto mb-4">
+                                                    <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                </div>
+                                                <figcaption class="figure-caption text-center">Links patrocinados pelo AdSense durante uma pesquisa no Google <br>Fonte: Google (2024)</figcaption>
+                                            </figure>
+                                            <p class="acessivel no-print visually-hidden">Captura de tela de dois anúncios patrocinados, exibidos durante uma busca no site do
+                                                Google, das empresas Crédito Real e Quinto Andar, que são sites de imóveis. Os anúncios contêm os
+                                                links com seus logotipos. A Crédito Real tem um fundo vermelho com texto branco e o Quinto Andar
+                                                tem um fundo azul com texto branco, além disso, há uma descrição dos serviços oferecidos. Ambos os
+                                                anúncios levam para o site das empresas.</p>
+
+                                            <p>O AdSense funciona de duas maneiras, gerando anúncios com base em <b>
+                                                algoritmo
+                                                    seletivo
+                                            </b>, isto é, adaptando os anúncios de acordo com as pesquisas de cada usuário,
+                                                ou ajudando a colocar a página no topo das buscas do Google, de forma paga. No
+                                                painel de controle do AdSense, o usuário pode criar campanhas em diversos tipos de
+                                                anúncios e comprar palavras-chave. Cada vez que um usuário clica em um <i>link</i>
+                                                <b>patrocinado</b>, é pago um valor nesse clique. Cada clique gera mais custos, com mais
+                                                cliques, recebe-se mais notoriedade e chances de aparecer nas primeiras pesquisas
+                                                sem precisar pagar por isso. É como se fosse colocado um <i>outdoor</i> em uma estrada
+                                                movimentada para divulgação, e após haver um fluxo de visitantes e clientes, pode-
+                                                se retirar o <i>outdoor</i> e diminuir o custo. Cada palavra-chave no AdSense tem custos
+                                                flutuantes, por exemplo, R$ 0,80 pela palavra <b>educação</b> ou R$ 40,00 pela palavra
+                                                <b>seguro</b>, por clique. Mas já que há custos, como faturar com o uso do AdSense? Isso
+                                                vai depender da forma que o <i>website</i> foi construído. Você já deve ter visto alguns
+                                                <i>banners</i>, como na imagem a seguir, em determinados <i>websites</i>.</p>
+
+                                                <figure class="my-5">
+                                                    <div class="figure-img mx-auto mb-4">
+                                                        <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                    </div>
+                                                    <figcaption class="figure-caption text-center">Exemplo de anúncio criado pelo Google AdSense no site da Globo.com <br>Fonte: Globo.com (2024)</figcaption>
+                                                </figure>
+                                                <p class="acessivel no-print visually-hidden">Captura de tela de um banner no site Globo.com. Seu formato é retangular, com fundo
+                                                    colorido, há uma mulher sorrindo e o texto “A energia da mudança começa aqui”, e ao lado, o logotipo
+                                                    da empresa Abradee.</p>
+
+                                                <p>Esse espaço não é uma invasão do Google nos sites, mas sim um local deixado pelos
+                                                    desenvolvedores do próprio site justamente para os anúncios serem postos, de acordo
+                                                    com as pesquisas dos visitantes. Se eles clicarem nesse anúncio, quem receberá o
+                                                    valor por clique será o site. Durante o desenvolvimento dos sites, principalmente no
+                                                    processo de UX e UI, se o cliente concordou, são deixados esses espaços em aberto.
+                                                    Existem diversos tipos de anúncio, com variação de tamanho, local ocupado e afins.
+                                                    Basta adaptá-los conforme desejado, a fim de não poluir o conteúdo nem a
+                                                    navegação, trazendo benefícios a todos os envolvidos no processo.</p>
+
+                                       
+                                        
+                                             
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3><i>Meta Tags</i></h3>
+
+                    <p>Ainda contemplando a área de desenvolvimento, existe mais uma maneira orgânica
+                        de facilitar as buscas pelos <i>sites</i>. Uma das primeiras estruturas colocadas no HTML
+                        dos <i>websites</i> são as <b><i>meta tags</i></b>. Essas <i>tags</i> ajudam a dar um título, um conteúdo ou
+                        uma linguagem primária, entre várias outras funções. Porém, nesse caso, a <i>meta tag</i>
+                        necessária são as <i>keywords</i>. Elas ajudam no processo de SEO (<i>
+                            Search Engine
+                            Optimization
+                        </i>), a otimização para motores de busca, que é justamente o que permite
+                        que as páginas dos clientes sejam encontradas com mais facilidade. A aplicação delas
+                        é simples, e quanto mais palavras-chave forem usadas, melhor serão os
+                        ranqueamentos nos motores de busca.</p>
+
+                    <figure class="my-5">
+                        <div class="figure-img mx-auto mb-4">
+                            <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png" alt="exemplo codigo meta tag">
+                        </div>
+                    </figure>
+
+                    <p>Veja uma breve explicação de cada uma delas a seguir.</p>
+
+                    <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
+
+                    <div class="accordion" id="accordionMetaTags">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Charset UTF-8 
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionMetaTags">
+                                <div class="accordion-body">
+                                    <p>É uma configuração binária para textos e símbolos. O UTF-8 permite que os
+                                        textos dos <i>websites</i> que utilizam acentos e caracteres especiais sejam lidos por
+                                        qualquer navegador.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Description
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMetaTags">
+                                <div class="accordion-body">
+                                    <p>É um pequeno texto que aparece no motor de busca para o usuário saber do
+                                        que se trata o link que ele clicará.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Keywords 
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionMetaTags">
+                                <div class="accordion-body">
+                                    <p>São as palavras-chave específicas sobre o conteúdo que o usuário encontrará
+                                        no <i>site</i>. Além disso ajuda o motor de busca a entender e indexar o seu <i>site</i> com
+                                        essas palavras-chave.</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <h3>Encerramento</h3>
+
+                      <p>Estudante, você chegou ao final deste conteúdo. Que jornada longa, não é? Trabalhar
+                        com estruturas de pós-produção e análise de dados é uma tarefa de longo prazo, que
+                        exige muita atenção e constante checagem das ferramentas que estão sendo
+                        utilizadas. Além disso, é importante que profissionais de <i>marketing</i> digital também
+                        estejam a par desse trabalho. Tudo depende do contexto do cliente e do tipo de
+                        <i>website</i> desejado por ele. Essa etapa de gerenciamento e análise pode ser oferecida
+                        como parte do desenvolvimento, afinal, tudo acontece dentro do processo de colocar
+                        o <i>website</i> no ar. Converse sobre isso desde o início e, quando tudo estiver alinhado,
+                        parta para a análise de dados. Bons estudos e mãos à obra!
+                        </p>
+
+                
+
+
+                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
+                </div>
+            </section>
+            <!-- Paginação-->
+            <footer class="text-center no-print d-flex justify-content-center mx-auto">
+                <ul class="pagination">
+    
+                </ul>
+            </footer>   
+        </section>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+        <!--Splide - slideshow-->
+        <script src="../assets/js/splide.min.js"></script>
+        <!--Prog'n'roll - barra de progresso conforme rola a página-->
+        <script src="../assets/js/prognroll.min.js"></script>
+        <!--Scripts gerais-->
+        <script src="../assets/js/geral.js"></script>
+
+        <script>
+            $(function() {
+                $("body").prognroll();
+            });
+        </script>
+
+        <!-- Handtalk -->
+        <script>
+            var scriptElem=document.createElement("script");
+            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset="UTF-8",
+            scriptElem.onload=function(){
+                window.ht = new HT({
+                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
+                    align:"top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,           
+                    mobileConfig:{align:"right",
+                                    actionsAlign:"top",
+                                    customButtonStyle:{
+                                        borderRadius:"6px",
+                                        size:"38px",
+                                        horizontalMargin:"13px",
+                                        bottomMargin:"140px",
+                                        rightMargin:"40px"}
+                                    }
+                    });        
+                $('.ht-skip').attr("aria-hidden","true")
+            },
+        document.body.appendChild(scriptElem);
+        
+        </script>
+    </body>
+</html>
