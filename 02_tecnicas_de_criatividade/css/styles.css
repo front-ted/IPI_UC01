@@ -1,6 +1,6 @@
 body{
     background: url('../img/lampada.png') 95% 30% fixed no-repeat,url('../img/bg_fundo.png') fixed no-repeat;
-    background-size: 15%, cover;
+    background-size: 13%, cover;
 
 }
 
@@ -12,15 +12,23 @@ body{
 }
 
 .btn-tecnicas{
-    background-color: transparent;
     position: relative;
     width: 231px;
     height: 299px;
     border: transparent;
-    color: transparent;
+    color: #fff;
     overflow: visible;
+    font-weight: bolder;
 
+    z-index: 2;
     
+}
+
+.btn-tecnicas span {
+    font-size: 30px;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+
 }
 
 .btn-brainstorming{
@@ -42,6 +50,8 @@ body{
     background-position: center center;
     opacity: 0; 
     transition: opacity 0.4s;
+     z-index: -1;
+    
 }
 
 .btn-brainstorming:hover::before{
@@ -61,8 +71,9 @@ body{
     opacity: 1; 
     transition: opacity 5s ease-in;
     border-radius: 20px;
-    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2)); 
-}
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2));  
+    z-index: -1;
+} 
 
 .btn-mapas{
     background: url('../img/bt_mapamental.jpg');
@@ -82,6 +93,7 @@ body{
     background-position: center center;
     opacity: 0; 
     transition: opacity 0.4s;
+    z-index: -1;
 }
 
 .btn-mapas:hover::before{
@@ -102,7 +114,8 @@ body{
     transition: opacity 5s ease-in;
     border-radius: 20px;
     filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2)); 
-}
+    z-index: -1;
+} 
 
 .btn-semantico{
     background: url('../img/bt_moodboard.jpg');
@@ -122,6 +135,7 @@ body{
     background-position: center center;
     opacity: 0; 
     transition: opacity 0.4s;
+    z-index: -1;
 }
 
 .btn-semantico:hover::before{
@@ -142,6 +156,7 @@ body{
     transition: opacity 5s ease-in;
     border-radius: 20px;
     filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2)); 
+    z-index: -1;
 }
 
 
