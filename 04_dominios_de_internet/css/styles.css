@@ -31,7 +31,16 @@ body{
     align-items: center;
     justify-content: center;
     font-weight: bolder;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.flip-card-back p{
+    max-width: 80%;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: transparent;
 }
 
 .slide1{
