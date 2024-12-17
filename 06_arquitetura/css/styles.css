@@ -65,10 +65,8 @@ body{
 
 .btn_painel1{
     position: absolute;
-    background-color: transparent;
-    color: transparent;
-    border: none;
-    width: 115px;
+   
+    width: 145px;
 }
 
 .btn-usuarios{

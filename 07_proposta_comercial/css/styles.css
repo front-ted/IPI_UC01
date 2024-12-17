@@ -1,0 +1,145 @@
+body{
+    background: 
+        url('../img/bg1.png') top left no-repeat,
+        url('../img/bg2.png') bottom right no-repeat,
+        url('../img/asset01.png')  95% 35% no-repeat,
+        url('../img/asset02.png')  5% 55% no-repeat;   
+}
+
+.painel6Botoes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-painel6botoes{
+    height: 200px;
+    width: 200px;
+    border: none;
+    position: relative;
+    margin: 30px;
+}
+
+.btn-capa::before,
+.btn-problema::before,
+.btn-solucao::before,
+.btn-visao::before,
+.btn-custo::before,
+.btn-cronograma::before 
+{
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: -30%;
+    width: 300px;
+    height: 300px;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0; 
+    transition: opacity 0.4s;
+    overflow: visible;
+}
+
+.btn-capa:hover::before,
+.btn-problema:hover::before,
+.btn-solucao:hover::before,
+.btn-visao:hover::before,
+.btn-custo:hover::before,
+.btn-cronograma:hover::before 
+    {
+    opacity: 1;
+    animation: rotate 4s linear infinite;
+}
+
+.btn-capa::after,
+.btn-problema::after,
+.btn-solucao::after,
+.btn-visao::after,
+.btn-custo::after,
+.btn-cronograma::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    opacity: 1; 
+    transition: opacity 5s ease-in;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2)); 
+}
+
+.btn-capa::after
+{
+background: url('../img/bt01.png') no-repeat;
+}
+
+.btn-problema::after{
+    background: url('../img/bt02.png') no-repeat;
+}
+
+.btn-solucao::after{
+    background: url('../img/bt03.png') no-repeat;
+}
+
+.btn-visao::after{
+    background: url('../img/bt04.png') no-repeat;
+}
+
+.btn-custo::after{
+    background: url('../img/bt05.png') no-repeat;
+}
+
+.btn-cronograma::after{
+    background: url('../img/bt06.png') no-repeat;
+}
+
+.btn-capa{
+    background: url('../img/bt01.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-problema{
+    background: url('../img/bt02.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-solucao{
+    background: url('../img/bt03.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-visao{
+    background: url('../img/bt04.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-custo{
+    background: url('../img/bt05.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-cronograma{
+    background: url('../img/bt06.png') no-repeat;
+    background-position: center center;
+}
+
+.encerramento{
+    background: url('../img/encerramento.png') no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 800px;
+    padding-top: 100px;
+}
+
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

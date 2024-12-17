@@ -708,7 +708,7 @@ a.botao{text-decoration: none;}
     background-position: left top 5px;
 }
 .marcador-numeral li:first-child{
-    background-image: url('../images/marcador.png');
+    background-image: url('../images/marcador_1.svg');
 }
 .marcador-numeral li:nth-child(2){
     background-image: url('../images/marcador_2.svg');
