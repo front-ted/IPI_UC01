@@ -24,6 +24,8 @@
         <link rel="stylesheet" href="../assets/css/cores.css">
         <link rel="stylesheet" href="../print/print/print.css">
         <link rel="stylesheet" href="../assets/css/template.css">
+        <!-- estilos customizados -->
+         <link rel="stylesheet" href="css/styles.css">
     
     </head>
     <body class="bg-claro">
@@ -56,10 +58,10 @@
             </div>
             <nav id="nav-offcanvas" class="offcanvas-body">
                 <ul>
-                    <li><a href="#titulo1">Lorem ipsum</a></li>
-                    <li><a href="#titulo2">Lorem ipsum</a></li>
-                    <li><a href="#titulo3">Lorem ipsum dolor sit amet dolor sit amet</a></li>
-                    <li><a href="#titulo4">Lorem ipsum</a></li>
+                    <li><a href="#introducao">Introdução</a></li>
+                    <li><a href="#tecnicas">Técnicas para análise e gerenciamento</a></li>
+                    <li><a href="#tags"><i>Meta</i> tags</a></li>
+                    <li><a href="#encerramento">Encerramento </a></li>
                 </ul>
             </nav>
         </div>
@@ -72,7 +74,7 @@
                     
                     <h2>Requisitos: conceitos e técnicas para análise e gerenciamento</h2>
 
-                    <h3>Introdução</h3>
+                    <h3 id="introducao">Introdução</h3>
 
                     <p>O desenvolvimento de um <i>website</i> traz consigo também um processo trabalhoso de
                         pós-produção, que inclui a análise de dados e o gerenciamento contínuo. Quando um
@@ -88,7 +90,7 @@
                         exploradas algumas técnicas a fim de compreender como essas informações podem
                         ser úteis e quais dados podem ser obtidos.</p>
                     
-                    <h3>Técnicas para análise e gerenciamento</h3>
+                    <h3 id="tecnicas">Técnicas para análise e gerenciamento</h3>
 
                     <p>Para entender o modo de trabalhar com dados, você deve levar em consideração duas
                         estratégias primárias: <b>o que</b> e <b>como</b>.</p>
@@ -137,7 +139,7 @@
                         </ul>
                     </div>
 
-                    <p>A definição de estratégias ajuda a ter uma visão direcionada e retornar ao cliente os
+                    <p class="mt-5">A definição de estratégias ajuda a ter uma visão direcionada e retornar ao cliente os
                         dados necessários. Além disso, utilizando esses dados, também é possível gerar
                         relatórios e apontar melhorias. Você notou que apareceram alguns termos diferentes?
                         Por exemplo, <i>landing pages</i>, mapas de calor, orgânico ou pago, ROI, mas o que é
@@ -152,21 +154,21 @@
 
                     <div class="painelTecnicas no-print">
 
-                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modalAnalytics">
+                        <button type="button" class="btn-dados btn-analytics radius shadow" data-bs-toggle="modal" data-bs-target="#modalAnalytics">
                             Google Analytics
                         </button>
 
-                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modalTrends">
+                        <button type="button" class="btn-dados btn-trends radius shadow" data-bs-toggle="modal" data-bs-target="#modalTrends">
                             Google Trends
                         </button>
 
-                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modalTagManager">
+                        <button type="button" class="btn-dados btn-tagManager radius shadow mt-5" data-bs-toggle="modal" data-bs-target="#modalTagManager">
                             Google Tag Manager
                         </button>
 
-                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modalAdSense">
+                        <button type="button" class="btn-dados btn-adSense radius shadow mt-5" data-bs-toggle="modal" data-bs-target="#modalAdSense">
                             Google AdSense
-                        </button>
+                        </button> 
                     
                     </div>
 
@@ -280,7 +282,7 @@
 
                                                     <figure class="my-5">
                                                         <div class="figure-img mx-auto mb-4">
-                                                            <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                            <img class="img-fluid d-block mx-auto radius shadow" src="img/fig01.jpg">
                                                         </div>
                                                         <figcaption class="figure-caption text-center">Exemplo do painel de controle do Google Analytics <br> Fonte: </figcaption>
                                                     </figure>
@@ -330,7 +332,7 @@
                                         
                                             <figure class="my-5">
                                                 <div class="figure-img mx-auto mb-4">
-                                                    <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                    <img class="img-fluid d-block mx-auto radius shadow" src="img/fig02.jpg">
                                                 </div>
                                                 <figcaption class="figure-caption text-center">Busca por “Senac EAD” no Google Trends <br> Fonte:
                                                     https://trends.google.com (Acesso em 02 de out de
@@ -349,7 +351,7 @@
                                             
                                                 <figure class="my-5">
                                                     <div class="figure-img mx-auto mb-4">
-                                                        <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                        <img class="img-fluid d-block mx-auto radius shadow" src="img/fig03.jpg">
                                                     </div>
                                                     <figcaption class="figure-caption text-center">Interesse em “Senac EAD” por sub-região no Google Trends <br> Fonte:
                                                         https://trends.google.com (Acesso em 02 de out de
@@ -376,7 +378,7 @@
                                                 
                                                     <figure class="my-5">
                                                         <div class="figure-img mx-auto mb-4">
-                                                            <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                            <img class="img-fluid d-block mx-auto radius shadow" src="img/fig04.jpg">
                                                         </div>
                                                         <figcaption class="figure-caption text-center">Pesquisas relacionadas no Google Trends <br> Fonte:
                                                             https://trends.google.com (Acesso em 02 de out de
@@ -403,7 +405,7 @@
                                         
                                                     <figure class="my-5">
                                                         <div class="figure-img mx-auto mb-4">
-                                                            <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                            <img class="img-fluid d-block mx-auto radius shadow" src="img/fig05.jpg">
                                                         </div>
                                                         <figcaption class="figure-caption text-center">Comparação entre as buscas por Marvel e DC no Google Trends <br> Fonte:
                                                             https://trends.google.com (Acesso em 02 de out de
@@ -495,7 +497,7 @@
                                         
                                             <figure class="my-5">
                                                 <div class="figure-img mx-auto mb-4">
-                                                    <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                    <img class="img-fluid d-block mx-auto radius shadow" src="img/fig06.jpg">
                                                 </div>
                                                 <figcaption class="figure-caption text-center">Links patrocinados pelo AdSense durante uma pesquisa no Google <br>Fonte: Google (2024)</figcaption>
                                             </figure>
@@ -524,7 +526,7 @@
 
                                                 <figure class="my-5">
                                                     <div class="figure-img mx-auto mb-4">
-                                                        <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png">
+                                                        <img class="img-fluid d-block mx-auto radius shadow" src="img/fig07.jpg">
                                                     </div>
                                                     <figcaption class="figure-caption text-center">Exemplo de anúncio criado pelo Google AdSense no site da Globo.com <br>Fonte: Globo.com (2024)</figcaption>
                                                 </figure>
@@ -553,7 +555,7 @@
                         </div>
                     </div>
 
-                    <h3><i>Meta Tags</i></h3>
+                    <h3 id="tags"><i>Meta Tags</i></h3>
 
                     <p>Ainda contemplando a área de desenvolvimento, existe mais uma maneira orgânica
                         de facilitar as buscas pelos <i>sites</i>. Uma das primeiras estruturas colocadas no HTML
@@ -569,7 +571,7 @@
 
                     <figure class="my-5">
                         <div class="figure-img mx-auto mb-4">
-                            <img class="img-fluid d-block mx-auto radius shadow" src="img/img01.png" alt="exemplo codigo meta tag">
+                            <img class="img-fluid d-block mx-auto radius shadow" src="" alt="figura meta tag">
                         </div>
                     </figure>
 
@@ -624,7 +626,7 @@
                         </div>
                       </div>
 
-                      <h3>Encerramento</h3>
+                      <h3 id="encerramento">Encerramento</h3>
 
                       <p>Estudante, você chegou ao final deste conteúdo. Que jornada longa, não é? Trabalhar
                         com estruturas de pós-produção e análise de dados é uma tarefa de longo prazo, que

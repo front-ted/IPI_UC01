@@ -1,0 +1,135 @@
+body{
+    background: url('../img/bg.jpg') fixed;
+    background-position: -150% center;
+    background-size: cover;
+    border: none;
+}
+
+.painelTecnicas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.btn-analytics::before,
+.btn-trends::before,
+.btn-tagManager::before,
+.btn-adSense::before 
+{
+    content: '';
+    position: absolute;
+    top: -90px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0; 
+    transition: opacity 0.4s;
+    overflow: visible;
+}
+
+.btn-analytics:hover::before,
+.btn-trends:hover::before,
+.btn-tagManager:hover::before,
+.btn-adSense:hover::before 
+    {
+    opacity: 1;
+    animation: rotate 4s linear infinite;
+}
+
+.btn-analytics::after,
+.btn-trends::after,
+.btn-tagManager::after,
+.btn-adSense::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    opacity: 1; 
+    transition: opacity 5s ease-in;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2)); 
+}
+
+.btn-analytics::after
+{
+background: url('../img/bt1.png') no-repeat;
+background-position: center center;
+
+}
+
+.btn-trends::after{
+    background: url('../img/bt2.png') no-repeat;
+    background-position: center center;
+
+}
+
+.btn-tagManager::after{
+    background: url('../img/bt3.png') no-repeat;
+    background-position: center center;
+
+}
+
+.btn-adSense::after{
+    background: url('../img/bt4.png') no-repeat;
+    background-position: center center;
+
+}
+
+
+.btn-dados{
+    height: 111px;
+    width: 413px;
+    position: relative;
+    border: none;
+}
+
+.btn-analytics{
+    background: url('../img/bt1.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-trends{
+    background: url('../img/bt2.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-tagManager{
+    background: url('../img/bt3.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-adSense{
+    background: url('../img/bt4.png') no-repeat;
+    background-position: center center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.accordion-item {
+    background-color: transparent; 
+}
+
+.accordion-body{
+    background-color: #fff;
+}
+
+.bg-escuro .tab-content {
+    color: #000;
+
+}
