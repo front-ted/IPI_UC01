@@ -1,35 +1,108 @@
 body{
-    background: url('../img/bg.jpg') fixed;
+    background: url('../img/bg.jpg') fixed no-repeat;
     color: #fff;
-}
-
-.modal-body{
-    background: url('../img/bg.jpg') fixed;
+    background-size: cover;
 }
 
 .accordion-body {
     color: black;
 }
 
+.painel-tecnologias{
+    display: flex;
+    justify-content: space-around;
+}
 
 .btn-tecnologias{
-    width: 269px;
-    height: 129px;
+    width: 300px;
+    height: 300px;
     background-color: transparent;
     color: transparent;
     border: none;
 }
 
-.linha1{
-    display: flex;
-    justify-content: space-around;
-}
+
 .btn-aws{
+    position: relative;
     background: url('../img/bt_aws.png') no-repeat;
+    overflow: visible;
+    background-color: transparent;
+    background-position: center center;
+}
+
+
+.btn-aws::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    opacity: 0; 
+    transition: opacity 0.4s;
+}
+
+.btn-aws:hover::before{
+    opacity: 1;
+    animation: rotate 4s linear infinite;
+}
+
+.btn-aws::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_aws.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in;
 }
 
 .btn-google{
+    position: relative;
     background: url('../img/bt_gcloud.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-google::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    opacity: 0; 
+    transition: opacity 0.4s;
+}
+
+.btn-google:hover::before{
+    opacity: 1;
+    animation: rotate 4s linear infinite;
+}
+
+.btn-google::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_gcloud.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in;
 }
 
 .linha2{
@@ -38,25 +111,272 @@ body{
 
 .btn-azure{ 
     background: url('../img/bt_azure.png') no-repeat;
+    position: relative;
+    background-position: center center;
+}
+
+
+.btn-azure::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    opacity: 0; 
+    transition: opacity 0.4s;
+}
+
+.btn-azure:hover::before{
+    opacity: 1;
+    animation: rotate 4s linear infinite;
+}
+
+.btn-azure::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_azure.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in;
+}
+
+
+.tec-desenvolvimentoWeb{
+    display: flex;
+    justify-content: space-around;
 }
 
 .btn-front{
-    height: 129px;
-    width: 269px;
+    height: 290px;
+    width: 290px;
     background-color: transparent;
     border: none;
     color: transparent;
+    position: relative;
 }
 
 .btn-html{
     background: url('../img/bt_html.png') no-repeat;
+    background-position: center center;
+}
+
+
+.btn-html::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_html.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in;
 }
 
 .btn-css{
     background: url('../img/bt_css.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-css::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_css.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in;
 }
 
 .btn-js{
     background: url('../img/bt_javascript.png') no-repeat;
+    background-position: center center;
 }
 
+.btn-js::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_javascript.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in;
+}
+
+.btn-html::before, 
+.btn-css:before, 
+.btn-js:before,
+.btn-kanban:before,
+.btn-scrum:before,
+.btn-trello:before,
+.btn-project:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0; 
+    transition: opacity 0.4s;
+}
+
+.btn-html:hover::before, 
+.btn-css:hover:before, 
+.btn-js:hover:before,
+.btn-kanban:hover:before,
+.btn-scrum:hover:before,
+.btn-trello:hover:before,
+.btn-project:hover:before
+{
+    opacity: 1;
+    animation: rotate 4s linear infinite;
+}
+
+.painelMetodosAgeis{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-painelMetodosAgeis{
+   height: 300px;
+   width: 300px; 
+   border: none;
+   color: transparent;
+   position: relative;
+}
+
+.btn-scrum{
+    background: url('../img/bt_scrum.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-scrum::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_scrum.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in;
+}
+
+.btn-kanban{
+    background: url('../img/bt_kanban.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-kanban::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_kanban.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in;
+}
+
+.btn-softwares{
+    background-color: transparent;
+    color: transparent;
+    height: 300px;
+    width: 300px;
+    border: none;
+    position: relative;
+}
+
+.painel-softwares{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 10%;
+}
+
+
+.btn-trello{
+    background: url('../img/bt_trello.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-trello::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_trello.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in;
+}
+
+.btn-project{
+    background: url('../img/bt_project.png') no-repeat;
+    background-position: center center;
+}
+
+.btn-project::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bt_project.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in;
+}
+
+.modal-body{
+    color: #000;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.accordion-item {
+    background-color: transparent; 
+}
+
+.accordion-body{
+    background-color: #fff;
+}

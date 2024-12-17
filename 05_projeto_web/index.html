@@ -58,10 +58,11 @@
             </div>
             <nav id="nav-offcanvas" class="offcanvas-body">
                 <ul>
-                    <li><a href="#titulo1">Lorem ipsum</a></li>
-                    <li><a href="#titulo2">Lorem ipsum</a></li>
-                    <li><a href="#titulo3">Lorem ipsum dolor sit amet dolor sit amet</a></li>
-                    <li><a href="#titulo4">Lorem ipsum</a></li>
+                    <li><a href="#introducao">Introdução</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#tendencias">Tendências</a></li>
+                    <li><a href="#gestao">Gestão de projetos</a></li>
+                    <li><a href="#encerramento">Encerramento</a></li>
                 </ul>
             </nav>
         </div>
@@ -78,7 +79,7 @@
                             
                             <h2>Projeto <i>web</i>: tecnologias, tendências, gestão de projetos (custos, calendários de tarefas, relatórios de acompanhamento)</h2>
 
-                            <h3>Introdução</h3>
+                            <h3 id="introducao">Introdução</h3>
 
                             <p>Este material é voltado para projetos web, começando pela definição de projeto: um esforço temporário destinado a alcançar um objetivo claro e viável, com prazos definidos e recursos limitados, como financeiros, humanos e materiais. Os projetos web geralmente envolvem iniciativas novas ou exclusivas, que, muitas vezes, não se repetem.</p>
 
@@ -95,13 +96,13 @@
                     <div class="bloco2">
                         <div class="container">
 
-                            <h3>Tecnologias</h3>
+                            <h3 id="tecnologias">Tecnologias</h3>
 
                             <p>Os sistemas <i>web</i> são executados diretamente no <i>browser</i> (ou navegador), não sendo necessário realizar uma instalação na máquina do usuário, como ocorre com os sistemas tradicionais. Para que seu funcionamento ocorra, o sistema depende de um servidor <i>web</i>, de solicitações realizadas pelos usuários, através de requisições emitidas no navegador pelo protocolo HTTP ou HTTPS e da resposta do protocolo. Ou seja, toda vez que um <i>site</i> é acessado no navegador de internet (cliente), é realizada uma requisição para um servidor <i>web</i> (servidor) através do protocolo HTTP ou HTTPS. Esse servidor recebe a requisição e retorna como resposta ao navegador do cliente. Essa resposta pode ser páginas, imagens, documentos, entre outros. Algo muito importante para o funcionamento dos sistemas <i>web</i> está relacionado com a comunicação do cliente com o servidor. No material “Domínio de internet: conceito, registro e disponibilidade de serviços”, foi separado um conteúdo bem interessante abordando esses assuntos. No que diz respeito a serviço de hospedagem em nuvem, foram apresentados a você três dos principais serviços globais disponíveis no mercado. Confira a seguir. </p>
 
                             <p class="no-print">Clique ou toque para visualizar o conteúdo. </p>
 
-                            <div class="row linha1 mb-5">
+                            <div class="row painel-tecnologias">
 
                                 <button type="button" class="btn-tecnologias btn-aws" data-bs-toggle="modal" data-bs-target="#modalAWS">
                                     Amazon AWS
@@ -113,7 +114,7 @@
                                 
                             </div>
                             
-                            <div class="linha2 pt-5">
+                            <div class="linha2">
                                 <button type="button" class="btn-tecnologias btn-google mx-auto" data-bs-toggle="modal" data-bs-target="#modalGoogleCloud">
                                     Google Cloud
                                 </button>
@@ -199,7 +200,7 @@
                               <p class="no-print">Clique ou toque para visualizar o conteúdo. </p>
 
 
-                            <div class="row linha1 mb-5">
+                            <div class="row tec-desenvolvimentoWeb mb-5">
 
                                 <button type="button" class="btn-front btn-html" data-bs-toggle="modal" data-bs-target="#modalHTML">
                                     HTML 
@@ -338,7 +339,7 @@
 
                     <div class="bloco4">
                         <div class="container">
-                            <h3>Tendências</h3>
+                            <h3 id="tendencias">Tendências</h3>
 
                             <p>A demanda por desenvolvimento de aplicativos da <i>web</i> aumentou significantemente nos últimos anos. Isso deve-se também ao fato de que as empresas expandiram, por exemplo, o seu modelo eletrônico de vendas. Veja a seguir quatro tendências tecnológicas selecionadas para você. </p>
 
@@ -405,7 +406,7 @@
 
                     <div class="bloco5">
                         <div class="container">
-                            <h3>Gestão de projetos</h3>
+                            <h3 id="gestao">Gestão de projetos</h3>
 
                             <p>Anteriormente, foi definido o que são projetos, e gerenciar projetos significa orientar uma equipe com um enfoque organizacional, aplicando conhecimentos, habilidades e técnicas para o desenvolvimento de um <i>software</i>, no caso. Para isso, são utilizadas metodologias em desenvolvimento de <i>software</i> na gestão de projetos, que ajudam a estruturar, planejar e controlar o processo de desenvolvimento de <i>software</i>, assegurando um fluxo organizado e bem direcionado.  </p>
 
@@ -421,11 +422,11 @@
 
                             <div class="painelMetodosAgeis">
                                 
-                                <button type="button" class="btn-painelMetodosAgeis" data-bs-toggle="modal" data-bs-target="#modalScrum">
+                                <button type="button" class="btn-painelMetodosAgeis btn-scrum" data-bs-toggle="modal" data-bs-target="#modalScrum">
                                     Scrum
                                 </button>
     
-                                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modalKanban">
+                                <button type="button" class="btn-painelMetodosAgeis btn-kanban" data-bs-toggle="modal" data-bs-target="#modalKanban">
                                     Kanban 
                                 </button>
 
@@ -522,7 +523,7 @@
                         </div>
                     </div>
 
-                    <div class="bloco6">
+                    <div class="bloco6 mt-5">
                         <div class="container">
 
                             <div class="row g0">
@@ -626,20 +627,25 @@
                 </div>
                     </div>
 
-                    <div class="bloco7">
+                    <div class="bloco7 ">
                         <div class="container">
 
                             <h4>Ferramentas de gestão de projetos</h4>
 
                             <p>Agora que você já sabe o que é gestão de projetos e suas metodologias ágeis, veja alguns <i>softwares</i> para iniciar o gerenciamento. </p>
 
-                            <button type="button" class="botao check hvr-sweep-to-right" data-bs-toggle="modal" data-bs-target="#modalTrello">
-                                Trello
-                            </button>
+                            <div class="painel-softwares">
 
-                            <button type="button" class="botao check hvr-sweep-to-right" data-bs-toggle="modal" data-bs-target="#modalMSProject">
-                                Microsoft Project 
-                            </button>
+                                <button type="button" class="btn-softwares btn-trello" data-bs-toggle="modal" data-bs-target="#modalTrello">
+                                    Trello
+                                </button>
+    
+                                <button type="button" class="btn-softwares btn-project" data-bs-toggle="modal" data-bs-target="#modalMSProject">
+                                    Microsoft Project 
+                                </button>
+
+                            </div>
+
                             
                             <div class="modal fade" id="modalTrello" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
@@ -669,7 +675,7 @@
                                 </div>
                             </div>
 
-                            <p class="no-print">Clique ou toque para visualizar todo o conteúdo.</p>
+                            <p class="no-print my-5">Clique ou toque para visualizar todo o conteúdo.</p>
 
                             <div class="caixa-container destaque icone exemplo borda-colorida no-print" aria-hidden="true">
                                 <div class="caixa-exp">
@@ -776,7 +782,7 @@
 
                     <div class="bloco9">
                         <div class="container">
-                            <h3>Encerramento</h3>
+                            <h3 id="encerramento">Encerramento</h3>
 
                             <p>O sucesso de um projeto <i>web</i> vai além da simples escolha de tecnologias adequadas. A gestão de projetos desempenha um papel crucial nesse processo, garantindo que o controle de custos, prazos e relatórios de acompanhamento sejam executados de forma eficiente para que as metas estabelecidas sejam atingidas. Um gerenciamento de projetos eficaz, quando aliado a metodologias ágeis como o Scrum, possibilita a entrega de resultados de alta qualidade, respeitando tanto o orçamento quanto os prazos definidos. Esse modelo ágil promove adaptações rápidas e eficientes, permitindo que a equipe responda prontamente a mudanças e novos desafios que possam surgir ao longo do projeto. </p>
 
