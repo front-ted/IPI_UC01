@@ -106,7 +106,7 @@
 .elemento3{
     height: 481px;
     background: url('../img/bg_elemento.png') left no-repeat ;
-    margin-top: -33px;
+    margin-top: -50px;
     position: relative;
     transform: rotate(180deg);
 }
@@ -169,3 +169,59 @@
     background-position: center center;
     opacity: 1; 
 }
+
+@media screen and (max-width:1500px) {
+
+    .elemento2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1300px) {
+
+    .elemento3{
+        display: none;
+    }
+
+    .bloco2{
+        background: none;
+        background-color: black;
+    }
+
+    .bloco7,
+    .bloco6
+    {
+        margin-top: 0px;
+    }
+
+    .bloco4{
+        background-color: black;
+    }
+}
+
+
+@media screen and (max-width:878px) {
+
+  .elemento1{
+    display: none;
+  }
+
+  .bloco1 {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:658px) {
+
+    .bloco8{
+        
+        height: 900px;
+       
+    }
+  }
+  
+
+
+
+
+

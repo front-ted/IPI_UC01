@@ -212,6 +212,19 @@ body{
 }
 
 
+@media screen and (max-width:1310px) {
+
+    .briefings{
+        height: 800px;
+        background-size: cover;
+    }
+   
+}
+
+
+
+
+
 @media screen and (max-width:1500px) {
 
   
@@ -241,9 +254,11 @@ body{
   
    
 }
-@media screen and (max-width:600px) {
 
-   
+
+
+
+@media screen and (max-width:600px) {  
 
     .mobile{
         display: block;

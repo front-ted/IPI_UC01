@@ -4,7 +4,7 @@ body{
 
 
 .bg1{
-    /* margin-top: -50px; */
+    
     background: url('../img/bg_elemento1.png') no-repeat left 0px,
                 url('../img/bg_elemento2.png') no-repeat right 0px;
     border: 1px solid transparent; 
@@ -88,3 +88,19 @@ body{
 .painelMobile{
     display: none;
 }
+
+@media screen and (max-width:1780px) {
+
+    body{
+        background: none;
+    }
+    
+    .bg1{
+        background: none,
+                    none;
+    }
+
+    .bg3{
+        background: none, none;
+    }
+  }

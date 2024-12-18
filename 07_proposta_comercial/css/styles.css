@@ -143,3 +143,15 @@ background: url('../img/bt01.png') no-repeat;
         transform: rotate(360deg);
     }
 }
+
+@media screen and (max-width:1600px) {
+
+    body{
+        background: 
+            url('../img/bg1.png') top left no-repeat,
+            url('../img/bg2.png') bottom right no-repeat,
+            none,
+            none;   
+    }
+  
+  }

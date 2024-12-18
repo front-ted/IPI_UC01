@@ -85,3 +85,35 @@ body{
 .carousel-item{
     background-color: #fff;
 }
+
+
+
+@media screen and (max-width:1500px) {
+
+    body{
+        background: none, 
+                   none, 
+                    none, 
+                    none, 
+                    linear-gradient(180deg, #fff 0%, #b4bfce 100%);
+        background-size: unset, unset, unset, unset,100%;
+    }
+
+    
+  }
+
+  @media screen and (max-width:1350px) {
+
+    .slide1::after {
+        display: none;
+    }
+    
+  }
+
+  @media screen and (max-width:900px) {
+
+    .slide1::before {
+        display: none;
+    }
+    
+  }

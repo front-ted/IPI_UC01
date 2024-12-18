@@ -133,3 +133,16 @@ background-position: center center;
     color: #000;
 
 }
+
+
+@media screen and (max-width:1600px) {
+
+    
+    body{
+        background: none;
+        
+    }
+  
+  }
+
+
