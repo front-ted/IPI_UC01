@@ -9,7 +9,7 @@ body{
 
 .flip-card{
     width: 352px;
-}
+} 
 
 .flip-card-front{
     background: url('../img/card_frente.png') no-repeat;
@@ -21,6 +21,7 @@ body{
     justify-content: center;
     font-weight: bolder;
     font-size: 50px;
+    
 }
 
 .flip-card-back{
@@ -99,14 +100,10 @@ body{
         background-size: unset, unset, unset, unset,100%;
     }
 
-    
-  }
-
-  @media screen and (max-width:1350px) {
-
     .slide1::after {
         display: none;
     }
+
     
   }
 
@@ -115,5 +112,17 @@ body{
     .slide1::before {
         display: none;
     }
+    
+  }
+
+  @media screen and (max-width:750px) {
+
+    .carousel-control-prev,
+    .carousel-control-next
+    {
+        display: none;
+    }
+
+  
     
   }

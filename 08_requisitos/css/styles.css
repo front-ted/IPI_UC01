@@ -110,6 +110,32 @@ background-position: center center;
     background-position: center center;
 }
 
+pre{
+    background-color: #000;
+    color: #dcdcdc;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+
+.tag {
+    color: #569cd6; /* Cor azul para tags */
+}
+
+.propriedade{
+    color: #74bfd5;
+}
+
+.valor{
+    color: #bb846e;
+}
+
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);

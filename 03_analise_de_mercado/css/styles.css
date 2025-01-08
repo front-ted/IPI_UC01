@@ -175,6 +175,10 @@
     .elemento2{
         display: none;
     }
+
+    .bloco4{
+        background-color: black;
+    }
 }
 
 @media screen and (max-width:1300px) {
@@ -194,9 +198,7 @@
         margin-top: 0px;
     }
 
-    .bloco4{
-        background-color: black;
-    }
+    
 }
 
 

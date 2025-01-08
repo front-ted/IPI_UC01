@@ -164,7 +164,7 @@
 }
 .pagina img	{
   display: inline-block;
-  max-width: 60% !important;
+  max-width: 90% !important;
 }
 .pagina legend{
   display: block;
@@ -706,3 +706,17 @@ table.text-left.align-middle td {
   margin-top: 10px;
 }
 /* código para tabela não desconfigurar na versão impressa */
+
+.jira,
+.project{
+  width: 20%;
+}
+
+.burndown{
+  width: 100%;
+}
+
+
+.conceito{
+  margin-top: 0px !important;
+}

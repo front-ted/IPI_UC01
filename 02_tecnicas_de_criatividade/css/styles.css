@@ -186,6 +186,12 @@ body{
     filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2));  
 }
 
+@media screen and (max-width:1800px) {
+
+    .footer{
+        display: none;
+    }
+}
 
 @media screen and (max-width:1500px) {
 
@@ -194,9 +200,7 @@ body{
        
     }
 
-    .footer{
-        display: none;
-    }
+   
 }
 
 @media screen and (max-width: 820px) {

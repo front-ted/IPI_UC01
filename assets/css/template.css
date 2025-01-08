@@ -598,6 +598,15 @@ a.botao{text-decoration: none;}
     color: #fff;
 }
 
+.bg-escuro .modal-body button {
+    color: grey;
+}
+
+
+.bg-escuro .accordion-body * {
+    color: black;
+}
+
 .bg-escuro .splide .card .card-body p{
     
     color: black;
@@ -671,7 +680,7 @@ a.botao{text-decoration: none;}
 
 /*CITAÇÃO*/
 .citacao {padding-left: 20%;}
-.citacao *{font-size: .9em;}
+.citacao {font-size: .9em;}
 
 /*REFERÊNCIAS*/
 .referencias #booklet{
@@ -886,7 +895,7 @@ a.botao{text-decoration: none;}
   }
   
   .caixa-exp.aberta {
-    max-height: 1900px;
+    max-height: 1950px;
   }
   
   .caixa-exp figure {

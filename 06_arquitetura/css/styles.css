@@ -64,8 +64,7 @@ body{
 }
 
 .btn_painel1{
-    position: absolute;
-   
+    position: absolute;   
     width: 145px;
 }
 
@@ -103,4 +102,50 @@ body{
     .bg3{
         background: none, none;
     }
+  }
+
+
+  @media screen and (max-width:800px) {
+
+    .parallax1,
+    .parallax2,
+    .parallax3 {
+        display: none;
+    }
+    
+  }
+
+
+  @media screen and (max-width:700px) {
+
+    .painel1{
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 80%;
+    }
+
+    .btn_painel1{
+        position: relative;   
+    }
+    
+    .btn-usuarios{
+        left: unset;
+        top: unset
+    }
+    
+    .btn-conteudo{
+        left: unset;
+        top: unset
+    }
+    
+    .btn-contexto{
+        
+        right: unset;
+        top: unset
+    }
+
+
   }
