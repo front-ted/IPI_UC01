@@ -88,6 +88,14 @@ body{
     display: none;
 }
 
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
+.bg-escuro .tab-pane *{
+    color: #000;
+}
+
 @media screen and (max-width:1780px) {
 
     body{

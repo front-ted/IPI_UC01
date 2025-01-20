@@ -132,6 +132,14 @@ background: url('../img/bt01.png') no-repeat;
     padding-top: 100px;
 }
 
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
+.bg-escuro td {
+    background: transparent;
+}
+
 
 
 

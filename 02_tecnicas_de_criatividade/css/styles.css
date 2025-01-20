@@ -186,6 +186,10 @@ body{
     filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2));  
 }
 
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
 @media screen and (max-width:1800px) {
 
     .footer{

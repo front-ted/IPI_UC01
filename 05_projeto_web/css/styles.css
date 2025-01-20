@@ -440,6 +440,10 @@ body{
     color: #000;
 }
 
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);

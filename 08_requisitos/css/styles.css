@@ -135,6 +135,11 @@ code {
     color: #bb846e;
 }
 
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
+
 
 @keyframes rotate {
     from {
