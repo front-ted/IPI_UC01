@@ -1,501 +1,923 @@
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <!-- Inserir o tíutlo do conhecimento na tag title -->
-        <title>Briefing: conceito, especificidades para projetos web e modelos</title>
-        <!-- Meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS v5.0.2 -->
-        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="../assets/css/animate.min.css" />
-        <!-- hover.css https://ianlunn.github.io/Hover/ -->
-        <link rel="stylesheet" href="../assets/css/hover-min.css" />
-        <!--Splide - slideshow-->
-        <link rel="stylesheet" href="../assets/css/splide.min.css">
-        <!-- Preloader -->
-        <link rel="stylesheet" href="../assets/css/preloader.css">
-        <!-- Áudio customizado -->
-        <link rel="stylesheet" href="../assets/css/player.css">
-        <!-- Estilos do template -->
-        <link rel="stylesheet" href="../assets/css/cores.css">
-        <link rel="stylesheet" href="../print/print/print.css">
-        <link rel="stylesheet" href="../assets/css/template.css">
-        <!-- estilos do conhecimento -->
-         <link rel="stylesheet" href="css/styles.css">
-    
-    </head>
-    <body class="bg-claro">
-        <!-- Preloader OBRIGATÓRIO -->
-        <div class="preloader">
-            <div class="anim"></div>
-            <p>Aguarde enquanto o conteúdo é carregado.</p>
-        </div>
-        <!-- Marca d'água OBRIGATÓRIA -->
-        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Briefing: conceito, especificidades para projetos web e modelos</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <header id="topo">
-            <div class="topo-logo">
-                <div class="container">
-                    <h1 id="nome-curso" class="only-print">Informática para Internet</h1>  
-                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>
-                </div>
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../assets/css/splide.min.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../assets/css/cores.css">
+    <link rel="stylesheet" href="../print/print/print.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <!-- estilos do conhecimento -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body class="bg-claro">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Informática para Internet</h1>
+                <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"
+                    aria-hidden="true"></div>
             </div>
-        </header>
-        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
-        <section id="booklet">
-            <div class="layer-preta no-print"></div>
-            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
-            <section class="paginas">
-                <div class="pagina">
+        </div>
+    </header>
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <div class="layer-preta no-print"></div>
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <section class="paginas">
+            <div class="pagina">
 
-                    <div class="container">
-                        <h2><i>Briefing</i>: conceito, especificidades para projetos <i>web</i> e modelos</h2>
+                <div class="container">
+                    <h2><i>Briefing</i>: conceito, especificidades para projetos <i>web</i> e modelos</h2>
 
-                        <p>Neste material, você aprenderá sobre a importância do <i>briefing</i> em projetos, com foco específico no desenvolvimento de sistemas <i>web</i>. Serão explorados o conceito de <i>briefing</i>, sua função estratégica para a organização e a execução eficiente de projetos, e como ele pode ser utilizado para alinhar as expectativas entre o cliente e a equipe de desenvolvimento. Ao longo do conteúdo, você verá exemplos práticos de como estruturar um <i>briefing</i> e entenderá quais são as etapas cruciais para garantir que o projeto atenda às necessidades tanto da empresa quanto dos usuários finais. </p>
+                    <p>Neste material, você aprenderá sobre a importância do <i>briefing</i> em projetos, com foco
+                        específico no desenvolvimento de sistemas <i>web</i>. Serão explorados o conceito de
+                        <i>briefing</i>, sua função estratégica para a organização e a execução eficiente de projetos, e
+                        como ele pode ser utilizado para alinhar as expectativas entre o cliente e a equipe de
+                        desenvolvimento. Ao longo do conteúdo, você verá exemplos práticos de como estruturar um
+                        <i>briefing</i> e entenderá quais são as etapas cruciais para garantir que o projeto atenda às
+                        necessidades tanto da empresa quanto dos usuários finais.
+                    </p>
 
-                        <p class="no-print">Clique ou toque no botão de <i>play</i> para ouvir o <i>podcast</i> ou de transcrição para ler o conteúdo. </p>
+                    <p class="no-print">Clique ou toque no botão de <i>play</i> para ouvir o <i>podcast</i> ou de
+                        transcrição para ler o conteúdo. </p>
 
-                        <div class="bg-podcast no-print">
-                            <div class="d-flex justify-content-center flex-column align-items-center">
-                                <p>Ouça o <i>podcast</i> a seguir.</p>
-                                <div class="audio-player no-print">
-                                    <audio>
-                                        <source src="podcast/podcast.mp3" type="audio/mpeg">
-                                    </audio>
-                                    <div class="row">
-                                        <div class="timestamp">00:00 | 00:00</div>
-                                        <div class="barra">
-                                            <input type="range" value="0" max="4140" step="any">
-                                        </div>
-                                        <div class="botoes">
-                                            <button title="Tocar" class="btn-play btn-player"></button>
-                                            <button title="Pause" class="btn-pause btn-player"></button>
-                                            <button title="Transcrição" data-bs-toggle="modal"
-                                                data-bs-target="#modalTranscricao"
-                                                class="btn-transcricao btn-player"></button>
-                                        </div>
+                    <div class="bg-podcast no-print">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <p>Ouça o <i>podcast</i> a seguir.</p>
+                            <div class="audio-player no-print">
+                                <audio>
+                                    <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="row">
+                                    <div class="timestamp">00:00 | 00:00</div>
+                                    <div class="barra">
+                                        <input type="range" value="0" max="4140" step="any">
+                                    </div>
+                                    <div class="botoes">
+                                        <button title="Tocar" class="btn-play btn-player"></button>
+                                        <button title="Pause" class="btn-pause btn-player"></button>
+                                        <button title="Transcrição" data-bs-toggle="modal"
+                                            data-bs-target="#modalTranscricao"
+                                            class="btn-transcricao btn-player"></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="modal fade" id="modalTranscricao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Transcrição <i>Podcast</i></h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="container">
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Olá, estudante do curso Técnico em Desenvolvimento de Sistemas, me chamo Jonas, sou bacharel em Sistemas de Informação, especialista em Gestão Estratégica de Negócios e mestre em Educação, experiência como scrum master na implantação de sistemas, tutor e consultor em Projetos de Melhoria. Hoje vamos falar sobre a importância do <i>briefing</i> e seu papel no desenvolvimento de sistemas web, explorando seu conceito, função estratégica e como alinhas expectativas entre cliente e equipe. Para trazer exemplos práticos e etapas cruciais para garantir um <i>briefing</i> perfeito, estão aqui comigo a docente Bruna Ávila, que é doutora em Design pela Universidade Federal do Rio Grande do Sul, especialista em UX e Aprendizagem de Adultos. Também conosco, a docente Laís Martini, que é graduada em Arquitetura e Urbanismo pela Universidade Federal de Santa Maria, mestre em Engenharia Civil e especialista em Design de Interiores. Sejam bem-vindas! </p>
-    
-                                            <p><b>Laís</b></p>
-    
-                                            <p>Olá! Tudo bom? Obrigada pelo convite.</p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>Olá! Muito obrigada pelo convite! É um prazer estar aqui.</p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Pessoal, para a gente começar hoje o nosso bate-papo: o que é um <i>briefing</i> e qual sua importância para o sucesso de um projeto em desenvolvimento de sistemas web?  </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Bom, um <i>briefing</i>, ele tem um sentido bem amplo e se aplica nas mais variadas disciplinas projetuais. A gente pode falar de <i>briefing</i> em design, em arquitetura, em engenharia, em desenvolvimento de sistemas e por aí vai. Então, dada essa perspectiva bem ampla do <i>briefing</i>, ele nada mais é que o levantamento das principais necessidades do nosso usuário, independente do contexto, e, a partir disso, a hierarquização dos principais requisitos do projeto. A gente consegue, com isso, também levantar os objetivos do projeto. Então, é essencial para qualquer disciplina que tenha esse caráter de elencar necessidades e descobrir um pouco mais do nosso público-alvo.  </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Até porque, gente, para analisar o <i>briefing</i>, pode ter outros nomes em outras áreas. Se a gente for analisar a área da saúde, isso pode ser chamado de anamnese. </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Exatamente! Boa! </p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>É, um <i>briefing</i>, acredito que nada mais é do que um mapa com todas essas etapas do que a gente precisa avaliar em um projeto, enfim, para fazer uma concepção de algum elemento. </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>E aí, falando já em etapas: como é que a gente estrutura esse <i>briefing</i>? Que estratégia que a gente pode ter para atender às expectativas do cliente? Como é que a gente trabalha isso? </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>O <i>briefing</i>, acredito que nada mais é do que a necessidade de documentar o desenvolvimento de um projeto, garantir que tudo que esteja sendo pensado e avaliado para determinado projeto, ele seja bem organizado, que tenha uma estrutura que seja eficiente, para que as decisões desse projeto, elas sejam mais assertivas, nesse sentido.  </p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>Então, a partir do que a Laís trouxe, eu incluiria que o <i>briefing</i> também é uma definição dos objetivos principais de um projeto. E aí a gente pode ter um grande objetivo, e a partir disso, objetivos que são mais específicos, que a gente também pode chamar de requisitos de projeto. Então, essa primeira etapa, ela é ampla. A gente precisa delimitar exatamente o porquê do projeto existir. Adianta para nós, assim, é algo muito que nos serve, definir, talvez em palavras-chaves, em um primeiro momento: o que o projeto se destina a fazer? Que problemas ele resolve? Quais são os resultados esperados? E muitas vezes, esses problemas, eles não vêm bem definidos. Na maioria das vezes, os problemas de projeto, eles são amplos. Então a gente percebendo, em um primeiro momento, o que aquele problema definitivamente envolve, e a partir disso, ir desdobrando ele. Então esse seria, assim, um primeiro grande momento da construção do <i>briefing</i>. Depois, eu acho que a análise do público-alvo também é superimportante. A gente saber quem vai fazer uso, existe será um único público-alvo? Será que o público-alvo final, esse projeto engloba só o público-alvo final ou a gente tem, daqui a pouco, stakeholders, pessoas que também se envolvem no projeto e também precisam fazer o uso desse produto que a gente está pensando? Então definir todas as pessoas que se envolvem é uma etapa superimportante no desdobramento do <i>briefing</i>. </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>E acredito que pensar também, além disso tudo que a Bruna falou, a questão da agilidade também nos processos. Então, quando a gente consegue fazer uma organização assim, dessas palavras-chaves, por meio de organogramas, diagramas, fica mais fácil compreender esse público-alvo e, a partir disso, também entender suas necessidades diante do contexto geral, assim, do que esse projeto vai abranger. </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Se a gente for analisar ainda, vocês trabalham com engenharia, arquitetura e design de interiores, que tem uma entrega muito material, muito física ao final do processo. Diferente de um sistema, que é uma coisa virtual, uma coisa que está fora do contato físico. Se a gente for analisar nesse cenário, como que a gente pode aprender com a entrega física para melhorar a entrega virtual? O que se tem de dica nesse processo que vocês fazem desse <i>briefing</i> para garantir que o final seja bem elaborado, que o cliente atendeu à expectativa ali? </p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>Bom, eu acho que no mundo físico, a gente busca se inteirar muito sobre os requisitos funcionais de um projeto, quais são esses requisitos na construção de um ambiente. Então a gente tem que perceber detalhes como escolha de materiais, detalhes sobre iluminação, detalhes sobre o uso de cores. E isso tem um fundamento técnico, não está só embasado no gosto do cliente. Passando, eu imagino que para o digital, isso tem muito a ver com a ergonomia de uma página, com as hierarquizações que a gente coloca dentro de um ambiente que seja virtual. E essa organização, ela precisa ser feita a partir de uma entrega técnica que a gente tem, muitas vezes, nosso cliente não sabe exatamente do que ele precisa, e aí o especialista, com essa visão técnica, consegue direcionar esses requisitos de acordo com o que a pessoa nos traz lá nas primeiras necessidades dela. Porque a gente vê, na construção de um projeto, que, muitas vezes, as pessoas, elas sabem que tem a dor, mas elas não sabem exatamente por que aquilo está doendo. E isso, acho que acontece muito no, tanto no digital quanto no físico. </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Exato. A gente tem a responsividade do <i>site</i>, tem a paleta de cores do <i>site</i>, vai ter os menus, vai ter toda a questão, como você colocou, ligada ao design de interiores. </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Dentro desse mundo da engenharia, da arquitetura, do design de interiores, tudo é muito físico no sentido palpável ao cliente. Ele até imagina como deseja algo para o seu espaço, mas tudo sempre está muito no campo das ideias. Então é a função do profissional, do projetista, do designer fazer esse mapeamento do desejo do cliente para esse determinado espaço, e aí entender o que ele espera, o que ele imagina, no que ele quer que seja o resultado final disso, e aí conseguir colocar em prática e realmente idealizar e, no final, chegar àquele resultado. Então, se não tiver um <i>briefing</i> bem elaborado, o mapeamento que seja muito efetivo, no sentido de identificar esses desejos, não é possível chegar a esse resultado, porque, como profissional, você vai estar desenvolvendo um projeto para outra pessoa, não é seu gosto pessoal. Então isso acaba sendo um desafio muito grande na aplicação do <i>briefing</i>, nesse sentido, porque é realmente a única maneira de conseguir identificar e realizar esse processo.  </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Mas, por mais que a gente saiba que não é para a gente que a gente está desenvolvendo para um terceiro, tem os elementos técnicos que a gente também precisa se posicionar para não perder a razão, para não perder o sentido. Então a gente está ali como profissional. Então, na hora do <i>briefing</i>, também cabe a nós instruir o nosso usuário, o nosso cliente, de que algumas coisas podem não dar certo. </p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>Exatamente. Eu acho que a gente atua, de forma geral, como pesquisadores, e uma das funções do pesquisador é fazer as perguntas certas e também estar aberto para respostas que, muitas vezes, a gente não está esperando. Essas respostas podem ser muito ricas, mas também a gente precisa ter um escopo delimitado para educar, eu não gosto muito dessa palavra, eu diria, então, direcionar o nosso cliente para, enfim, a partir dos requisitos técnicos que a gente possui, guiá-lo para, enfim, obter a melhor experiência daquilo que a gente está projetando.  </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Até porque, muitas vezes, tem fatores externos que vão impactar, e foge do que o cliente imagina. Isso muito relacionado, principalmente, a prazo e ao orçamento. Então, às vezes, imaginar algo exacerbado, e na prática não é bem assim. Então trazer, às vezes, o cliente para essa realidade de orientar: “ah, isso é possível, isso não é”. Também é bem importante para o resultado, o sucesso do projeto, realmente.  </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Essa orientação do cliente, ela é superimportante, mas, nesse campo de orientação, que ferramentas que a gente pode utilizar para que esse projeto, ele seja concluído, atenda às expectativas do cliente, mas que seja visualmente possível que a gente veja ele acontecendo, em que etapa que ele está? Em que processo que ele está? Como que eu controlo o orçamento? Como eu controlo o cronograma? Como é que vocês veem isso? Isso tem alguma ferramenta que vocês ocupam? Como que vocês recomendam ela? </p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>Bom, citando algumas delas, eu gosto muito de usar o Trello. Ele cria quadros com cartões, então, para organizar os tópicos do <i>briefing</i>. Além do Trello, eu conheço, gosto também do Notion. É uma plataforma que é superversátil para criar briefings que sejam bem organizados, permite a inclusão de tabelas, de listas, de links que a gente possa incorporar. E também recomendo, gosto do Asana, então, assim, ele permite que sejam criados, dentro deles, tarefas bem detalhadas, com prazos e atribuição de responsáveis para cada etapa de projeto. </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>E dentro do <i>briefing</i>, que daí é algo bem específico nesse contexto geral de projeto, é importante também a gente identificar se esse projeto, ele vai estar sendo aplicado para um cliente on-line ou presencial. Porque, se ele for on-line, a gente pode trabalhar com formulários justamente para conseguir enviar para ele, às vezes, apresentar alguma imagem de referência para ele conseguir visualizar e identificar a questão de cores, de imagens, referenciais, enfim, e aí conseguir mapear, nesse sentido. E se for um cliente presencial, até o próprio caneta e papel em uma reunião presencial, mostrando, identificando imagens. E isso também possibilita uma conversa muito direcionada e entender o que ele espera e deseja para esse projeto, é uma maneira de conseguir identificar essas características essenciais.  </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>O legal hoje desses aplicativos, esses sistemas, é que eles são tudo de nuvem, então você consegue levar o celular na palma da mão e consegue, você e o cliente, ter acesso a tudo, em tempo real. Fez uma atualização, o cliente já recebeu, todo mundo já recebeu esse cenário. E para parte da documentação também, você sobe os documentos, hoje com assinatura digital, isso é superpossível com qualidade, e você consegue visualizar na palma da mão. Na TI, a gente chama as entregas parciais de sprints, então o cronograma é previsto em sprints, geralmente de duas semanas, para a gente poder fazer as entregas. Nas áreas de vocês, como que isso é trabalhado, essas entregas parciais do projeto, como é que isso é detalhado com o cliente? </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Bom, a gente usa uma metodologia própria do design, e essa metodologia, ela é muito embasada toda em etapas de projeto. E essas etapas ganham nomes específicos. Mas, basicamente, a gente começa com um projeto que é mais informacional, onde a gente levanta as necessidades do cliente. A gente, enfim, busca identificar tudo o que for possível em relação àquele produto, que é físico, seja ele um produto mesmo ou um ambiente. Depois nós passamos para uma parte mais conceitual. Dadas todas as informações que a gente recebeu, está na hora do designer colocar a criatividade à prova. Então é hora de criar os esboços e de pensar os croquis, os levantamentos métricos do espaço. Então acho que a gente pode ir fazendo um paralelo com a área de TI, onde tem algum momento que a gente já se sente mais seguro frente às necessidades e o aprofundamento no cliente que a gente tem. E aí colocamos então a nossa criatividade em prática. </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Que acho que bem na TI é a conversão da parte de documentação para o desenvolvimento. Então chegou no “dev.”, e ele vai começar a programar. </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Provavelmente, isso aí! Depois disso, a gente tem uma parte mais técnica, porque no design de interiores, nós precisamos pensar nas circulações, nos espaços que são todos embasados em normas técnicas. Então a gente tem que prever uma ergonomia física adequada para que aquele design seja universal, alguém com algum tipo de restrição, de acessibilidade ou até uma restrição cognitiva consiga fazer uso do espaço adequadamente. Então é a hora de fazer os desenhos técnicos. São plantas e mais plantas técnicas para a gente conseguir conversar com os nossos pares de projeto e ter esse diálogo documentado de uma maneira que qualquer pessoa da área, em qualquer parte do mundo, consiga acessar aqueles relatórios e reproduzir, se for necessário. E depois disso, a execução. Então a gente realmente acompanha essa construção do espaço físico e se assegura de que aquilo que foi construído lá no início, o levantamento das necessidades, o desenho do <i>briefing</i> seja efetivamente cumprido e entregue para o cliente da melhor forma. </p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>É, dentro do design, como no TI também, se conversa com outras áreas, outros profissionais da área, então na hora que se está executando esse projeto, vai ter o azulejista, o gesseiro, o marceneiro...  </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>O desenvolvedor, o DDA, o UX...  </p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>Então todos precisam falar a mesma língua e entender todas as grafias.  É o que nós sempre falamos, a linguagem do designer é o desenho técnico, então precisa seguir algumas regras em relação às normas e tudo mais para que isso seja palpável e efetivo em todos os níveis. Então, e isso só é possível por meio da identificação preliminar do <i>briefing</i>, que é onde tudo vai “startar”. </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Mesmo tomando todos esses cuidados, tomando todas essas precauções, fazendo documentação, entregando, conversando com os pares, pode haver um mal-entendido. E aí, como é que vocês indicam, que práticas vocês adotam para quando acontecer esse mal-entendido, que pode e é supernormal, essas revisões de projeto, mesmo com um bom <i>briefing</i>, pode haver uma revisão de projeto, que prática que vocês adotam para esse processo de revisão acontecer e não prejudicar o cronograma, por exemplo? </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Acho que o principal é diálogo sempre porque imprevistos sempre acontecem, em muitos casos, dentro da construção, assim, principalmente em caso de reforma, quando a gente começa a repaginar os espaços, sempre é uma caixinha de surpresa, porque algo que já existia ali, então pode acontecer de surgir algum imprevisto, algo que foi pensado e mapeado no <i>briefing</i> e, daqui a pouco, lá na frente, não pode ser executado. Então é importante dar um passo para trás, avaliar a situação, rever a estratégia, conversar com o cliente, conversar com quem está executando, com os fornecedores, com os parceiros e aí chegar à melhor solução possível diante do que é possível ser realizado. </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Eu só vou complementar, que é a dificuldade que a gente tem na T.I., algumas vezes, é porque por não ser físico, é difícil explicar que não dá para fazer. Quando você está trabalhando com uma reforma, não dá para tirar um pilar. O pilar está ali, ele é físico, ele existe, ele é palpável. E, algumas vezes, o cliente fica frustrado porque como que não dá para fazer? Como que esse passo não pode ser dado dentro da T.I? Porque a gente não consegue dar esse passo, e aí, se a gente for falar de responsividade, como que responde para o cliente que não dá para fazer para todas as plataformas por um orçamento do X, tem que aumentar o orçamento porque tem mais horas, homem e tudo mais. Então, como que também a gente trabalha isso?  </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>E é uma coisa que, assim, é raro, mas acontece muito. Acontece bastante, assim. E eu acho que a gente normalizar que isso acontece talvez é um dos primeiros passos, a gente deixar claro para o nosso cliente. Não vamos chamar de imprevistos, vamos colocar como inputs, como entradas de projeto que podem estar acontecendo durante o ciclo de desenvolvimento, e quando algo não for possível, eu acho que a gente... é um grande trabalho do desenvolvedor e do designer tentar adequar à sua linguagem, porque a gente não vai explicar para o cliente, em termos técnicos, o porquê que não dá, então é algo que vem, assim, a partir de uma certa experiência, talvez de um pouco mais de bagagem, a gente encontrar as palavras certas e colocar para o cliente, o porquê que não, que é assim, que dentro daquilo que foi desenhado no início, existe uma linha de raciocínio lógico, conceitual, técnico para se chegar no final, e determinadas funções não vão poder ser englobadas, porque senão elas vão desarticular toda essa coluna estrutural que foi pensada desde o início do projeto.  </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Acho que a gente tem um gancho aqui agora para uma pergunta superimportante para vocês duas, que vai servir muito para a gente de T.I., como que vocês explicam para o cliente alguma coisa que ele não vê no dia a dia, que é o que fica dentro da parede, a hidráulica, a elétrica, fica dentro da parede, ele não vê no dia a dia. Isso tem um custo significativo e consome um custo significativo do orçamento. Como é que vocês explicam?  Porque a explicação de vocês vai ser superplausível pra gente, porque se o cliente não vê, está muito ligado à gente, tem parte de trás, tem banco de dados, tem construção, tem uma série de infraestrutura que é necessário, que consome o orçamento, mas que o cliente não vê, não é a carinha do <i>site</i> dele, não é o desenvolvimento web. Então que dica que vocês dão nesse cenário?  </p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>E eu acredito que, na verdade, é a comunicação, é isso que, profissionalmente, nós precisamos desenvolver também, saber falar várias línguas, digamos assim, ser claro na forma de comunicar algo, alguma informação. Sendo o físico, que é o pilar ali dentro da parede, ou algo digital na nuvem. Enfim, acho que saber comunicar a informação é o maior desafio. Nós, como profissionais, eu acredito que precisamos desenvolver essa habilidade de conseguir falar todas as línguas e trazer essas informações de uma maneira clara e bem objetiva.  </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Eu acho que, assim, um bom argumento é a gente pensar que, nos nossos casos, tanto no mundo físico como no mundo digital, um bom projeto, ele não é feito de fora para dentro. A gente precisa começar a erguer as paredes, e essas paredes têm que ser de materiais que sejam bons, não é? E no caso de vocês, também ter essa estrutura por trás, que seja relevante, que seja, enfim, que tenha ali por trás as melhores alternativas de materiais para poder chegar lá no front-end com essa cara bem estruturada, e sim, muitas vezes, o cliente não vai enxergar isso, mas ele precisa saber que essa estrutura está sendo levantada para que, enfim, a casa dele não caia e o <i>site</i> dele também não caia. Então é toda uma explicação que se dá previamente de que o projeto é feito de dentro para fora, e não o contrário.  </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Se a gente puder fazer um overview, então, de tudo que a gente falou aqui, que etapas que são cruciais para seu desenvolvimento, como é que a gente define se <i>briefing</i>? Como é que a gente resume isso para um usuário final, para entender esse cenário e poder começar a aplicar isso? </p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>Eu acredito que o primeiro ponto é o entendimento da necessidade do cliente. Fazendo essa identificação, a gente consegue traçar o escopo do projeto e aí identificar público-alvo, avaliar prazo, avaliar orçamento, fazer todas as coletas de informação que são necessárias para, aí sim, realmente colocar em prática e efetivar o projeto, a fim de que ele evite retrabalho, seja ágil e obter todo esse sucesso, nesse sentido. </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Eu acho que sim. Eu acho que objetivar com a equipe, da qual você faz parte, o teu produto, para quem ele é, qual é, quais são os prazos, quais são as necessidades de quem usa, as necessidades primárias secundárias, revisar qual é o nível de necessidades que a gente vai chegar a atender, quais a gente não vai atender, porque também é sobre, em alguns momentos, a gente recortar esse escopo para ele ficar mais assertivo e se aprofundar. O <i>briefing</i> é um mergulho na realidade que a gente está procurando investigar. Então ele não é feito em pouquíssimo tempo. Claro que a gente demanda obedecer, cumprir alguns prazos, mas o <i>briefing</i>, ele vai ficando mais redondo na medida que a gente vai mergulhando naquele assunto. Então tem esse tempo de maturação no assunto, eu acho que é muito importante. </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>E ele não tem uma única versão, ele vai mudando conforme o projeto vai acontecendo. Ele pode se alterar conforme o projeto vai acontecendo. E aí vem outra pergunta, como que vocês fazem hoje para ter os aceites desses clientes, nessas alterações de vocês, porque isso também é importante, alterou, precisa-se ter um novo aceite. O <i>briefing</i> inicial, a versão um não deixou de ser a válida, começou a dois, começou a três, enfim. </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Na verdade, um projeto, ele nunca está fechado. O projeto, ele tem a possibilidade de se alterar constantemente e ele é uma construção, por isso que se chama projeto. Então eu acredito que ele não ser linear faz parte do processo. Então a gente vai ter todas as etapas, mas, no meio dessas etapas, tem os percalços que vão surgindo. Então, ter esse retorno e apresentar é natural do processo, assim, não vejo como algo fechado, sabe?  </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Mas o aceite em si, a gente tem que pegar toda vez ele? Tem que ter a assinatura do cliente, que ele está ciente dessa situação? Como é que a gente faz isso para ficar documentado? Porque a gente tem falado muito aqui de documentação, então a gente vai compor um acervo do projeto, que também é documental. Então, esse aceite, como é que ele funciona, é sempre toda vez? </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>É, nas etapas de projeto, sempre isso é documentado em contrato, sempre.  Normalmente, em um caso bem, explicando assim no design, que são as etapas “estudo preliminar, anteprojeto, projeto, projeto executivo, detalhamentos finais”, sempre entre reuniões tem o memorial da reunião. Indicamos que se faça o memorial da reunião, no qual se aponta os principais itens que foram tratados na reunião e o que é necessário ser corrigido e ajustado para a próxima etapa. Então tudo isso vai ficando documentado na pasta do cliente e isso também possibilita uma melhor organização, assim, dentro da equipe, porque, muitas vezes, se trabalha com equipes muito grandes, então todos precisam ter, não necessariamente a pessoa que vai estar fazendo esse ajuste é a pessoa que esteve na reunião, o profissional que esteve na reunião, então, para ter um conhecimento geral de tudo, isso é importante. </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>E aí vem, a gente pode ligar com a escolha da ferramenta, porque se a ferramenta for boa e você souber manipular ela, essa mudança já vai ficar “linkada” a um card, que quem está trabalhando já vai saber que houve mudança, e não vai ficar perdido ali no projeto. </p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>Exatamente, é como antigamente se faziam as documentações formais de projeto. Se alguém saísse da equipe, o projeto, ele estava ali, eternizado em um no caderno de projeto mesmo, e aí essas ferramentas hoje servem para isso. Se alguém sai da equipe, o projeto segue lá, se retroalimentando com aquilo que já foi feito. Então é um aprendizado que não termina se alguém sai, ele está ali para quem entra, para quem permanece, e assim por diante.  </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>E o conhecimento precisa estar ali. </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Eu quero enfatizar a importância da documentação, que, às vezes, pode parecer algo supérfluo, superficial, mas a gente só vai se dar conta da falta que esse detalhamento inicial faz quando a gente precisa dele. E aí esse retrocesso tem custos, tem custos de orçamento, custos de tempo, porque um projeto, ele pode, ficando mais moroso, ele vai acarretar uma série de dificuldades para toda a equipe. Então, ganhar esse tempo, eu acho que não é nem gastar esse tempo, é ganhar esse tempo com a documentação inicial é válido. Então, assim que os alunos dediquem-se a esse primeiro momento, porque as perguntas bem feitas nesse primeiro momento vão ajudá-los a depois, em um segundo, terceiro momento, conseguir andar de uma maneira mais autônoma no projeto que está sendo desenvolvido. </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Assim como uma casa precisa de manutenção, um <i>site</i> também precisa de manutenção e sustentação, então a documentação é importante para isso.</p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>É fundamental para o sucesso do resultado. Então, muito importante cuidar essa questão da eficiência no desenvolvimento dos projetos. Tudo isso é válido. </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Gostaria de agradecer a participação da Bruna e da Laís hoje aqui com a gente. Muito obrigado! </p>
-    
-                                            <p><b>Laís </b></p>
-    
-                                            <p>Nós que agradecemos! </p>
-    
-                                            <p><b>Bruna </b></p>
-    
-                                            <p>Obrigada também! Foi ótimo! </p>
-    
-                                            <p><b>Jonas </b></p>
-    
-                                            <p>Vimos então que um <i>briefing</i> bem elaborado é essencial para o sucesso de qualquer projeto. Ele serve não apenas como ponto de partida, mas como uma ferramenta estratégica que alinha expectativas, melhora a comunicação entre cliente e desenvolvedores e otimiza recursos e prazos. Com um <i>briefing</i> claro, é possível garantir que o produto, o <i>site</i>, sistema, atenda às necessidades do cliente, evitando retrabalhos e falhas no processo. Bons estudos e até a próxima! </p>
-                                            
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="botao hvr-sweep-to-right" data-bs-dismiss="modal">Fechar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                       
-                        <h3>Especificidades para projetos <i>web</i> </h3>
-
-                        <p class="desktop">A criação de um <i>briefing</i> para projetos <i>web</i> tem características que diferem de projetos voltados a outros sistemas, pois as características dos sistemas <i>web</i> são únicas e têm um foco extremamente voltado à interação com o usuário final. O planejamento desses tipos de projeto é multidisciplinar, pois depende de várias características importantes para que o resultado final seja o esperado pelo usuário, como experiência do usuário (UX), responsividade, navegação intuitiva, otimização de mecanismos de busca, acessibilidade, psicologia das cores, tipografia, entre outras. Por isso, é tão importante um detalhamento completo desses elementos para que o <i>site</i> atenda as expectativas de <i>performance</i>, estética e funcionalidade da empresa e usuários finais. </p>  
-
-                        <p class="mobile paragrafo1-mobile no-print" aria-hidden="true">A criação de um <i>briefing</i> para projetos <i>web</i> tem características que diferem de projetos voltados a outros sistemas, pois as características dos sistemas <i>web</i> são únicas e têm um foco extremamente voltado à interação com o usuário final. </p>
-
-                        <p class="mobile no-print" aria-hidden="true">   O planejamento desses tipos de projeto é multidisciplinar, pois depende de várias características importantes para que o resultado final seja o esperado pelo usuário, como experiência do usuário (UX), responsividade, navegação intuitiva, otimização de mecanismos de busca, acessibilidade, psicologia das cores, tipografia, entre outras. Por isso, é tão importante um detalhamento completo desses elementos para que o <i>site</i> atenda as expectativas de <i>performance</i>, estética e funcionalidade da empresa e usuários finais. </p>  
-
                     </div>
 
-                    <div class="row mb-5 elemento">
-
-                        <div class="container ">
-                            <img src="img/ilustra1.jpg" class="ilustracao img-fluid desktop no-print" srcset="">
-
-                            <img src="img/ilustra1_mobile.jpg" class="ilustracao img-fluid mobile mx-auto no-print" srcset="">
-                            
-                        </div>
-                    </div>
-                        
-                    <div class="container pos-elemento">
-
-
-                        <p class="desktop">No <i>briefing</i>, é importante ter uma lista de perguntas, que sejam claras e objetivas e ajudem o cliente (empresa/pessoa) a demonstrar as reais necessidades do seu sistema <i>web</i> e, da mesma forma, sirva como um guia fiel para equipe de desenvolvimento. É importante que antes de criar um modelo, que pode ser alterado conforme as características de cada projeto, as perguntas sejam separadas conforme as áreas do planejamento. </p>
-
-                        <p class="mobile paragrafo2-mobile" aria-hidden="true">No <i>briefing</i>, é importante ter uma lista de perguntas, que sejam claras e objetivas e ajudem o cliente (empresa/pessoa) a demonstrar as reais necessidades do seu sistema <i>web</i> e, da mesma forma, sirva como um guia fiel para equipe de desenvolvimento. 
-                        </p>
-                            <p class="mobile no-print" aria-hidden="true">                            
-                            É importante que antes de criar um modelo, que pode ser alterado conforme as características de cada projeto, as perguntas sejam separadas conforme as áreas do planejamento. </p> 
-
-
-
-                        <p class=""><b>Exemplos de áreas de um projeto <i>web</i> </b></p>
-
-                        <p>As áreas de foco em um projeto <b><i>web</i></b> podem ser alteradas conforme suas necessidades, porém existem algumas que fazem parte da grande maioria dos projetos e devem servir de base para a criação de qualquer modelo de <i>briefing</i>. Conheça-as a seguir. </p>
-
-                        <p class="no-print">
-                            Clique ou toque para visualizar o conteúdo. 
-                        </p>
-
-                        <div class="accordion " id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                       a) Informações gerais do cliente  
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Perguntas relevantes sobre o entendimento da empresa, como nome da empresa, localização, missão, ramo de atuação, meios de contato com a empresa e equipe responsável. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        b) Informações gerais do&nbsp;<i>site</i> 
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Perguntas que deixem claro o motivo da criação do <i>site</i>, como, por exemplo, qual é a mensagem que deve ser passada, quais são os principais produtos da empresa, quais são as informações dos usuários necessárias para sua captação, se o <i>site</i> deve ser dinâmico ou estático. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        c) Público-alvo 
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Questões focadas em descobrir qual é o perfil e quais são os tipos de usuário que utilizarão o <i>site</i>, seus gostos e necessidades e tipo de informação buscada por esse nicho. </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                        d) Conteúdo do&nbsp;<i>site</i>  
-                                    </button>
-                                </h2>
-                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Seção na qual precisam ser definidos todos os conteúdos que estarão contidos no <i>site</i>.  </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                        e) Aparência   
-                                    </button>
-                                </h2>
-                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>No caso dos <i>sites</i>, um dos focos mais importantes do <i>briefing</i> é em relação à aparência esperada pelo cliente e pelo nicho de usuários que utilizarão o <i>site</i>, pois a escolha de cores, fontes, alinhamentos etc. é um ponto importante na definição do sucesso ou não de um projeto <i>web</i>. </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading6">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                        f) Cronograma e orçamento
-                                    </button>
-                                </h2>
-                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Elementos para a definição do orçamento e do cronograma, coerentes com o projeto, apresentados de forma detalhada e organizada, com etapas claras e bem definidas. </p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <h3>Modelos de <i>briefing</i></h3>
-
-                        <p>Com as áreas definidas, pode-se gerar diversos modelos de <i>briefing</i>, como versões disponibilizadas de forma <i>on-line</i>, em que o cliente responde e depois deve ser marcada uma reunião para um ajuste final antes do início do planejamento. Também pode ser utilizada uma versão mais completa, normalmente em uma reunião já com empresa contratante. </p>
-
-                        <p class="no-print">Clique ou toque para visualizar o conteúdo. </p>
-
-                        <div class="painel">
-                            
-                            <button type="button" class="bt-form bt-form1 no-print" data-bs-toggle="modal" data-bs-target="#modal1">
-                                <div class="btn-hover">
-                                    <b>Modelo 1 – Formulário <i>web</i></b>
-                                </div>
-                            </button>
-    
-                            <button type="button" class="bt-form bt2 no-print" data-bs-toggle="modal" data-bs-target="#modal2">
-                                <b>Modelo 2 – <i>Briefing</i> detalhado</b>
-                            </button>
-
-                        </div>
-
-                        
-                    
-                    <!-- Modais -->
-                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="modalTranscricao" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel"><b>Modelo 1 – Formulário <i>web</i></b></h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h5 class="modal-title" id="exampleModalLabel">Transcrição <i>Podcast</i></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="container">
-                                        <p>O modelo 1 de <i>briefing</i> é um exemplo de um contato inicial <i>on-line</i>, em que o cliente preenche um formulário, muitas vezes, no <i>site</i> da empresa criadora dos projetos <i>web</i> ou por um <i>link</i> em uma rede social. Normalmente são modelos com menos perguntas e de rápido preenchimento, por ser um contato inicial que ainda será complementado em uma reunião posterior. </p>
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Olá, estudante do curso Técnico em Desenvolvimento de Sistemas, me chamo
+                                            Jonas, sou bacharel em Sistemas de Informação, especialista em Gestão
+                                            Estratégica de Negócios e mestre em Educação, experiência como scrum master
+                                            na implantação de sistemas, tutor e consultor em Projetos de Melhoria. Hoje
+                                            vamos falar sobre a importância do <i>briefing</i> e seu papel no
+                                            desenvolvimento de sistemas web, explorando seu conceito, função estratégica
+                                            e como alinhas expectativas entre cliente e equipe. Para trazer exemplos
+                                            práticos e etapas cruciais para garantir um <i>briefing</i> perfeito, estão
+                                            aqui comigo a docente Bruna Ávila, que é doutora em Design pela Universidade
+                                            Federal do Rio Grande do Sul, especialista em UX e Aprendizagem de Adultos.
+                                            Também conosco, a docente Laís Martini, que é graduada em Arquitetura e
+                                            Urbanismo pela Universidade Federal de Santa Maria, mestre em Engenharia
+                                            Civil e especialista em Design de Interiores. Sejam bem-vindas! </p>
+
+                                        <p><b>Laís</b></p>
+
+                                        <p>Olá! Tudo bom? Obrigada pelo convite.</p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>Olá! Muito obrigada pelo convite! É um prazer estar aqui.</p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Pessoal, para a gente começar hoje o nosso bate-papo: o que é um
+                                            <i>briefing</i> e qual sua importância para o sucesso de um projeto em
+                                            desenvolvimento de sistemas web?
+                                        </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Bom, um <i>briefing</i>, ele tem um sentido bem amplo e se aplica nas mais
+                                            variadas disciplinas projetuais. A gente pode falar de <i>briefing</i> em
+                                            design, em arquitetura, em engenharia, em desenvolvimento de sistemas e por
+                                            aí vai. Então, dada essa perspectiva bem ampla do <i>briefing</i>, ele nada
+                                            mais é que o levantamento das principais necessidades do nosso usuário,
+                                            independente do contexto, e, a partir disso, a hierarquização dos principais
+                                            requisitos do projeto. A gente consegue, com isso, também levantar os
+                                            objetivos do projeto. Então, é essencial para qualquer disciplina que tenha
+                                            esse caráter de elencar necessidades e descobrir um pouco mais do nosso
+                                            público-alvo. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Até porque, gente, para analisar o <i>briefing</i>, pode ter outros nomes em
+                                            outras áreas. Se a gente for analisar a área da saúde, isso pode ser chamado
+                                            de anamnese. </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Exatamente! Boa! </p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>É, um <i>briefing</i>, acredito que nada mais é do que um mapa com todas
+                                            essas etapas do que a gente precisa avaliar em um projeto, enfim, para fazer
+                                            uma concepção de algum elemento. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>E aí, falando já em etapas: como é que a gente estrutura esse
+                                            <i>briefing</i>? Que estratégia que a gente pode ter para atender às
+                                            expectativas do cliente? Como é que a gente trabalha isso?
+                                        </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>O <i>briefing</i>, acredito que nada mais é do que a necessidade de
+                                            documentar o desenvolvimento de um projeto, garantir que tudo que esteja
+                                            sendo pensado e avaliado para determinado projeto, ele seja bem organizado,
+                                            que tenha uma estrutura que seja eficiente, para que as decisões desse
+                                            projeto, elas sejam mais assertivas, nesse sentido. </p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>Então, a partir do que a Laís trouxe, eu incluiria que o <i>briefing</i>
+                                            também é uma definição dos objetivos principais de um projeto. E aí a gente
+                                            pode ter um grande objetivo, e a partir disso, objetivos que são mais
+                                            específicos, que a gente também pode chamar de requisitos de projeto. Então,
+                                            essa primeira etapa, ela é ampla. A gente precisa delimitar exatamente o
+                                            porquê do projeto existir. Adianta para nós, assim, é algo muito que nos
+                                            serve, definir, talvez em palavras-chaves, em um primeiro momento: o que o
+                                            projeto se destina a fazer? Que problemas ele resolve? Quais são os
+                                            resultados esperados? E muitas vezes, esses problemas, eles não vêm bem
+                                            definidos. Na maioria das vezes, os problemas de projeto, eles são amplos.
+                                            Então a gente percebendo, em um primeiro momento, o que aquele problema
+                                            definitivamente envolve, e a partir disso, ir desdobrando ele. Então esse
+                                            seria, assim, um primeiro grande momento da construção do <i>briefing</i>.
+                                            Depois, eu acho que a análise do público-alvo também é superimportante. A
+                                            gente saber quem vai fazer uso, existe será um único público-alvo? Será que
+                                            o público-alvo final, esse projeto engloba só o público-alvo final ou a
+                                            gente tem, daqui a pouco, stakeholders, pessoas que também se envolvem no
+                                            projeto e também precisam fazer o uso desse produto que a gente está
+                                            pensando? Então definir todas as pessoas que se envolvem é uma etapa
+                                            superimportante no desdobramento do <i>briefing</i>. </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>E acredito que pensar também, além disso tudo que a Bruna falou, a questão da
+                                            agilidade também nos processos. Então, quando a gente consegue fazer uma
+                                            organização assim, dessas palavras-chaves, por meio de organogramas,
+                                            diagramas, fica mais fácil compreender esse público-alvo e, a partir disso,
+                                            também entender suas necessidades diante do contexto geral, assim, do que
+                                            esse projeto vai abranger. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Se a gente for analisar ainda, vocês trabalham com engenharia, arquitetura e
+                                            design de interiores, que tem uma entrega muito material, muito física ao
+                                            final do processo. Diferente de um sistema, que é uma coisa virtual, uma
+                                            coisa que está fora do contato físico. Se a gente for analisar nesse
+                                            cenário, como que a gente pode aprender com a entrega física para melhorar a
+                                            entrega virtual? O que se tem de dica nesse processo que vocês fazem desse
+                                            <i>briefing</i> para garantir que o final seja bem elaborado, que o cliente
+                                            atendeu à expectativa ali?
+                                        </p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>Bom, eu acho que no mundo físico, a gente busca se inteirar muito sobre os
+                                            requisitos funcionais de um projeto, quais são esses requisitos na
+                                            construção de um ambiente. Então a gente tem que perceber detalhes como
+                                            escolha de materiais, detalhes sobre iluminação, detalhes sobre o uso de
+                                            cores. E isso tem um fundamento técnico, não está só embasado no gosto do
+                                            cliente. Passando, eu imagino que para o digital, isso tem muito a ver com a
+                                            ergonomia de uma página, com as hierarquizações que a gente coloca dentro de
+                                            um ambiente que seja virtual. E essa organização, ela precisa ser feita a
+                                            partir de uma entrega técnica que a gente tem, muitas vezes, nosso cliente
+                                            não sabe exatamente do que ele precisa, e aí o especialista, com essa visão
+                                            técnica, consegue direcionar esses requisitos de acordo com o que a pessoa
+                                            nos traz lá nas primeiras necessidades dela. Porque a gente vê, na
+                                            construção de um projeto, que, muitas vezes, as pessoas, elas sabem que tem
+                                            a dor, mas elas não sabem exatamente por que aquilo está doendo. E isso,
+                                            acho que acontece muito no, tanto no digital quanto no físico. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Exato. A gente tem a responsividade do <i>site</i>, tem a paleta de cores do
+                                            <i>site</i>, vai ter os menus, vai ter toda a questão, como você colocou,
+                                            ligada ao design de interiores.
+                                        </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Dentro desse mundo da engenharia, da arquitetura, do design de interiores,
+                                            tudo é muito físico no sentido palpável ao cliente. Ele até imagina como
+                                            deseja algo para o seu espaço, mas tudo sempre está muito no campo das
+                                            ideias. Então é a função do profissional, do projetista, do designer fazer
+                                            esse mapeamento do desejo do cliente para esse determinado espaço, e aí
+                                            entender o que ele espera, o que ele imagina, no que ele quer que seja o
+                                            resultado final disso, e aí conseguir colocar em prática e realmente
+                                            idealizar e, no final, chegar àquele resultado. Então, se não tiver um
+                                            <i>briefing</i> bem elaborado, o mapeamento que seja muito efetivo, no
+                                            sentido de identificar esses desejos, não é possível chegar a esse
+                                            resultado, porque, como profissional, você vai estar desenvolvendo um
+                                            projeto para outra pessoa, não é seu gosto pessoal. Então isso acaba sendo
+                                            um desafio muito grande na aplicação do <i>briefing</i>, nesse sentido,
+                                            porque é realmente a única maneira de conseguir identificar e realizar esse
+                                            processo.
+                                        </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Mas, por mais que a gente saiba que não é para a gente que a gente está
+                                            desenvolvendo para um terceiro, tem os elementos técnicos que a gente também
+                                            precisa se posicionar para não perder a razão, para não perder o sentido.
+                                            Então a gente está ali como profissional. Então, na hora do <i>briefing</i>,
+                                            também cabe a nós instruir o nosso usuário, o nosso cliente, de que algumas
+                                            coisas podem não dar certo. </p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>Exatamente. Eu acho que a gente atua, de forma geral, como pesquisadores, e
+                                            uma das funções do pesquisador é fazer as perguntas certas e também estar
+                                            aberto para respostas que, muitas vezes, a gente não está esperando. Essas
+                                            respostas podem ser muito ricas, mas também a gente precisa ter um escopo
+                                            delimitado para educar, eu não gosto muito dessa palavra, eu diria, então,
+                                            direcionar o nosso cliente para, enfim, a partir dos requisitos técnicos que
+                                            a gente possui, guiá-lo para, enfim, obter a melhor experiência daquilo que
+                                            a gente está projetando. </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Até porque, muitas vezes, tem fatores externos que vão impactar, e foge do
+                                            que o cliente imagina. Isso muito relacionado, principalmente, a prazo e ao
+                                            orçamento. Então, às vezes, imaginar algo exacerbado, e na prática não é bem
+                                            assim. Então trazer, às vezes, o cliente para essa realidade de orientar:
+                                            “ah, isso é possível, isso não é”. Também é bem importante para o resultado,
+                                            o sucesso do projeto, realmente. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Essa orientação do cliente, ela é superimportante, mas, nesse campo de
+                                            orientação, que ferramentas que a gente pode utilizar para que esse projeto,
+                                            ele seja concluído, atenda às expectativas do cliente, mas que seja
+                                            visualmente possível que a gente veja ele acontecendo, em que etapa que ele
+                                            está? Em que processo que ele está? Como que eu controlo o orçamento? Como
+                                            eu controlo o cronograma? Como é que vocês veem isso? Isso tem alguma
+                                            ferramenta que vocês ocupam? Como que vocês recomendam ela? </p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>Bom, citando algumas delas, eu gosto muito de usar o Trello. Ele cria quadros
+                                            com cartões, então, para organizar os tópicos do <i>briefing</i>. Além do
+                                            Trello, eu conheço, gosto também do Notion. É uma plataforma que é
+                                            superversátil para criar briefings que sejam bem organizados, permite a
+                                            inclusão de tabelas, de listas, de links que a gente possa incorporar. E
+                                            também recomendo, gosto do Asana, então, assim, ele permite que sejam
+                                            criados, dentro deles, tarefas bem detalhadas, com prazos e atribuição de
+                                            responsáveis para cada etapa de projeto. </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>E dentro do <i>briefing</i>, que daí é algo bem específico nesse contexto
+                                            geral de projeto, é importante também a gente identificar se esse projeto,
+                                            ele vai estar sendo aplicado para um cliente on-line ou presencial. Porque,
+                                            se ele for on-line, a gente pode trabalhar com formulários justamente para
+                                            conseguir enviar para ele, às vezes, apresentar alguma imagem de referência
+                                            para ele conseguir visualizar e identificar a questão de cores, de imagens,
+                                            referenciais, enfim, e aí conseguir mapear, nesse sentido. E se for um
+                                            cliente presencial, até o próprio caneta e papel em uma reunião presencial,
+                                            mostrando, identificando imagens. E isso também possibilita uma conversa
+                                            muito direcionada e entender o que ele espera e deseja para esse projeto, é
+                                            uma maneira de conseguir identificar essas características essenciais. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>O legal hoje desses aplicativos, esses sistemas, é que eles são tudo de
+                                            nuvem, então você consegue levar o celular na palma da mão e consegue, você
+                                            e o cliente, ter acesso a tudo, em tempo real. Fez uma atualização, o
+                                            cliente já recebeu, todo mundo já recebeu esse cenário. E para parte da
+                                            documentação também, você sobe os documentos, hoje com assinatura digital,
+                                            isso é superpossível com qualidade, e você consegue visualizar na palma da
+                                            mão. Na TI, a gente chama as entregas parciais de sprints, então o
+                                            cronograma é previsto em sprints, geralmente de duas semanas, para a gente
+                                            poder fazer as entregas. Nas áreas de vocês, como que isso é trabalhado,
+                                            essas entregas parciais do projeto, como é que isso é detalhado com o
+                                            cliente? </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Bom, a gente usa uma metodologia própria do design, e essa metodologia, ela é
+                                            muito embasada toda em etapas de projeto. E essas etapas ganham nomes
+                                            específicos. Mas, basicamente, a gente começa com um projeto que é mais
+                                            informacional, onde a gente levanta as necessidades do cliente. A gente,
+                                            enfim, busca identificar tudo o que for possível em relação àquele produto,
+                                            que é físico, seja ele um produto mesmo ou um ambiente. Depois nós passamos
+                                            para uma parte mais conceitual. Dadas todas as informações que a gente
+                                            recebeu, está na hora do designer colocar a criatividade à prova. Então é
+                                            hora de criar os esboços e de pensar os croquis, os levantamentos métricos
+                                            do espaço. Então acho que a gente pode ir fazendo um paralelo com a área de
+                                            TI, onde tem algum momento que a gente já se sente mais seguro frente às
+                                            necessidades e o aprofundamento no cliente que a gente tem. E aí colocamos
+                                            então a nossa criatividade em prática. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Que acho que bem na TI é a conversão da parte de documentação para o
+                                            desenvolvimento. Então chegou no “dev.”, e ele vai começar a programar. </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Provavelmente, isso aí! Depois disso, a gente tem uma parte mais técnica,
+                                            porque no design de interiores, nós precisamos pensar nas circulações, nos
+                                            espaços que são todos embasados em normas técnicas. Então a gente tem que
+                                            prever uma ergonomia física adequada para que aquele design seja universal,
+                                            alguém com algum tipo de restrição, de acessibilidade ou até uma restrição
+                                            cognitiva consiga fazer uso do espaço adequadamente. Então é a hora de fazer
+                                            os desenhos técnicos. São plantas e mais plantas técnicas para a gente
+                                            conseguir conversar com os nossos pares de projeto e ter esse diálogo
+                                            documentado de uma maneira que qualquer pessoa da área, em qualquer parte do
+                                            mundo, consiga acessar aqueles relatórios e reproduzir, se for necessário. E
+                                            depois disso, a execução. Então a gente realmente acompanha essa construção
+                                            do espaço físico e se assegura de que aquilo que foi construído lá no
+                                            início, o levantamento das necessidades, o desenho do <i>briefing</i> seja
+                                            efetivamente cumprido e entregue para o cliente da melhor forma. </p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>É, dentro do design, como no TI também, se conversa com outras áreas, outros
+                                            profissionais da área, então na hora que se está executando esse projeto,
+                                            vai ter o azulejista, o gesseiro, o marceneiro... </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>O desenvolvedor, o DDA, o UX... </p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>Então todos precisam falar a mesma língua e entender todas as grafias. É o
+                                            que nós sempre falamos, a linguagem do designer é o desenho técnico, então
+                                            precisa seguir algumas regras em relação às normas e tudo mais para que isso
+                                            seja palpável e efetivo em todos os níveis. Então, e isso só é possível por
+                                            meio da identificação preliminar do <i>briefing</i>, que é onde tudo vai
+                                            “startar”. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Mesmo tomando todos esses cuidados, tomando todas essas precauções, fazendo
+                                            documentação, entregando, conversando com os pares, pode haver um
+                                            mal-entendido. E aí, como é que vocês indicam, que práticas vocês adotam
+                                            para quando acontecer esse mal-entendido, que pode e é supernormal, essas
+                                            revisões de projeto, mesmo com um bom <i>briefing</i>, pode haver uma
+                                            revisão de projeto, que prática que vocês adotam para esse processo de
+                                            revisão acontecer e não prejudicar o cronograma, por exemplo? </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Acho que o principal é diálogo sempre porque imprevistos sempre acontecem, em
+                                            muitos casos, dentro da construção, assim, principalmente em caso de
+                                            reforma, quando a gente começa a repaginar os espaços, sempre é uma caixinha
+                                            de surpresa, porque algo que já existia ali, então pode acontecer de surgir
+                                            algum imprevisto, algo que foi pensado e mapeado no <i>briefing</i> e, daqui
+                                            a pouco, lá na frente, não pode ser executado. Então é importante dar um
+                                            passo para trás, avaliar a situação, rever a estratégia, conversar com o
+                                            cliente, conversar com quem está executando, com os fornecedores, com os
+                                            parceiros e aí chegar à melhor solução possível diante do que é possível ser
+                                            realizado. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Eu só vou complementar, que é a dificuldade que a gente tem na T.I., algumas
+                                            vezes, é porque por não ser físico, é difícil explicar que não dá para
+                                            fazer. Quando você está trabalhando com uma reforma, não dá para tirar um
+                                            pilar. O pilar está ali, ele é físico, ele existe, ele é palpável. E,
+                                            algumas vezes, o cliente fica frustrado porque como que não dá para fazer?
+                                            Como que esse passo não pode ser dado dentro da T.I? Porque a gente não
+                                            consegue dar esse passo, e aí, se a gente for falar de responsividade, como
+                                            que responde para o cliente que não dá para fazer para todas as plataformas
+                                            por um orçamento do X, tem que aumentar o orçamento porque tem mais horas,
+                                            homem e tudo mais. Então, como que também a gente trabalha isso? </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>E é uma coisa que, assim, é raro, mas acontece muito. Acontece bastante,
+                                            assim. E eu acho que a gente normalizar que isso acontece talvez é um dos
+                                            primeiros passos, a gente deixar claro para o nosso cliente. Não vamos
+                                            chamar de imprevistos, vamos colocar como inputs, como entradas de projeto
+                                            que podem estar acontecendo durante o ciclo de desenvolvimento, e quando
+                                            algo não for possível, eu acho que a gente... é um grande trabalho do
+                                            desenvolvedor e do designer tentar adequar à sua linguagem, porque a gente
+                                            não vai explicar para o cliente, em termos técnicos, o porquê que não dá,
+                                            então é algo que vem, assim, a partir de uma certa experiência, talvez de um
+                                            pouco mais de bagagem, a gente encontrar as palavras certas e colocar para o
+                                            cliente, o porquê que não, que é assim, que dentro daquilo que foi desenhado
+                                            no início, existe uma linha de raciocínio lógico, conceitual, técnico para
+                                            se chegar no final, e determinadas funções não vão poder ser englobadas,
+                                            porque senão elas vão desarticular toda essa coluna estrutural que foi
+                                            pensada desde o início do projeto. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Acho que a gente tem um gancho aqui agora para uma pergunta superimportante
+                                            para vocês duas, que vai servir muito para a gente de T.I., como que vocês
+                                            explicam para o cliente alguma coisa que ele não vê no dia a dia, que é o
+                                            que fica dentro da parede, a hidráulica, a elétrica, fica dentro da parede,
+                                            ele não vê no dia a dia. Isso tem um custo significativo e consome um custo
+                                            significativo do orçamento. Como é que vocês explicam? Porque a explicação
+                                            de vocês vai ser superplausível pra gente, porque se o cliente não vê, está
+                                            muito ligado à gente, tem parte de trás, tem banco de dados, tem construção,
+                                            tem uma série de infraestrutura que é necessário, que consome o orçamento,
+                                            mas que o cliente não vê, não é a carinha do <i>site</i> dele, não é o
+                                            desenvolvimento web. Então que dica que vocês dão nesse cenário? </p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>E eu acredito que, na verdade, é a comunicação, é isso que,
+                                            profissionalmente, nós precisamos desenvolver também, saber falar várias
+                                            línguas, digamos assim, ser claro na forma de comunicar algo, alguma
+                                            informação. Sendo o físico, que é o pilar ali dentro da parede, ou algo
+                                            digital na nuvem. Enfim, acho que saber comunicar a informação é o maior
+                                            desafio. Nós, como profissionais, eu acredito que precisamos desenvolver
+                                            essa habilidade de conseguir falar todas as línguas e trazer essas
+                                            informações de uma maneira clara e bem objetiva. </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Eu acho que, assim, um bom argumento é a gente pensar que, nos nossos casos,
+                                            tanto no mundo físico como no mundo digital, um bom projeto, ele não é feito
+                                            de fora para dentro. A gente precisa começar a erguer as paredes, e essas
+                                            paredes têm que ser de materiais que sejam bons, não é? E no caso de vocês,
+                                            também ter essa estrutura por trás, que seja relevante, que seja, enfim, que
+                                            tenha ali por trás as melhores alternativas de materiais para poder chegar
+                                            lá no front-end com essa cara bem estruturada, e sim, muitas vezes, o
+                                            cliente não vai enxergar isso, mas ele precisa saber que essa estrutura está
+                                            sendo levantada para que, enfim, a casa dele não caia e o <i>site</i> dele
+                                            também não caia. Então é toda uma explicação que se dá previamente de que o
+                                            projeto é feito de dentro para fora, e não o contrário. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Se a gente puder fazer um overview, então, de tudo que a gente falou aqui,
+                                            que etapas que são cruciais para seu desenvolvimento, como é que a gente
+                                            define se <i>briefing</i>? Como é que a gente resume isso para um usuário
+                                            final, para entender esse cenário e poder começar a aplicar isso? </p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>Eu acredito que o primeiro ponto é o entendimento da necessidade do cliente.
+                                            Fazendo essa identificação, a gente consegue traçar o escopo do projeto e aí
+                                            identificar público-alvo, avaliar prazo, avaliar orçamento, fazer todas as
+                                            coletas de informação que são necessárias para, aí sim, realmente colocar em
+                                            prática e efetivar o projeto, a fim de que ele evite retrabalho, seja ágil e
+                                            obter todo esse sucesso, nesse sentido. </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Eu acho que sim. Eu acho que objetivar com a equipe, da qual você faz parte,
+                                            o teu produto, para quem ele é, qual é, quais são os prazos, quais são as
+                                            necessidades de quem usa, as necessidades primárias secundárias, revisar
+                                            qual é o nível de necessidades que a gente vai chegar a atender, quais a
+                                            gente não vai atender, porque também é sobre, em alguns momentos, a gente
+                                            recortar esse escopo para ele ficar mais assertivo e se aprofundar. O
+                                            <i>briefing</i> é um mergulho na realidade que a gente está procurando
+                                            investigar. Então ele não é feito em pouquíssimo tempo. Claro que a gente
+                                            demanda obedecer, cumprir alguns prazos, mas o <i>briefing</i>, ele vai
+                                            ficando mais redondo na medida que a gente vai mergulhando naquele assunto.
+                                            Então tem esse tempo de maturação no assunto, eu acho que é muito
+                                            importante.
+                                        </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>E ele não tem uma única versão, ele vai mudando conforme o projeto vai
+                                            acontecendo. Ele pode se alterar conforme o projeto vai acontecendo. E aí
+                                            vem outra pergunta, como que vocês fazem hoje para ter os aceites desses
+                                            clientes, nessas alterações de vocês, porque isso também é importante,
+                                            alterou, precisa-se ter um novo aceite. O <i>briefing</i> inicial, a versão
+                                            um não deixou de ser a válida, começou a dois, começou a três, enfim. </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Na verdade, um projeto, ele nunca está fechado. O projeto, ele tem a
+                                            possibilidade de se alterar constantemente e ele é uma construção, por isso
+                                            que se chama projeto. Então eu acredito que ele não ser linear faz parte do
+                                            processo. Então a gente vai ter todas as etapas, mas, no meio dessas etapas,
+                                            tem os percalços que vão surgindo. Então, ter esse retorno e apresentar é
+                                            natural do processo, assim, não vejo como algo fechado, sabe? </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Mas o aceite em si, a gente tem que pegar toda vez ele? Tem que ter a
+                                            assinatura do cliente, que ele está ciente dessa situação? Como é que a
+                                            gente faz isso para ficar documentado? Porque a gente tem falado muito aqui
+                                            de documentação, então a gente vai compor um acervo do projeto, que também é
+                                            documental. Então, esse aceite, como é que ele funciona, é sempre toda vez?
+                                        </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>É, nas etapas de projeto, sempre isso é documentado em contrato, sempre.
+                                            Normalmente, em um caso bem, explicando assim no design, que são as etapas
+                                            “estudo preliminar, anteprojeto, projeto, projeto executivo, detalhamentos
+                                            finais”, sempre entre reuniões tem o memorial da reunião. Indicamos que se
+                                            faça o memorial da reunião, no qual se aponta os principais itens que foram
+                                            tratados na reunião e o que é necessário ser corrigido e ajustado para a
+                                            próxima etapa. Então tudo isso vai ficando documentado na pasta do cliente e
+                                            isso também possibilita uma melhor organização, assim, dentro da equipe,
+                                            porque, muitas vezes, se trabalha com equipes muito grandes, então todos
+                                            precisam ter, não necessariamente a pessoa que vai estar fazendo esse ajuste
+                                            é a pessoa que esteve na reunião, o profissional que esteve na reunião,
+                                            então, para ter um conhecimento geral de tudo, isso é importante. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>E aí vem, a gente pode ligar com a escolha da ferramenta, porque se a
+                                            ferramenta for boa e você souber manipular ela, essa mudança já vai ficar
+                                            “linkada” a um card, que quem está trabalhando já vai saber que houve
+                                            mudança, e não vai ficar perdido ali no projeto. </p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>Exatamente, é como antigamente se faziam as documentações formais de projeto.
+                                            Se alguém saísse da equipe, o projeto, ele estava ali, eternizado em um no
+                                            caderno de projeto mesmo, e aí essas ferramentas hoje servem para isso. Se
+                                            alguém sai da equipe, o projeto segue lá, se retroalimentando com aquilo que
+                                            já foi feito. Então é um aprendizado que não termina se alguém sai, ele está
+                                            ali para quem entra, para quem permanece, e assim por diante. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>E o conhecimento precisa estar ali. </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Eu quero enfatizar a importância da documentação, que, às vezes, pode parecer
+                                            algo supérfluo, superficial, mas a gente só vai se dar conta da falta que
+                                            esse detalhamento inicial faz quando a gente precisa dele. E aí esse
+                                            retrocesso tem custos, tem custos de orçamento, custos de tempo, porque um
+                                            projeto, ele pode, ficando mais moroso, ele vai acarretar uma série de
+                                            dificuldades para toda a equipe. Então, ganhar esse tempo, eu acho que não é
+                                            nem gastar esse tempo, é ganhar esse tempo com a documentação inicial é
+                                            válido. Então, assim que os alunos dediquem-se a esse primeiro momento,
+                                            porque as perguntas bem feitas nesse primeiro momento vão ajudá-los a
+                                            depois, em um segundo, terceiro momento, conseguir andar de uma maneira mais
+                                            autônoma no projeto que está sendo desenvolvido. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Assim como uma casa precisa de manutenção, um <i>site</i> também precisa de
+                                            manutenção e sustentação, então a documentação é importante para isso.</p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>É fundamental para o sucesso do resultado. Então, muito importante cuidar
+                                            essa questão da eficiência no desenvolvimento dos projetos. Tudo isso é
+                                            válido. </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Gostaria de agradecer a participação da Bruna e da Laís hoje aqui com a
+                                            gente. Muito obrigado! </p>
+
+                                        <p><b>Laís </b></p>
+
+                                        <p>Nós que agradecemos! </p>
+
+                                        <p><b>Bruna </b></p>
+
+                                        <p>Obrigada também! Foi ótimo! </p>
+
+                                        <p><b>Jonas </b></p>
+
+                                        <p>Vimos então que um <i>briefing</i> bem elaborado é essencial para o sucesso
+                                            de qualquer projeto. Ele serve não apenas como ponto de partida, mas como
+                                            uma ferramenta estratégica que alinha expectativas, melhora a comunicação
+                                            entre cliente e desenvolvedores e otimiza recursos e prazos. Com um
+                                            <i>briefing</i> claro, é possível garantir que o produto, o <i>site</i>,
+                                            sistema, atenda às necessidades do cliente, evitando retrabalhos e falhas no
+                                            processo. Bons estudos e até a próxima!
+                                        </p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h3>Especificidades para projetos <i>web</i> </h3>
+
+                    <p class="desktop">A criação de um <i>briefing</i> para projetos <i>web</i> tem características que
+                        diferem de projetos voltados a outros sistemas, pois as características dos sistemas <i>web</i>
+                        são únicas e têm um foco extremamente voltado à interação com o usuário final. O planejamento
+                        desses tipos de projeto é multidisciplinar, pois depende de várias características importantes
+                        para que o resultado final seja o esperado pelo usuário, como experiência do usuário (UX),
+                        responsividade, navegação intuitiva, otimização de mecanismos de busca, acessibilidade,
+                        psicologia das cores, tipografia, entre outras. Por isso, é tão importante um detalhamento
+                        completo desses elementos para que o <i>site</i> atenda as expectativas de <i>performance</i>,
+                        estética e funcionalidade da empresa e usuários finais. </p>
+
+                    <p class="mobile paragrafo1-mobile no-print" aria-hidden="true">A criação de um <i>briefing</i> para
+                        projetos <i>web</i> tem características que diferem de projetos voltados a outros sistemas, pois
+                        as características dos sistemas <i>web</i> são únicas e têm um foco extremamente voltado à
+                        interação com o usuário final. </p>
+
+                    <p class="mobile no-print" aria-hidden="true"> O planejamento desses tipos de projeto é
+                        multidisciplinar, pois depende de várias características importantes para que o resultado final
+                        seja o esperado pelo usuário, como experiência do usuário (UX), responsividade, navegação
+                        intuitiva, otimização de mecanismos de busca, acessibilidade, psicologia das cores, tipografia,
+                        entre outras. Por isso, é tão importante um detalhamento completo desses elementos para que o
+                        <i>site</i> atenda as expectativas de <i>performance</i>, estética e funcionalidade da empresa e
+                        usuários finais.
+                    </p>
+
+                </div>
+
+                <div class="row mb-5 elemento">
+
+                    <div class="container ">
+                        <img src="img/ilustra1.jpg" class="ilustracao img-fluid desktop no-print" srcset="">
+
+                        <img src="img/ilustra1_mobile.jpg" class="ilustracao img-fluid mobile mx-auto no-print"
+                            srcset="">
+
+                    </div>
+                </div>
+
+                <div class="container pos-elemento">
+
+
+                    <p class="desktop">No <i>briefing</i>, é importante ter uma lista de perguntas, que sejam claras e
+                        objetivas e ajudem o cliente (empresa/pessoa) a demonstrar as reais necessidades do seu sistema
+                        <i>web</i> e, da mesma forma, sirva como um guia fiel para equipe de desenvolvimento. É
+                        importante que antes de criar um modelo, que pode ser alterado conforme as características de
+                        cada projeto, as perguntas sejam separadas conforme as áreas do planejamento.
+                    </p>
+
+                    <p class="mobile paragrafo2-mobile" aria-hidden="true">No <i>briefing</i>, é importante ter uma
+                        lista de perguntas, que sejam claras e objetivas e ajudem o cliente (empresa/pessoa) a
+                        demonstrar as reais necessidades do seu sistema <i>web</i> e, da mesma forma, sirva como um guia
+                        fiel para equipe de desenvolvimento.
+                    </p>
+                    <p class="mobile no-print" aria-hidden="true">
+                        É importante que antes de criar um modelo, que pode ser alterado conforme as características de
+                        cada projeto, as perguntas sejam separadas conforme as áreas do planejamento. </p>
+
+
+
+                    <p class=""><b>Exemplos de áreas de um projeto <i>web</i> </b></p>
+
+                    <p>As áreas de foco em um projeto <b><i>web</i></b> podem ser alteradas conforme suas necessidades,
+                        porém existem algumas que fazem parte da grande maioria dos projetos e devem servir de base para
+                        a criação de qualquer modelo de <i>briefing</i>. Conheça-as a seguir. </p>
+
+                    <p class="no-print">
+                        Clique ou toque para visualizar o conteúdo.
+                    </p>
+
+                    <div class="accordion " id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    a) Informações gerais do cliente
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Perguntas relevantes sobre o entendimento da empresa, como nome da empresa,
+                                        localização, missão, ramo de atuação, meios de contato com a empresa e equipe
+                                        responsável. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    b) Informações gerais do&nbsp;<i>site</i>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Perguntas que deixem claro o motivo da criação do <i>site</i>, como, por exemplo,
+                                        qual é a mensagem que deve ser passada, quais são os principais produtos da
+                                        empresa, quais são as informações dos usuários necessárias para sua captação, se
+                                        o <i>site</i> deve ser dinâmico ou estático. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    c) Público-alvo
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Questões focadas em descobrir qual é o perfil e quais são os tipos de usuário que
+                                        utilizarão o <i>site</i>, seus gostos e necessidades e tipo de informação
+                                        buscada por esse nicho. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    d) Conteúdo do&nbsp;<i>site</i>
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Seção na qual precisam ser definidos todos os conteúdos que estarão contidos no
+                                        <i>site</i>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    e) Aparência
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>No caso dos <i>sites</i>, um dos focos mais importantes do <i>briefing</i> é em
+                                        relação à aparência esperada pelo cliente e pelo nicho de usuários que
+                                        utilizarão o <i>site</i>, pois a escolha de cores, fontes, alinhamentos etc. é
+                                        um ponto importante na definição do sucesso ou não de um projeto <i>web</i>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    f) Cronograma e orçamento
+                                </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Elementos para a definição do orçamento e do cronograma, coerentes com o projeto,
+                                        apresentados de forma detalhada e organizada, com etapas claras e bem definidas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <h3>Modelos de <i>briefing</i></h3>
+
+                    <p>Com as áreas definidas, pode-se gerar diversos modelos de <i>briefing</i>, como versões
+                        disponibilizadas de forma <i>on-line</i>, em que o cliente responde e depois deve ser marcada
+                        uma reunião para um ajuste final antes do início do planejamento. Também pode ser utilizada uma
+                        versão mais completa, normalmente em uma reunião já com empresa contratante. </p>
+
+                    <p class="no-print">Clique ou toque para visualizar o conteúdo. </p>
+
+                    <div class="painel">
+
+                        <button type="button" class="bt-form bt-form1 no-print" data-bs-toggle="modal"
+                            data-bs-target="#modal1">
+                            <div class="btn-hover">
+                                <b>Modelo 1 – Formulário <i>web</i></b>
+                            </div>
+                        </button>
+
+                        <button type="button" class="bt-form bt2 no-print" data-bs-toggle="modal"
+                            data-bs-target="#modal2">
+                            <b>Modelo 2 – <i>Briefing</i> detalhado</b>
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- Modais -->
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Modelo 1 – Formulário
+                                            <i>web</i></b></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>O modelo 1 de <i>briefing</i> é um exemplo de um contato inicial
+                                            <i>on-line</i>, em que o cliente preenche um formulário, muitas vezes, no
+                                            <i>site</i> da empresa criadora dos projetos <i>web</i> ou por um
+                                            <i>link</i> em uma rede social. Normalmente são modelos com menos perguntas
+                                            e de rápido preenchimento, por ser um contato inicial que ainda será
+                                            complementado em uma reunião posterior.
+                                        </p>
 
                                         <p>Veja o modelo 1: </p>
 
                                         <img src="img/form1.png" alt="" srcset="" style="max-width: 90%;">
 
                                         <p class="no-print acessivel visually-hidden">
-                                            Formulário de briefing com campos para coleta de informações sobre uma empresa e suas preferências para a criação de um site. O modelo inclui perguntas sobre a descrição da empresa, objetivos do site, estrutura desejada e preferências de design, como cores e estilo visual. Há opções para selecionar seções do site e se o usuário tem manual de identidade visual. Ao final, há um botão para enviar as informações preenchidas. O propósito do formulário é ajudar na organização de requisitos para o desenvolvimento do projeto web.
+                                            Formulário de briefing com campos para coleta de informações sobre uma
+                                            empresa e suas preferências para a criação de um site. O modelo inclui
+                                            perguntas sobre a descrição da empresa, objetivos do site, estrutura
+                                            desejada e preferências de design, como cores e estilo visual. Há opções
+                                            para selecionar seções do site e se o usuário tem manual de identidade
+                                            visual. Ao final, há um botão para enviar as informações preenchidas. O
+                                            propósito do formulário é ajudar na organização de requisitos para o
+                                            desenvolvimento do projeto web.
                                         </p>
 
 
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="botao hvr-sweep-to-right" data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel"><b>Modelo 2 – <i>Briefing</i> detalhado </b></h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Modelo 2 – <i>Briefing</i>
+                                            detalhado </b></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="container">
-                                        <p>O modelo 2 de <i>briefing</i> é um exemplo mais completo, utilizado normalmente em reuniões com a empresa contratante. Mesmo variando de projeto para projeto, serve como base para qualquer projeto <i>web</i>. Devem ser inseridas informações mais completas, como orçamento e expectativas de calendário. </p>
+                                        <p>O modelo 2 de <i>briefing</i> é um exemplo mais completo, utilizado
+                                            normalmente em reuniões com a empresa contratante. Mesmo variando de projeto
+                                            para projeto, serve como base para qualquer projeto <i>web</i>. Devem ser
+                                            inseridas informações mais completas, como orçamento e expectativas de
+                                            calendário. </p>
 
                                         <p>Veja o modelo 2: </p>
 
@@ -508,7 +930,8 @@
 
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="botao hvr-sweep-to-right" data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
                                     </div>
                                 </div>
                             </div>
@@ -517,112 +940,171 @@
 
                     <!-- Modais -->
 
-                    <p class="mt-5 no-print">Veja a seguir um modelo de <i>briefing</i> resumido, com a simulação de uma empresa que precisa da criação de um <i>site</i>. </p>
+                    <p class="mt-5 no-print" aria-hidden="true">Veja a seguir um modelo de <i>briefing</i> resumido, com
+                        a simulação de uma
+                        empresa que precisa da criação de um <i>site</i>. </p>
 
-                    <a role="button" href="" target="_blank" class="bt-objeto d-block mx-auto my-5 shadow radius no-print">
-                        <span class="camada-blur"></span>
-                        <span class="sr-only">Espera objeto</span>
+                    <style>
+                        #bto-briefing {
+                            height: auto;
+                        }
+
+                        #bto-briefing:after {
+                            opacity: 0;
+                        }
+
+                        #bto-briefing:hover:after {
+                            opacity: 1;
+                            color: black;
+                        }
+
+                        #bto-briefing:hover img {
+                            filter: blur(4px);
+                            transition: 0.35s;
+                        }
+
+                        #bto-briefing:before {
+                            content: "";
+                            display: block;
+                            padding-top: 56%;
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        #bto-briefing img {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 100%;
+                            height: auto;
+                            filter: blur(0px);
+                            transition: 0.35s;
+                        }
+                    </style>
+                    <a id="bto-briefing" role="button" href="odas/briefing/index.html" target="_blank"
+                        class="bt-objeto d-block mx-auto my-5 shadow radius no-print" aria-hidden="true"
+                        style="display: block; position: relative">
+                        <img src="odas/briefing/trhumb.png" class="img-fluid" alt="">
                     </a>
 
 
-                    
-                    </div>
 
-                    <div class="divisor"></div>
-                    <div class="briefings">
+                </div>
 
-                        <div class="container">
+                <div class="divisor"></div>
+                <div class="briefings">
 
-                            <h3 class="no-print">Comparação entre <i>briefings</i> </h3>
+                    <div class="container">
 
-                            <p class="no-print">Clique ou toque para visualizar uma animação comparando os modelos de <i>briefing</i>.</p>
-        
-                            <div class=" ratio ratio-16x9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZgzowRgxUs?si=uqBRpBelSCHP0cFl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
+                        <h3 class="no-print">Comparação entre <i>briefings</i> </h3>
 
+                        <p class="no-print">Clique ou toque para visualizar uma animação comparando os modelos de
+                            <i>briefing</i>.
+                        </p>
 
-                        
-
+                        <div class=" ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/1ZgzowRgxUs?si=uqBRpBelSCHP0cFl"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
 
+
+
+
                     </div>
-                    <div class="container">
-                        <h3>Encerramento</h3>
-        
-                        <p>A utilização adequada de um <b><i>briefing</i></b> é fundamental no sucesso de qualquer projeto. Ao compreender a importância desse documento, você perceberá que ele não é apenas um ponto de partida, mas uma ferramenta estratégica para guiar toda a equipe ao longo do processo. O <i>briefing</i> permite uma comunicação clara entre cliente e desenvolvedores e o alinhamento de expectativas, facilitando a organização do trabalho de maneira eficaz. Além disso, ajuda a evitar retrabalhos, otimizar o uso de recursos e prazos e garantir que o produto final atenda às necessidades específicas do cliente.  </p>
-    
-                        <img src="img/ilustra2.jpg" alt="" srcset="" class="mb-5 ilustracao img-fluid d-block no-print">
-    
-                        <p>Conhecer e aplicar corretamente o <i>briefing</i> em projetos aumenta a assertividade nas entregas, minimiza falhas e aprimora a qualidade dos resultados, tornando-o uma prática indispensável para qualquer profissional ou equipe que busque eficiência e sucesso no desenvolvimento de seus projetos. </p>
-                    
-                    </div>
-                        
-                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
-                        
-                </div>  
-            </section>
-            <!-- Paginação-->
-            <footer class="text-center no-print d-flex justify-content-center mx-auto">
-                <ul class="pagination">
-    
-                </ul>
-            </footer>   
+
+                </div>
+                <div class="container">
+                    <h3>Encerramento</h3>
+
+                    <p>A utilização adequada de um <b><i>briefing</i></b> é fundamental no sucesso de qualquer projeto.
+                        Ao compreender a importância desse documento, você perceberá que ele não é apenas um ponto de
+                        partida, mas uma ferramenta estratégica para guiar toda a equipe ao longo do processo. O
+                        <i>briefing</i> permite uma comunicação clara entre cliente e desenvolvedores e o alinhamento de
+                        expectativas, facilitando a organização do trabalho de maneira eficaz. Além disso, ajuda a
+                        evitar retrabalhos, otimizar o uso de recursos e prazos e garantir que o produto final atenda às
+                        necessidades específicas do cliente.
+                    </p>
+
+                    <img src="img/ilustra2.jpg" alt="" srcset="" class="mb-5 ilustracao img-fluid d-block no-print">
+
+                    <p>Conhecer e aplicar corretamente o <i>briefing</i> em projetos aumenta a assertividade nas
+                        entregas, minimiza falhas e aprimora a qualidade dos resultados, tornando-o uma prática
+                        indispensável para qualquer profissional ou equipe que busque eficiência e sucesso no
+                        desenvolvimento de seus projetos. </p>
+
+                </div>
+
+                <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
+
+            </div>
         </section>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
-        <!--Jquery-->
-        <script src="../assets/js/jquery-3.6.0.min.js"></script>
-        <!--Áudio customizado-->
-        <script src="../assets/js/audio-player.js"></script>
-        <!--Splide - slideshow-->
-        <script src="../assets/js/splide.min.js"></script>
-        <!--Prog'n'roll - barra de progresso conforme rola a página-->
-        <script src="../assets/js/prognroll.min.js"></script>
-        <script src="../print/print/template.config.js"></script>
-        <!--Scripts gerais-->
-        <script src="../assets/js/geral.js"></script>
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
 
-        <script>
-            var splide = new Splide( '.splide', {
-                type   : 'slide',
-                perPage: 2,
-                trimSpace: false,
-                focus  : 'center'
-            } );
+            </ul>
+        </footer>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../assets/js/prognroll.min.js"></script>
+    <script src="../print/print/template.config.js"></script>
+    <!--Scripts gerais-->
+    <script src="../assets/js/geral.js"></script>
 
-            splide.mount();
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'slide',
+            perPage: 2,
+            trimSpace: false,
+            focus: 'center'
+        });
 
-            $(function() {
-                $("body").prognroll();
-            });
-        </script>
+        splide.mount();
 
-        <!-- Handtalk -->
-        <script>
-            var scriptElem=document.createElement("script");
-            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
-            scriptElem.charset="UTF-8",
-            scriptElem.onload=function(){
+        $(function () {
+            $("body").prognroll();
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
                 window.ht = new HT({
-                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
-                    align:"top",
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
                     videoEnabled: true,
-                    ytEmbedReplace: true,           
-                    mobileConfig:{align:"right",
-                                    actionsAlign:"top",
-                                    customButtonStyle:{
-                                        borderRadius:"6px",
-                                        size:"38px",
-                                        horizontalMargin:"13px",
-                                        bottomMargin:"140px",
-                                        rightMargin:"40px"}
-                                    }
-                    });        
-                $('.ht-skip').attr("aria-hidden","true")
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
             },
-        document.body.appendChild(scriptElem);
-        
-        </script>
-    </body>
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
 </html>

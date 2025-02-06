@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - IPI</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consectetur amet unde quas, obcaecati
+                dicta inventore placeat sequi asperiores nihil ducimus velit mollitia, dolorem iste, dignissimos facere
+                animi cum et!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, eveniet commodi beatae ratione aspernatur
+                sequi aperiam voluptatem explicabo officia laudantium assumenda dolores quae temporibus. Alias corporis
+                non nemo dolor quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque nihil
+                dolorum enim animi incidunt impedit possimus tempore, inventore unde, quos ex ea consequatur soluta.
+                Velit doloremque vel similique ea!</p>
+        </div>
+
+        <div class="quiz_ipi_wrapper">
+            <div class="browser-start">
+                <div class="msg">
+                    <p>Faça agora o quiz com 5 questões para você responder. Selecione entre as opções apresentadas
+                        clicando sobre elas. Boa sorte!</p>
+                    <button class="browser-start-btn">Iniciar</button>
+                </div>
+            </div>
+            <div class="browser-ui">
+                <div class="browser-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="tabs">
+                            <button class="active">Questão 1 <input type="checkbox" name=""
+                                    class="question-checkbox"></button><button>Questão 2 <input type="checkbox" name=""
+                                    class="question-checkbox"></button><button>Questão 3 <input type="checkbox" name=""
+                                    class="question-checkbox"></button><button>Questão 4 <input type="checkbox" name=""
+                                    class="question-checkbox"></button><button>Questão 5 <input type="checkbox" name=""
+                                    class="question-checkbox"></button>
+                        </div>
+                        <div>
+                            <button class="browser-btn-inicio">?</button>
+                        </div>
+                    </div>
+                    <div class="url">
+                        <p class="browser-url-placeholder">https://oqueedominio.com.br/o-que-e-dominio</p>
+                    </div>
+                </div>
+                <div class="browser-body">
+                    <div class="questao">
+                        <div class="img-capa capa-1"></div>
+                        <div class="questao-texto">
+                            <h3>O que é um nome de domínio na internet?</h3>
+
+                            <button class="browser-opcao" data-feedback="1">a) Um protocolo usado para conectar
+                                diretamente um computador
+                                a
+                                um servidor de DNS.</button>
+                            <button class="browser-opcao correta" data-feedback="0">
+                                b) Um identificador único que associa um nome a um endereço IP, facilitando o acesso aos
+                                serviços oferecidos na web.
+                            </button>
+                            <button class="browser-opcao" data-feedback="2">c) Um nome temporário que pode ser
+                                compartilhado entre diferentes sites na internet. </button>
+                            <button class="browser-opcao" data-feedback="3">d) Um endereço físico que representa a
+                                localização dos
+                                servidores
+                                de uma empresa. </button>
+                            <button class="browser-opcao" data-feedback="4">e) Uma parte opcional do endereço IP que
+                                pode ser modificada
+                                pelo
+                                usuário a qualquer momento. </button>
+                        </div>
+                    </div>
+                    <div class="questao">
+                        <div class="img-capa capa-2"></div>
+                        <div class="questao-texto">
+                            <h3>Qual é a principal função do serviço DNS autoritativo?</h3>
+                            <button class="browser-opcao correta" data-feedback="5">
+                                a) Atualizar nomes de domínio e fornecer o endereço IP associado a um nome de domínio
+                                quando solicitado.
+                            </button>
+                            <button class="browser-opcao" data-feedback="6">b) Armazenar endereços IP de forma
+                                permanente para servidores
+                                recursivos.</button>
+                            <button class="browser-opcao" data-feedback="7">c) Realizar consultas diretamente ao
+                                navegador do usuário para
+                                buscar páginas HTML. </button>
+                            <button class="browser-opcao" data-feedback="8">d) Substituir o DNS recursivo no cache de
+                                consultas
+                                DNS.</button>
+                            <button class="browser-opcao" data-feedback="9">e) Modificar o endereço IP do site conforme
+                                a necessidade de
+                                tráfego.</button>
+                        </div>
+                    </div>
+                    <div class="questao">
+                        <div class="img-capa capa-3"></div>
+                        <div class="questao-texto">
+                            <h3>Quais são as regras básicas para a criação de um nome de domínio?</h3>
+
+                            <button class="browser-opcao" data-feedback="11">a) O nome de domínio deve ter exatamente 63
+                                caracteres e não
+                                pode conter números.</button>
+                            <button class="browser-opcao" data-feedback="12">b) O nome de domínio pode ter entre 1 e 100
+                                caracteres e pode
+                                começar ou terminar com um hífen.</button>
+                            <button class="browser-opcao" data-feedback="13">c) O nome de domínio deve ser composto
+                                apenas por letras e
+                                pode conter até 50 caracteres. </button>
+                            <button class="browser-opcao" data-feedback="14">d) O nome de domínio pode ter até 70
+                                caracteres, mas deve ser
+                                renovado a cada ano, caso contrário, será automaticamente deletado.</button>
+                            <button class="browser-opcao correta" data-feedback="10">
+                                e) O nome de domínio deve ter entre 2 e 63 caracteres e pode conter letras, números e
+                                hifens, mas não pode começar ou terminar com hifens.
+                            </button>
+                        </div>
+                    </div>
+                    <div class="questao">
+                        <div class="img-capa capa-4"></div>
+                        <div class="questao-texto">
+                            <h3>Quais são os benefícios de utilizar um certificado digital SSL em um site?</h3>
+                            <button class="browser-opcao correta" data-feedback="15">
+                                a) O certificado SSL criptografa os dados entre o servidor e o usuário, garantindo a
+                                privacidade e a segurança das informações transmitidas.
+                            </button>
+                            <button class="browser-opcao" data-feedback="16">b) O certificado SSL permite que o site
+                                funcione sem precisar
+                                de um domínio registrado.</button>
+                            <button class="browser-opcao" data-feedback="17">c) O certificado SSL impede que o servidor
+                                precise de
+                                autenticação adicional, como login e senha, para acesso do usuário.</button>
+                            <button class="browser-opcao" data-feedback="18">d) O certificado SSL é utilizado apenas
+                                para gerar e-mails
+                                personalizados para o domínio registrado.</button>
+                            <button class="browser-opcao" data-feedback="19">e) O certificado SSL remove a necessidade
+                                de um serviço de
+                                hospedagem, pois armazena os dados do site diretamente no navegador.</button>
+                        </div>
+                    </div>
+                    <div class="questao">
+                        <div class="img-capa capa-5"></div>
+                        <div class="questao-texto">
+                            <h3>O que é o serviço WHOIS e qual é sua principal função?</h3>
+
+                            <button class="browser-opcao" data-feedback="21">a) WHOIS é um sistema que armazena as
+                                chaves criptográficas
+                                geradas por certificados SSL.</button>
+                            <button class="browser-opcao" data-feedback="22">b) WHOIS é um serviço de hospedagem de
+                                sites que permite
+                                registrar domínios de forma anônima.</button>
+                            <button class="browser-opcao" data-feedback="23">c) WHOIS é um método de geração automática
+                                de certificados
+                                digitais para servidores web.</button>
+                            <button class="browser-opcao correta" data-feedback="20">
+                                d) WHOIS é um protocolo utilizado para consultar informações sobre o registro de
+                                domínios, protegendo os dados dos proprietários com privacidade.
+                            </button>
+                            <button class="browser-opcao" data-feedback="24">e) WHOIS é uma ferramenta usada para
+                                verificar se um domínio
+                                expirou e precisa de renovação.</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="browser-modal-feedback">
+                    <h3>Feedback</h3>
+                    <p class="feedback-text">
+                        Feedback
+                    </p>
+                    <button class="browser-modal-btn">Fechar</button>
+                </div>
+            </div>
+            <div class="browser-final">
+                <div class="msg">
+                    <p>Feedback</p>
+                    <button class="browser-restart-btn">Reiniciar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/quiz_ipi.js"></script>
+</body>
+
+</html>

@@ -1,420 +1,801 @@
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <!-- Inserir o tíutlo do conhecimento na tag title -->
-        <title>Domínios de internet: conceito, registro e disponibilidade de serviços</title>
-        <!-- Meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS v5.0.2 -->
-        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="../assets/css/animate.min.css" />
-        <!-- hover.css https://ianlunn.github.io/Hover/ -->
-        <link rel="stylesheet" href="../assets/css/hover-min.css" />
-        <!--Splide - slideshow-->
-        <link rel="stylesheet" href="../assets/css/splide.min.css">
-        <!-- Preloader -->
-        <link rel="stylesheet" href="../assets/css/preloader.css">
-        <!-- Áudio customizado -->
-        <link rel="stylesheet" href="../assets/css/player.css">
-        <!-- Estilos do template -->
-        <link rel="stylesheet" href="../assets/css/cores.css">
-        <link rel="stylesheet" href="../print/print/print.css">
-        <link rel="stylesheet" href="../assets/css/template.css">
-        <!-- custom css -->
-         <link rel="stylesheet" href="css/styles.css">
-    
-    </head>
-    <body class="bg-claro">
-        <!-- Preloader OBRIGATÓRIO -->
-        <div class="preloader">
-            <div class="anim"></div>
-            <p>Aguarde enquanto o conteúdo é carregado.</p>
-        </div>
-        <!-- Marca d'água OBRIGATÓRIA -->
-        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Domínios de internet: conceito, registro e disponibilidade de serviços</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <header id="topo">
-            <div class="topo-logo">
-                <div class="container">
-                    <h1 id="nome-curso" class="only-print">Informática para Internet</h1>  
-                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>
-                </div>
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../assets/css/splide.min.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../assets/css/cores.css">
+    <link rel="stylesheet" href="../print/print/print.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="odas/quiz-dominios/assets/css/styles.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body class="bg-claro">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Informática para Internet</h1>
+                <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"
+                    aria-hidden="true"></div>
             </div>
-        </header>
-        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
-        <section id="booklet">
-            <div class="layer-preta no-print"></div>
-            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
-            <section class="paginas">
-                <div class="pagina">
-                    <div class="container">
+        </div>
+    </header>
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <div class="layer-preta no-print"></div>
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <section class="paginas">
+            <div class="pagina">
+                <div class="container">
 
-                        <h2>Domínios de internet: conceito, registro e disponibilidade de serviços</h2>
+                    <h2>Domínios de internet: conceito, registro e disponibilidade de serviços</h2>
 
-                        <p>Para acessar um <i>site</i> na <i>web</i>, é necessário abrir o navegador e informar o endereço da URL desejada, em um processo semelhante ao pesquisar uma rua no GPS, informando seu nome para localizá-la. Entretanto, assim como as ruas têm um número chamado CEP para sua identificação, também existe uma sequência numérica para acessar um endereço na <i>web</i>, chamado endereço IP – <i>Internet Protocol</i>, porém, para facilitar sua memorização, utiliza-se seu nome de domínio. Neste conteúdo, você aprenderá o conceito desses domínios de internet, o <i>Domain Name System</i>, também conhecido como DNS. Além disso, verá como realizar o registro de um domínio e alguns serviços que são ofertados. </p>
+                    <p>Para acessar um <i>site</i> na <i>web</i>, é necessário abrir o navegador e informar o endereço
+                        da URL desejada, em um processo semelhante ao pesquisar uma rua no GPS, informando seu nome para
+                        localizá-la. Entretanto, assim como as ruas têm um número chamado CEP para sua identificação,
+                        também existe uma sequência numérica para acessar um endereço na <i>web</i>, chamado endereço IP
+                        – <i>Internet Protocol</i>, porém, para facilitar sua memorização, utiliza-se seu nome de
+                        domínio. Neste conteúdo, você aprenderá o conceito desses domínios de internet, o <i>Domain Name
+                            System</i>, também conhecido como DNS. Além disso, verá como realizar o registro de um
+                        domínio e alguns serviços que são ofertados. </p>
 
-                        <h3>Conceito </h3>
+                    <h3>Conceito </h3>
 
-                        <p>O DNS é responsável por gerenciar e associar os nomes de domínio aos endereços IP. Por exemplo, ao digitar o endereço IP 172.217.29.67 na barra de endereços de um navegador, você será redirecionado ao <i>site</i> do Google. Confira na animação a seguir. </p>
+                    <p>O DNS é responsável por gerenciar e associar os nomes de domínio aos endereços IP. Por exemplo,
+                        ao digitar o endereço IP 172.217.29.67 na barra de endereços de um navegador, você será
+                        redirecionado ao <i>site</i> do Google. Confira na animação a seguir. </p>
 
-                        <figure class="my-5">
-                            <div class="figure-img  mb-4">
-                                <img class="img-fluid mx-auto radius shadown d-block " src="img/FIGURA1.gif">
-                            </div>
-                        </figure>
+                    <figure class="my-5">
+                        <div class="figure-img  mb-4">
+                            <img class="img-fluid mx-auto radius shadown d-block " src="img/FIGURA1.gif">
+                        </div>
+                    </figure>
 
-                        <p class="acessivel no-print visually-hidden">
-                            Animação da tela de um navegador, no qual é digitado o endereço IP número 172.217.29.67, na barra de endereço. Ao pressionar o botão “Enter”, é exibida a página inicial do site do Google. 
-                        </p>
+                    <p class="acessivel no-print visually-hidden">
+                        Animação da tela de um navegador, no qual é digitado o endereço IP número 172.217.29.67, na
+                        barra de endereço. Ao pressionar o botão “Enter”, é exibida a página inicial do site do Google.
+                    </p>
 
-                        <p>Um nome de domínio é composto basicamente por duas partes: o nome e a extensão. O nome é escolhido pelo usuário, porém este corre o risco de realizar uma escolha que não está disponível, pois o domínio é uma forma de identificar uma infraestrutura de servidores na internet e disponibilizar acesso com flexibilidade aos serviços ofertados ao público, devendo este ser único, ou seja, não é possível que existam dois domínios com o mesmo nome disponíveis na internet. Já a extensão vai indicar a natureza do <i>site</i>. As extensões mais conhecidas são “.com”, “.org” e/ou “.gov”, com as seguintes classificações, respectivamente: comercial, organização sem fins lucrativos e governos. </p>
+                    <p>Um nome de domínio é composto basicamente por duas partes: o nome e a extensão. O nome é
+                        escolhido pelo usuário, porém este corre o risco de realizar uma escolha que não está
+                        disponível, pois o domínio é uma forma de identificar uma infraestrutura de servidores na
+                        internet e disponibilizar acesso com flexibilidade aos serviços ofertados ao público, devendo
+                        este ser único, ou seja, não é possível que existam dois domínios com o mesmo nome disponíveis
+                        na internet. Já a extensão vai indicar a natureza do <i>site</i>. As extensões mais conhecidas
+                        são “.com”, “.org” e/ou “.gov”, com as seguintes classificações, respectivamente: comercial,
+                        organização sem fins lucrativos e governos. </p>
 
-                        <p>Além de facilitar a memorização para o acesso a um <i>site</i>, um domínio é útil também em outros aspectos, como credibilidade, profissionalismo e endereços de <i>e-mail</i> personalizados com o domínio escolhido, comunicando, de modo eficiente, o <i>marketing</i> de uma empresa. Por fim, pode ser útil para SEO (<i>Search Engine Optimization</i>), pois, com palavras-chaves adequadas, o <i>site</i> pode subir no ranqueamento de pesquisa de um serviço de busca. Veja diferentes níveis de domínio a seguir. </p>
+                    <p>Além de facilitar a memorização para o acesso a um <i>site</i>, um domínio é útil também em
+                        outros aspectos, como credibilidade, profissionalismo e endereços de <i>e-mail</i>
+                        personalizados com o domínio escolhido, comunicando, de modo eficiente, o <i>marketing</i> de
+                        uma empresa. Por fim, pode ser útil para SEO (<i>Search Engine Optimization</i>), pois, com
+                        palavras-chaves adequadas, o <i>site</i> pode subir no ranqueamento de pesquisa de um serviço de
+                        busca. Veja diferentes níveis de domínio a seguir. </p>
 
-                        <p class="no-print">Clique ou toque para visualizar o conteúdo. </p>
+                    <p class="no-print">Clique ou toque para visualizar o conteúdo. </p>
 
-                        <div class="accordion" id="accordionDominios">
+                    <div class="accordion" id="accordionDominios">
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Domínios de topo (<i>top-level domain</i> –TLD) 
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionDominios">
-                                    <div class="accordion-body">
-                                        <p>É o endereço presente no nível máximo da hierarquia do DNS. Há diversas opções, como “.com”, “.net”, entre outras. A IANA – Internet Assigned Numbers Authority é a organização responsável por gerenciar a disponibilidade. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Domínios de topo de código de país 
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionDominios">
-                                    <div class="accordion-body">
-                                        <p>É a parte do domínio que expressa que o <i>site</i> é de determinado país, composto pelas duas letras após o TLD. No Brasil, é usado o código “.br”. </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                        Domínios de topo genéricos  
-                                    </button>
-                                </h2>
-                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionDominios">
-                                    <div class="accordion-body">
-                                        <p>É semelhante a um TLD, no entanto, não precisa da sigla de identificação do país. É voltado a situações especificas, como, por exemplo, o “.edu”, pertencente a instituições educacionais, ou “.mil”, para uso militar. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Domínios de segundo nível  
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionDominios">
-                                    <div class="accordion-body">
-                                        <p>É o nome dado ao <i>site</i>, representando geralmente a marca ou o nome da empresa, sucedido pelo “.com”. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="heading5">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    Subdomínios 
-                                  </button>
-                              </h2>
-                              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionDominios">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Domínios de topo (<i>top-level domain</i> –TLD)
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionDominios">
                                 <div class="accordion-body">
-                                    <p>Subdomínios são vantajosos porque permitem aos administradores de <i>site</i> criarem seções distintas sem adquirir um novo domínio. Em vez disso, eles podem criar subdomínios direcionando-os a diretórios específicos no servidor. </p>
+                                    <p>É o endereço presente no nível máximo da hierarquia do DNS. Há diversas opções,
+                                        como “.com”, “.net”, entre outras. A IANA – Internet Assigned Numbers Authority
+                                        é a organização responsável por gerenciar a disponibilidade. </p>
                                 </div>
-                              </div>
                             </div>
-                        
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="heading6">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Domínios de topo de código de país
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionDominios">
+                                <div class="accordion-body">
+                                    <p>É a parte do domínio que expressa que o <i>site</i> é de determinado país,
+                                        composto pelas duas letras após o TLD. No Brasil, é usado o código “.br”. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    Domínios de topo genéricos
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                data-bs-parent="#accordionDominios">
+                                <div class="accordion-body">
+                                    <p>É semelhante a um TLD, no entanto, não precisa da sigla de identificação do país.
+                                        É voltado a situações especificas, como, por exemplo, o “.edu”, pertencente a
+                                        instituições educacionais, ou “.mil”, para uso militar. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Domínios de segundo nível
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionDominios">
+                                <div class="accordion-body">
+                                    <p>É o nome dado ao <i>site</i>, representando geralmente a marca ou o nome da
+                                        empresa, sucedido pelo “.com”. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    Subdomínios
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                                data-bs-parent="#accordionDominios">
+                                <div class="accordion-body">
+                                    <p>Subdomínios são vantajosos porque permitem aos administradores de <i>site</i>
+                                        criarem seções distintas sem adquirir um novo domínio. Em vez disso, eles podem
+                                        criar subdomínios direcionando-os a diretórios específicos no servidor. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
                                     Domínios grátis
-                                  </button>
-                              </h2>
-                              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionDominios">
+                                </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                                data-bs-parent="#accordionDominios">
                                 <div class="accordion-body">
-                                    <p>Ofertados por serviços de criações de <i>sites</i>, como, por exemplo, o WordPress e o Wix. </p>
-                                </div>
-                              </div>
-                            </div>
-                            
-                        </div>
-
-                        <h4>DNS</h4>
-
-                        <p>É um serviço que realiza a tradução do endereço IP para a nomenclatura dada ao domínio, conforme visto. O DNS autoritativo funciona como fonte oficial de informações sobre um domínio, com duas funções principais. Conheça-as a seguir. </p>
-
-                        <p class="no-print">Clique ou toque nos <i>cards</i> para visualizar o conteúdo. </p>
-
-                        <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
-                            <div class="flip-card">
-                                <div class="flip-card-inner radius">
-                                    <div class="flip-card-front">
-                                        <p>Atualização dos nomes de domínio</p>
-                                    </div>
-                                    <div class="flip-card-back">
-                                        <p>Permite aos desenvolvedores realizarem alterações no nome de domínio, por meio do serviço DNS autoritativo. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="flip-card">
-                                <div class="flip-card-inner radius">
-                                    <div class="flip-card-front">
-                                        <p>Resposta a consultas DNS</p>
-                                    </div>
-                                    <div class="flip-card-back">
-                                        <p>Quando alguém na internet digita o endereço do <i>site</i>, esse serviço é o responsável por indicar o endereço IP associado a esse nome, para que o navegador possa encontrar o <i>site</i> correto. </p>
-                                    </div>
+                                    <p>Ofertados por serviços de criações de <i>sites</i>, como, por exemplo, o
+                                        WordPress e o Wix. </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="acessivel visually-hidden">
-                            <ol>
-                                <li>Atualização dos nomes de domínio <p>Permite aos desenvolvedores realizarem alterações no nome de domínio, por meio do serviço DNS autoritativo. </p></li>
-                                <li>Resposta a consultas DNS <p>Quando alguém na internet digita o endereço do site, esse serviço é o responsável por indicar o endereço IP associado a esse nome, para que o navegador possa encontrar o site correto. </p></li>                             
-                            </ol>
-                        </div>
+                    </div>
 
-                        <p>É chamado de “autoritativo” porque é a última palavra sobre o domínio. Outros servidores DNS, que atuam como “intermediários”, pedem as informações a ele para fornecer ao usuário final o caminho certo. O “recursivo” é outro serviço DNS conhecido, que possibilita o acesso ao endereço informado, caso já esteja em cache, no entanto, ao não encontrar informações em cache, é realizada uma requisição ao DNS autoritativo. Dessa forma, o DNS recursivo visa reduzir o tempo de acesso ao endereço buscado. </p>
+                    <h4>DNS</h4>
 
-                        <h4>Funcionamento do DNS </h4>
+                    <p>É um serviço que realiza a tradução do endereço IP para a nomenclatura dada ao domínio, conforme
+                        visto. O DNS autoritativo funciona como fonte oficial de informações sobre um domínio, com duas
+                        funções principais. Conheça-as a seguir. </p>
 
-                        <p>O DNS funciona da seguinte maneira: o usuário abre o seu navegador e informa o endereço que deseja acessar. Ao confirmar o endereço, é enviada uma requisição para o resolvedor DNS através do provedor de serviços contratado. Ao receber a requisição, é feito um novo encaminhamento para um dos servidores de serviço TLD. O servidor, por sua vez, responde com a informação do nome associado ao domínio solicitado. Essa informação é enviada do resolvedor DNS para o usuário que solicitou o acesso com o endereço IP solicitado. Em posse do endereço IP, o navegador envia nova requisição a ele, que retorna com a página <i>web</i> para o navegador mostrar a página HTML. </p>
+                    <p class="no-print">Clique ou toque nos <i>cards</i> para visualizar o conteúdo. </p>
 
-                        <figure class="my-5">
-                            <div class="figure-img mb-4">
-                                <img class="img-fluid d-block radius shadow mx-auto" src="img/fig02.jpg">
-                            </div>
-                            <figcaption class="figure-caption text-center">Fluxo DNS <br> Fonte: Senac EAD (2024)</figcaption>
-                        </figure>
-
-                        <p class="acessivel no-print visually-hidden">Ilustração do fluxo de operação DNS. O ícone do resolvedor DNS está conectado por uma seta ao ícone de um servidor DNS, com o número dois indicando o segundo passo. O fluxo mostra o resolvedor DNS realizando uma busca pelo endereço IP do domínio. O servidor DNS está conectado ao resolvedor DNS com uma seta retornando o IP do domínio, indicado pelo número três, representando o terceiro passo. O resolvedor DNS envia o endereço IP de volta ao navegador, indicado pelo número quatro e uma seta apontando do resolvedor DNS para o navegador, completando a entrega do IP. O navegador, agora em posse do endereço IP, envia uma solicitação de página ao servidor de hospedagem, indicada pelo número cinco e uma seta apontada para o servidor de hospedagem. O servidor de hospedagem responde ao navegador com a página HTML solicitada, ilustrado pelo número seis, com uma seta do servidor de hospedagem ao navegador, fechando o ciclo. </p>
-
-                        </div>
-
-                        <div class="slide1">
-                            <div class="container">
-                                <h3>Registro</h3>
-
-                                <p>Existe um processo de registro que precisa ser seguido e respeitado, afinal, como já visto, os domínios precisam ser únicos para que possam funcionar corretamente, assim como alguns TLDs necessitam seguir regras especificas. Os domínios devem ter de dois a 63 caracteres, é possível utilizar letras, números e hifens, no entanto, não é possível iniciar ou concluir o nome com o hífen. Um domínio pode ser reservado ou comprado, utilizando serviços de registros, ofertados por empresas de hospedagem de <i>sites</i> ou diretamente por meio de registradores. No Brasil, existe o Registro.br, disponibilizado pelo Nic.br, para encontrar esses serviços, é recomendado pesquisá-los em um buscador, como o Google. </p>
-
-                                <p class="no-print">Clique ou toque nas setas para visualizar o conteúdo. </p>
-
-                                <div id="carousel2" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                    <div class="carousel-indicators">
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev"></button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next"></button>
-                                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="indicador active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" class="indicador" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" class="indicador" aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3" class="indicador" aria-label="Slide 4"></button>
-
-                                    </div>
-                                    <div class="carousel-inner">
-                                        
-                                        <div class="carousel-item active radius shadow">
-                                            <p style="margin:  0% 10% 0% 15%;" >Ao acessar o <i>site</i>, a página inicial contém um campo para verificar a disponibilidade de um domínio, pois ele já pode pertencer a alguém. </p>
-                                            <img class="img-fluid d-block mx-auto" src="img/1_1.jpg">
-                                            <figcaption class="figure-caption text-center">Página de Registro <br> Fonte: Registro.br (2024)</figcaption>
-                                            <p class="acessivel no-print visually-hidden">Tela do site Registro.br, no qual podem ser registrados domínios com a extensão “.br”. No topo, há um campo de pesquisa para que os usuários consultem um domínio específico. Abaixo, há informações sobre o processo de liberação de domínios, que ocorrerá de nove de outubro de dois mil e vinte e quatro, às quinze horas, até dezesseis de outubro de dois mil e vinte e quatro, às quinze horas. Segundo o texto, esse processo visa disponibilizar novamente nomes de domínios que foram cancelados devido a irregularidades nos dados do titular. A página contém links para mais informações sobre domínios liberados e o processo de liberação. </p>
-                                        </div>
-
-                                        <div class="carousel-item radius shadow">
-                                            <p style="margin:  0% 10% 0% 15%;" >Após realizar a busca pela disponibilidade do domínio, é possível verificar se está disponível ou não, conforme imagem a seguir.</p>
-                                            <img class="img-fluid d-block mx-auto" src="img/1_2.jpg">
-                                            <figcaption class="figure-caption text-center">Domínio não disponível  <br> Fonte: Registro.br (2024)</figcaption>
-                                            <p class="acessivel no-print visually-hidden">Tela do site Registro.br. O domínio escolhido “informaticaparainternet.com.br”, consultado no campo de busca, não está disponível. É informado “domínio já registrado”.</p>
-                                        </div>
-
-                                        <div class="carousel-item radius shadow">
-                                            <p style="margin:  0% 10% 0% 15%;" >No caso, o domínio pesquisado “informaticaparainternet.com.br” já está registrado, não sendo possível utilizá-lo, em contrapartida, é exibida uma lista de possibilidades de associação de registro em outros níveis, conforme a seguir. </p>
-                                            <img class="img-fluid d-block mx-auto" src="img/1_3.jpg">
-                                            <figcaption class="figure-caption text-center">Sugestões de domínios   <br> Fonte: Registro.br (2024)</figcaption>
-                                            <p class="acessivel no-print visually-hidden">Tela seguinte do site Registro.br com uma lista de sugestões de domínios disponíveis, que podem ser escolhidos pelo usuário. Ao lado de cada opção, há um botão na cor verde com a opção de registrar o domínio sugerido.</p>
-                                        </div>
-
-                                        <div class="carousel-item radius shadow">
-                                            <p style="margin:  0% 10% 0% 15%;" >Dessa forma, basta escolher uma das opções disponibilizadas ou realizar uma nova associação de palavras para domínio. Nesse caso, será feita uma nova busca, agora pelo domínio “senac-ipi-rs”. </p>
-                                            <img class="img-fluid d-block mx-auto" src="img/1_4.jpg">
-                                            <figcaption class="figure-caption text-center">Escolha do plano <br> Fonte: Registro.br (2024)</figcaption>
-                                            <p class="acessivel no-print visually-hidden">Tela do site Registro.br com a pesquisa de um domínio disponível, que pode ser escolhido pelo usuário. Abaixo, estão listados os valores e o período de cada plano, podendo ser de um ano, dois anos e cinco anos. Ao lado, há um link para outros valores. Abaixo, há um botão verde com a opção “Registrar”.</p>
-                                        </div>
-                                    </div>
+                    <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                        <div class="flip-card">
+                            <div class="flip-card-inner radius">
+                                <div class="flip-card-front">
+                                    <p>Atualização dos nomes de domínio</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Permite aos desenvolvedores realizarem alterações no nome de domínio, por meio do
+                                        serviço DNS autoritativo. </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="container">
+                        <div class="flip-card">
+                            <div class="flip-card-inner radius">
+                                <div class="flip-card-front">
+                                    <p>Resposta a consultas DNS</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Quando alguém na internet digita o endereço do <i>site</i>, esse serviço é o
+                                        responsável por indicar o endereço IP associado a esse nome, para que o
+                                        navegador possa encontrar o <i>site</i> correto. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <p class="pt-5">Com a disponibilidade do domínio, é possível escolher o plano de registro a ser utilizado, porém é importante ressaltar que esse é um serviço cobrado, podendo variar o preço do registro conforme o prazo escolhido. Outro ponto importante é que os valores podem mudar conforme a política de preços do registrador. </p>
+                    <div class="acessivel visually-hidden">
+                        <ol>
+                            <li>Atualização dos nomes de domínio <p>Permite aos desenvolvedores realizarem alterações no
+                                    nome de domínio, por meio do serviço DNS autoritativo. </p>
+                            </li>
+                            <li>Resposta a consultas DNS <p>Quando alguém na internet digita o endereço do site, esse
+                                    serviço é o responsável por indicar o endereço IP associado a esse nome, para que o
+                                    navegador possa encontrar o site correto. </p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <p>É chamado de “autoritativo” porque é a última palavra sobre o domínio. Outros servidores DNS, que
+                        atuam como “intermediários”, pedem as informações a ele para fornecer ao usuário final o caminho
+                        certo. O “recursivo” é outro serviço DNS conhecido, que possibilita o acesso ao endereço
+                        informado, caso já esteja em cache, no entanto, ao não encontrar informações em cache, é
+                        realizada uma requisição ao DNS autoritativo. Dessa forma, o DNS recursivo visa reduzir o tempo
+                        de acesso ao endereço buscado. </p>
+
+                    <h4>Funcionamento do DNS </h4>
+
+                    <p>O DNS funciona da seguinte maneira: o usuário abre o seu navegador e informa o endereço que
+                        deseja acessar. Ao confirmar o endereço, é enviada uma requisição para o resolvedor DNS através
+                        do provedor de serviços contratado. Ao receber a requisição, é feito um novo encaminhamento para
+                        um dos servidores de serviço TLD. O servidor, por sua vez, responde com a informação do nome
+                        associado ao domínio solicitado. Essa informação é enviada do resolvedor DNS para o usuário que
+                        solicitou o acesso com o endereço IP solicitado. Em posse do endereço IP, o navegador envia nova
+                        requisição a ele, que retorna com a página <i>web</i> para o navegador mostrar a página HTML.
+                    </p>
+
+                    <figure class="my-5">
+                        <div class="figure-img mb-4">
+                            <img class="img-fluid d-block radius shadow mx-auto" src="img/fig02.jpg">
+                        </div>
+                        <figcaption class="figure-caption text-center">Fluxo DNS <br> Fonte: Senac EAD (2024)
+                        </figcaption>
+                    </figure>
+
+                    <p class="acessivel no-print visually-hidden">Ilustração do fluxo de operação DNS. O ícone do
+                        resolvedor DNS está conectado por uma seta ao ícone de um servidor DNS, com o número dois
+                        indicando o segundo passo. O fluxo mostra o resolvedor DNS realizando uma busca pelo endereço IP
+                        do domínio. O servidor DNS está conectado ao resolvedor DNS com uma seta retornando o IP do
+                        domínio, indicado pelo número três, representando o terceiro passo. O resolvedor DNS envia o
+                        endereço IP de volta ao navegador, indicado pelo número quatro e uma seta apontando do
+                        resolvedor DNS para o navegador, completando a entrega do IP. O navegador, agora em posse do
+                        endereço IP, envia uma solicitação de página ao servidor de hospedagem, indicada pelo número
+                        cinco e uma seta apontada para o servidor de hospedagem. O servidor de hospedagem responde ao
+                        navegador com a página HTML solicitada, ilustrado pelo número seis, com uma seta do servidor de
+                        hospedagem ao navegador, fechando o ciclo. </p>
+
+                </div>
+
+                <div class="slide1">
+                    <div class="container">
+                        <h3>Registro</h3>
+
+                        <p>Existe um processo de registro que precisa ser seguido e respeitado, afinal, como já visto,
+                            os domínios precisam ser únicos para que possam funcionar corretamente, assim como alguns
+                            TLDs necessitam seguir regras especificas. Os domínios devem ter de dois a 63 caracteres, é
+                            possível utilizar letras, números e hifens, no entanto, não é possível iniciar ou concluir o
+                            nome com o hífen. Um domínio pode ser reservado ou comprado, utilizando serviços de
+                            registros, ofertados por empresas de hospedagem de <i>sites</i> ou diretamente por meio de
+                            registradores. No Brasil, existe o Registro.br, disponibilizado pelo Nic.br, para encontrar
+                            esses serviços, é recomendado pesquisá-los em um buscador, como o Google. </p>
 
                         <p class="no-print">Clique ou toque nas setas para visualizar o conteúdo. </p>
 
-                        <div id="carousel3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div id="carousel2" class="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev"></button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next"></button>
-                                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="indicador active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" class="indicador" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2" class="indicador" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="3" class="indicador" aria-label="Slide 4"></button>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                                    data-bs-slide="prev"></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                                    data-bs-slide="next"></button>
+                                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0"
+                                    class="indicador active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" class="indicador"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" class="indicador"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3" class="indicador"
+                                    aria-label="Slide 4"></button>
+
                             </div>
                             <div class="carousel-inner">
-                                
+
                                 <div class="carousel-item active radius shadow">
-                                    <p style="margin:  0% 10% 0% 15%;" >Ao clicar no botão “Registrar”, uma nova tela é exibida, para preencher o CPF ou o CPNJ do responsável pelo registro. </p>
-                                    <img class="img-fluid d-block mx-auto" src="img/2_1.jpg">
-                                    <figcaption class="figure-caption text-center">Tela de confirmação de CPF <br> Fonte: Registro.br (2024)</figcaption>
-                                    <p class="acessivel no-print visually-hidden">Tela seguinte do site Registro.br, com uma caixa de texto para informar o CPF do cliente que vai registrar o domínio. Ao lado, há o botão “Continuar” na cor cinza, o que indica que ele está desabilitado.</p>
+                                    <p style="margin:  0% 10% 0% 15%;">Ao acessar o <i>site</i>, a página inicial contém
+                                        um campo para verificar a disponibilidade de um domínio, pois ele já pode
+                                        pertencer a alguém. </p>
+                                    <img class="img-fluid d-block mx-auto" src="img/1_1.jpg">
+                                    <figcaption class="figure-caption text-center">Página de Registro <br> Fonte:
+                                        Registro.br (2024)</figcaption>
+                                    <p class="acessivel no-print visually-hidden">Tela do site Registro.br, no qual
+                                        podem ser registrados domínios com a extensão “.br”. No topo, há um campo de
+                                        pesquisa para que os usuários consultem um domínio específico. Abaixo, há
+                                        informações sobre o processo de liberação de domínios, que ocorrerá de nove de
+                                        outubro de dois mil e vinte e quatro, às quinze horas, até dezesseis de outubro
+                                        de dois mil e vinte e quatro, às quinze horas. Segundo o texto, esse processo
+                                        visa disponibilizar novamente nomes de domínios que foram cancelados devido a
+                                        irregularidades nos dados do titular. A página contém links para mais
+                                        informações sobre domínios liberados e o processo de liberação. </p>
                                 </div>
 
                                 <div class="carousel-item radius shadow">
-                                    <p style="margin:  0% 10% 0% 15%;" >Após inseri-lo, basta clicar no botão “Continuar” para preencher os dados pessoais do administrador da conta na próxima tela. </p>
-                                    <img class="img-fluid d-block mx-auto" src="img/2_2.jpg">
-                                    <figcaption class="figure-caption text-center">Cadastro de dados pessoais <br> Fonte: Registro.br (2024)</figcaption>
-                                    <p class="acessivel no-print visually-hidden">Tela seguinte do site Registro.br com um formulário para o preenchimento dos seguintes dados pessoais do administrador da conta: nome completo (pessoa física), e-mail, CEP, endereço, número, complemento, UF, cidade, DDD, telefone e ramal. </p>
+                                    <p style="margin:  0% 10% 0% 15%;">Após realizar a busca pela disponibilidade do
+                                        domínio, é possível verificar se está disponível ou não, conforme imagem a
+                                        seguir.</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/1_2.jpg">
+                                    <figcaption class="figure-caption text-center">Domínio não disponível <br> Fonte:
+                                        Registro.br (2024)</figcaption>
+                                    <p class="acessivel no-print visually-hidden">Tela do site Registro.br. O domínio
+                                        escolhido “informaticaparainternet.com.br”, consultado no campo de busca, não
+                                        está disponível. É informado “domínio já registrado”.</p>
                                 </div>
 
                                 <div class="carousel-item radius shadow">
-                                    <p style="margin:  0% 10% 0% 15%;" >A seguir, estarão disponíveis para leitura os “Termos e Condições”. Na aba à esquerda, você verá a “Política de Privacidade” da conta. </p>
-                                    <img class="img-fluid d-block mx-auto" src="img/2_3.jpg">
-                                    <figcaption class="figure-caption text-center">Política de Privacidade <br> Fonte: Registro.br (2024)</figcaption>
-                                    <p class="acessivel no-print visually-hidden">Tela seguinte do site Registro.br exibindo, na aba à esquerda, a política de privacidade, que aborda aspectos sobre coleta de dados, uso e compartilhamento de dados e diretório. </p>
+                                    <p style="margin:  0% 10% 0% 15%;">No caso, o domínio pesquisado
+                                        “informaticaparainternet.com.br” já está registrado, não sendo possível
+                                        utilizá-lo, em contrapartida, é exibida uma lista de possibilidades de
+                                        associação de registro em outros níveis, conforme a seguir. </p>
+                                    <img class="img-fluid d-block mx-auto" src="img/1_3.jpg">
+                                    <figcaption class="figure-caption text-center">Sugestões de domínios <br> Fonte:
+                                        Registro.br (2024)</figcaption>
+                                    <p class="acessivel no-print visually-hidden">Tela seguinte do site Registro.br com
+                                        uma lista de sugestões de domínios disponíveis, que podem ser escolhidos pelo
+                                        usuário. Ao lado de cada opção, há um botão na cor verde com a opção de
+                                        registrar o domínio sugerido.</p>
                                 </div>
 
                                 <div class="carousel-item radius shadow">
-                                    <p style="margin:  0% 10% 0% 15%;" >Na mesma tela, na aba à direita, haverá o “Contrato” para sua leitura e aceite de todos os seus itens e da política de privacidade do registro do domínio. </p>
-                                    <img class="img-fluid d-block mx-auto" src="img/2_4.jpg">
-                                    <figcaption class="figure-caption text-center">Contrato de Uso <br> Fonte: Registro.br (2024)</figcaption>
-                                    <p class="acessivel no-print visually-hidden">Mesma tela do site Registro.br mostrando, na aba à direita, o contrato de registro de domínio, contendo suas cláusulas para aceite. </p>
+                                    <p style="margin:  0% 10% 0% 15%;">Dessa forma, basta escolher uma das opções
+                                        disponibilizadas ou realizar uma nova associação de palavras para domínio. Nesse
+                                        caso, será feita uma nova busca, agora pelo domínio “senac-ipi-rs”. </p>
+                                    <img class="img-fluid d-block mx-auto" src="img/1_4.jpg">
+                                    <figcaption class="figure-caption text-center">Escolha do plano <br> Fonte:
+                                        Registro.br (2024)</figcaption>
+                                    <p class="acessivel no-print visually-hidden">Tela do site Registro.br com a
+                                        pesquisa de um domínio disponível, que pode ser escolhido pelo usuário. Abaixo,
+                                        estão listados os valores e o período de cada plano, podendo ser de um ano, dois
+                                        anos e cinco anos. Ao lado, há um link para outros valores. Abaixo, há um botão
+                                        verde com a opção “Registrar”.</p>
                                 </div>
                             </div>
                         </div>
-
-                        <p>Após o preenchimento, é necessário confirmar o registro e seguir para as informações de pagamento e conclusão. Com a confirmação do registro do domínio, agora é necessário buscar um serviço de hospedagem para seu <i>site</i>. No entanto, é importante lembrar que, próximo ao final do período de registro do domínio, é necessário renovar o registro, pois, após a expiração do registro, ele volta a ficar disponível, e outro usuário pode tomar posse de seu registro do domínio, acarretando problemas. </p>
-
-                        <h3>Disponibilidade de serviços</h3>
-
-                        <p>Ao efetuar o registro do domínio, como já referenciado, é necessário procurar um serviço de hospedagem, podendo ser serviços gratuitos e/ou pagos. Eles são essenciais para que o <i>site</i> possa ser hospedado e fique disponível na internet para os demais usuários acessarem. Outro tipo de serviço para uso é a possibilidade de criação de contas de <i>e-mail</i> personalizadas. Também é possível utilizar a tecnologia de certificados digitais SSL (<i>secure socket layer</i>, um protocolo de comunicação de dados), que criptografam os dados nas requisições e nas respostas entre a máquina do usuário e o servidor do <i>site</i>, implementando, assim, a credibilidade do <i>site</i>, pois garante a privacidade dos dados. É necessário buscar o certificado com fornecedores de certificados digitais. Para estabelecer uma conexão SSL, o servidor <i>web</i> precisa ter um certificado SSL, no qual são preenchidas diversas informações sobre a identidade do servidor, <i>site</i> e empresa. Devido à sua praticidade, em muitos casos, o certificado digital substitui a operação de <i>login</i> e senha. Durante esse processo, o servidor gera duas chaves criptográficas: uma pública e outra privada. Elas são associadas a diferentes certificados. A chave pública é incluída no CSR (<i>certificate signing request</i>), um arquivo que contém detalhes sobre o servidor. Como a chave pública não precisa ser confidencial, a certificadora valida as informações contidas no CSR e, em seguida, emite o certificado SSL, que contém esses dados. Com isso, o servidor consegue estabelecer a conexão criptografada utilizando o certificado SSL e a chave privada. Esse procedimento acontece de forma que os usuários só percebem a conexão segura por meio de um ícone de cadeado verde, geralmente exibido no canto esquerdo do navegador. No entanto, o Google Chrome, a partir da versão 117, em setembro de 2023, substituiu por um ícone de ajustes. Ao clicar sobre esse ícone, é possível visualizar e verificar os detalhes do certificado SSL. </p>
-
-                        <figure class="my-5">
-                            <div class="figure-img mb-4">
-                                <img class="img-fluid d-block radius shadow mx-auto" src="img/fig03.jpg">
-                            </div>
-                            <figcaption class="figure-caption text-center">Ícone de ajuste <br> Fonte: Google (2024)</figcaption>
-                        </figure>
-
-                        <p class="acessivel no-print visually-hidden">Tela do site do Google mostrando a barra de endereços do navegador Google Chrome com o endereço do site “google.com.br”, abaixo há uma caixa com sua URL, um ícone de cadeado com o texto “A conexão é segura”, um ícone de cookies com o texto “Cookies e dados do site” e um ícone de engrenagem com o texto “Configurações do site”.</p>
-
-                        <p>É possível gerar um certificado digital, contratando o serviço de uma empresa que tenha autoridade certificadora. Por fim, também é possível se valer do serviço de privacidade WHOIS, um protocolo para consultar informações sobre registros de domínios, ofertado pelo registrador, no qual os dados do cliente que realizou o domínio são mantidos em privacidade, mantendo o anonimato e evitando, por exemplo, o envio de <i>spams</i>. </p>
-
-                        <p>Antes de concluir este material, faça o <i>quiz</i> a seguir para praticar o que aprendeu e testar seus conhecimentos.  </p>
-
-                        <p class="no-print">Clique ou toque para acessar o jogo. </p>
-
-                        <a role="button" href="" target="_blank" class="bt-objeto d-block mx-auto my-5 shadow radius no-print">
-                            <span class="camada-blur"></span>
-                            <span class="sr-only">Acesse</span>
-                        </a>
-
-                        <h3>Encerramento</h3>
-
-                        <div class="grafismo">
-                            <div class="destaque gradiente icone conclusao">
-                                <p>Neste conteúdo, foram abordados os principais conceitos de domínio, relacionando-os com DNS e demonstrando seus diferentes níveis existentes. Também foi visto como realizar o registro de um domínio e quais serviços ficam disponíveis para uso após seu cadastramento. </p>
-                            </div>
-                        </div>
-
-                        
-                        
-
                     </div>
-                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
+                </div>
+
+                <div class="container">
+
+                    <p class="pt-5">Com a disponibilidade do domínio, é possível escolher o plano de registro a ser
+                        utilizado, porém é importante ressaltar que esse é um serviço cobrado, podendo variar o preço do
+                        registro conforme o prazo escolhido. Outro ponto importante é que os valores podem mudar
+                        conforme a política de preços do registrador. </p>
+
+                    <p class="no-print">Clique ou toque nas setas para visualizar o conteúdo. </p>
+
+                    <div id="carousel3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+                                data-bs-slide="prev"></button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                                data-bs-slide="next"></button>
+                            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0"
+                                class="indicador active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" class="indicador"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2" class="indicador"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="3" class="indicador"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active radius shadow">
+                                <p style="margin:  0% 10% 0% 15%;">Ao clicar no botão “Registrar”, uma nova tela é
+                                    exibida, para preencher o CPF ou o CPNJ do responsável pelo registro. </p>
+                                <img class="img-fluid d-block mx-auto" src="img/2_1.jpg">
+                                <figcaption class="figure-caption text-center">Tela de confirmação de CPF <br> Fonte:
+                                    Registro.br (2024)</figcaption>
+                                <p class="acessivel no-print visually-hidden">Tela seguinte do site Registro.br, com uma
+                                    caixa de texto para informar o CPF do cliente que vai registrar o domínio. Ao lado,
+                                    há o botão “Continuar” na cor cinza, o que indica que ele está desabilitado.</p>
+                            </div>
+
+                            <div class="carousel-item radius shadow">
+                                <p style="margin:  0% 10% 0% 15%;">Após inseri-lo, basta clicar no botão “Continuar”
+                                    para preencher os dados pessoais do administrador da conta na próxima tela. </p>
+                                <img class="img-fluid d-block mx-auto" src="img/2_2.jpg">
+                                <figcaption class="figure-caption text-center">Cadastro de dados pessoais <br> Fonte:
+                                    Registro.br (2024)</figcaption>
+                                <p class="acessivel no-print visually-hidden">Tela seguinte do site Registro.br com um
+                                    formulário para o preenchimento dos seguintes dados pessoais do administrador da
+                                    conta: nome completo (pessoa física), e-mail, CEP, endereço, número, complemento,
+                                    UF, cidade, DDD, telefone e ramal. </p>
+                            </div>
+
+                            <div class="carousel-item radius shadow">
+                                <p style="margin:  0% 10% 0% 15%;">A seguir, estarão disponíveis para leitura os “Termos
+                                    e Condições”. Na aba à esquerda, você verá a “Política de Privacidade” da conta.
+                                </p>
+                                <img class="img-fluid d-block mx-auto" src="img/2_3.jpg">
+                                <figcaption class="figure-caption text-center">Política de Privacidade <br> Fonte:
+                                    Registro.br (2024)</figcaption>
+                                <p class="acessivel no-print visually-hidden">Tela seguinte do site Registro.br
+                                    exibindo, na aba à esquerda, a política de privacidade, que aborda aspectos sobre
+                                    coleta de dados, uso e compartilhamento de dados e diretório. </p>
+                            </div>
+
+                            <div class="carousel-item radius shadow">
+                                <p style="margin:  0% 10% 0% 15%;">Na mesma tela, na aba à direita, haverá o “Contrato”
+                                    para sua leitura e aceite de todos os seus itens e da política de privacidade do
+                                    registro do domínio. </p>
+                                <img class="img-fluid d-block mx-auto" src="img/2_4.jpg">
+                                <figcaption class="figure-caption text-center">Contrato de Uso <br> Fonte: Registro.br
+                                    (2024)</figcaption>
+                                <p class="acessivel no-print visually-hidden">Mesma tela do site Registro.br mostrando,
+                                    na aba à direita, o contrato de registro de domínio, contendo suas cláusulas para
+                                    aceite. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Após o preenchimento, é necessário confirmar o registro e seguir para as informações de pagamento
+                        e conclusão. Com a confirmação do registro do domínio, agora é necessário buscar um serviço de
+                        hospedagem para seu <i>site</i>. No entanto, é importante lembrar que, próximo ao final do
+                        período de registro do domínio, é necessário renovar o registro, pois, após a expiração do
+                        registro, ele volta a ficar disponível, e outro usuário pode tomar posse de seu registro do
+                        domínio, acarretando problemas. </p>
+
+                    <h3>Disponibilidade de serviços</h3>
+
+                    <p>Ao efetuar o registro do domínio, como já referenciado, é necessário procurar um serviço de
+                        hospedagem, podendo ser serviços gratuitos e/ou pagos. Eles são essenciais para que o
+                        <i>site</i> possa ser hospedado e fique disponível na internet para os demais usuários
+                        acessarem. Outro tipo de serviço para uso é a possibilidade de criação de contas de
+                        <i>e-mail</i> personalizadas. Também é possível utilizar a tecnologia de certificados digitais
+                        SSL (<i>secure socket layer</i>, um protocolo de comunicação de dados), que criptografam os
+                        dados nas requisições e nas respostas entre a máquina do usuário e o servidor do <i>site</i>,
+                        implementando, assim, a credibilidade do <i>site</i>, pois garante a privacidade dos dados. É
+                        necessário buscar o certificado com fornecedores de certificados digitais. Para estabelecer uma
+                        conexão SSL, o servidor <i>web</i> precisa ter um certificado SSL, no qual são preenchidas
+                        diversas informações sobre a identidade do servidor, <i>site</i> e empresa. Devido à sua
+                        praticidade, em muitos casos, o certificado digital substitui a operação de <i>login</i> e
+                        senha. Durante esse processo, o servidor gera duas chaves criptográficas: uma pública e outra
+                        privada. Elas são associadas a diferentes certificados. A chave pública é incluída no CSR
+                        (<i>certificate signing request</i>), um arquivo que contém detalhes sobre o servidor. Como a
+                        chave pública não precisa ser confidencial, a certificadora valida as informações contidas no
+                        CSR e, em seguida, emite o certificado SSL, que contém esses dados. Com isso, o servidor
+                        consegue estabelecer a conexão criptografada utilizando o certificado SSL e a chave privada.
+                        Esse procedimento acontece de forma que os usuários só percebem a conexão segura por meio de um
+                        ícone de cadeado verde, geralmente exibido no canto esquerdo do navegador. No entanto, o Google
+                        Chrome, a partir da versão 117, em setembro de 2023, substituiu por um ícone de ajustes. Ao
+                        clicar sobre esse ícone, é possível visualizar e verificar os detalhes do certificado SSL.
+                    </p>
+
+                    <figure class="my-5">
+                        <div class="figure-img mb-4">
+                            <img class="img-fluid d-block radius shadow mx-auto" src="img/fig03.jpg">
+                        </div>
+                        <figcaption class="figure-caption text-center">Ícone de ajuste <br> Fonte: Google (2024)
+                        </figcaption>
+                    </figure>
+
+                    <p class="acessivel no-print visually-hidden">Tela do site do Google mostrando a barra de endereços
+                        do navegador Google Chrome com o endereço do site “google.com.br”, abaixo há uma caixa com sua
+                        URL, um ícone de cadeado com o texto “A conexão é segura”, um ícone de cookies com o texto
+                        “Cookies e dados do site” e um ícone de engrenagem com o texto “Configurações do site”.</p>
+
+                    <p>É possível gerar um certificado digital, contratando o serviço de uma empresa que tenha
+                        autoridade certificadora. Por fim, também é possível se valer do serviço de privacidade WHOIS,
+                        um protocolo para consultar informações sobre registros de domínios, ofertado pelo registrador,
+                        no qual os dados do cliente que realizou o domínio são mantidos em privacidade, mantendo o
+                        anonimato e evitando, por exemplo, o envio de <i>spams</i>. </p>
+
+                    <p>Antes de concluir este material, faça o <i>quiz</i> a seguir para praticar o que aprendeu e
+                        testar seus conhecimentos. </p>
+
+                    <p class="no-print">Clique ou toque para acessar o jogo. </p>
+
+                    <div class="quiz_ipi_wrapper">
+                        <div class="browser-start">
+                            <div class="msg">
+                                <p>Faça agora o quiz com 5 questões para você responder. Selecione entre as opções
+                                    apresentadas
+                                    clicando sobre elas. Boa sorte!</p>
+                                <button class="browser-start-btn">Iniciar</button>
+                            </div>
+                        </div>
+                        <div class="browser-ui">
+                            <div class="browser-header">
+                                <div class="d-flex justify-content-between">
+                                    <div class="tabs">
+                                        <button class="active">Questão 1 <input type="checkbox" name=""
+                                                class="question-checkbox"></button><button>Questão 2 <input
+                                                type="checkbox" name=""
+                                                class="question-checkbox"></button><button>Questão 3 <input
+                                                type="checkbox" name=""
+                                                class="question-checkbox"></button><button>Questão 4 <input
+                                                type="checkbox" name=""
+                                                class="question-checkbox"></button><button>Questão 5 <input
+                                                type="checkbox" name="" class="question-checkbox"></button>
+                                    </div>
+                                    <div>
+                                        <button class="browser-btn-inicio">?</button>
+                                    </div>
+                                </div>
+                                <div class="url">
+                                    <p class="browser-url-placeholder">https://oqueedominio.com.br/o-que-e-dominio</p>
+                                </div>
+                            </div>
+                            <div class="browser-body">
+                                <div class="questao">
+                                    <div class="img-capa capa-1"></div>
+                                    <div class="questao-texto">
+                                        <h3>O que é um nome de domínio na internet?</h3>
+
+                                        <button class="browser-opcao" data-feedback="1">a) Um protocolo usado para
+                                            conectar
+                                            diretamente um computador
+                                            a
+                                            um servidor de DNS.</button>
+                                        <button class="browser-opcao correta" data-feedback="0">
+                                            b) Um identificador único que associa um nome a um endereço IP, facilitando
+                                            o acesso aos
+                                            serviços oferecidos na web.
+                                        </button>
+                                        <button class="browser-opcao" data-feedback="2">c) Um nome temporário que pode
+                                            ser
+                                            compartilhado entre diferentes sites na internet. </button>
+                                        <button class="browser-opcao" data-feedback="3">d) Um endereço físico que
+                                            representa a
+                                            localização dos
+                                            servidores
+                                            de uma empresa. </button>
+                                        <button class="browser-opcao" data-feedback="4">e) Uma parte opcional do
+                                            endereço IP que
+                                            pode ser modificada
+                                            pelo
+                                            usuário a qualquer momento. </button>
+                                    </div>
+                                </div>
+                                <div class="questao">
+                                    <div class="img-capa capa-2"></div>
+                                    <div class="questao-texto">
+                                        <h3>Qual é a principal função do serviço DNS autoritativo?</h3>
+                                        <button class="browser-opcao correta" data-feedback="5">
+                                            a) Atualizar nomes de domínio e fornecer o endereço IP associado a um nome
+                                            de domínio
+                                            quando solicitado.
+                                        </button>
+                                        <button class="browser-opcao" data-feedback="6">b) Armazenar endereços IP de
+                                            forma
+                                            permanente para servidores
+                                            recursivos.</button>
+                                        <button class="browser-opcao" data-feedback="7">c) Realizar consultas
+                                            diretamente ao
+                                            navegador do usuário para
+                                            buscar páginas HTML. </button>
+                                        <button class="browser-opcao" data-feedback="8">d) Substituir o DNS recursivo no
+                                            cache de
+                                            consultas
+                                            DNS.</button>
+                                        <button class="browser-opcao" data-feedback="9">e) Modificar o endereço IP do
+                                            site conforme
+                                            a necessidade de
+                                            tráfego.</button>
+                                    </div>
+                                </div>
+                                <div class="questao">
+                                    <div class="img-capa capa-3"></div>
+                                    <div class="questao-texto">
+                                        <h3>Quais são as regras básicas para a criação de um nome de domínio?</h3>
+
+                                        <button class="browser-opcao" data-feedback="11">a) O nome de domínio deve ter
+                                            exatamente 63
+                                            caracteres e não
+                                            pode conter números.</button>
+                                        <button class="browser-opcao" data-feedback="12">b) O nome de domínio pode ter
+                                            entre 1 e 100
+                                            caracteres e pode
+                                            começar ou terminar com um hífen.</button>
+                                        <button class="browser-opcao" data-feedback="13">c) O nome de domínio deve ser
+                                            composto
+                                            apenas por letras e
+                                            pode conter até 50 caracteres. </button>
+                                        <button class="browser-opcao" data-feedback="14">d) O nome de domínio pode ter
+                                            até 70
+                                            caracteres, mas deve ser
+                                            renovado a cada ano, caso contrário, será automaticamente deletado.</button>
+                                        <button class="browser-opcao correta" data-feedback="10">
+                                            e) O nome de domínio deve ter entre 2 e 63 caracteres e pode conter letras,
+                                            números e
+                                            hifens, mas não pode começar ou terminar com hifens.
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="questao">
+                                    <div class="img-capa capa-4"></div>
+                                    <div class="questao-texto">
+                                        <h3>Quais são os benefícios de utilizar um certificado digital SSL em um site?
+                                        </h3>
+                                        <button class="browser-opcao correta" data-feedback="15">
+                                            a) O certificado SSL criptografa os dados entre o servidor e o usuário,
+                                            garantindo a
+                                            privacidade e a segurança das informações transmitidas.
+                                        </button>
+                                        <button class="browser-opcao" data-feedback="16">b) O certificado SSL permite
+                                            que o site
+                                            funcione sem precisar
+                                            de um domínio registrado.</button>
+                                        <button class="browser-opcao" data-feedback="17">c) O certificado SSL impede que
+                                            o servidor
+                                            precise de
+                                            autenticação adicional, como login e senha, para acesso do usuário.</button>
+                                        <button class="browser-opcao" data-feedback="18">d) O certificado SSL é
+                                            utilizado apenas
+                                            para gerar e-mails
+                                            personalizados para o domínio registrado.</button>
+                                        <button class="browser-opcao" data-feedback="19">e) O certificado SSL remove a
+                                            necessidade
+                                            de um serviço de
+                                            hospedagem, pois armazena os dados do site diretamente no
+                                            navegador.</button>
+                                    </div>
+                                </div>
+                                <div class="questao">
+                                    <div class="img-capa capa-5"></div>
+                                    <div class="questao-texto">
+                                        <h3>O que é o serviço WHOIS e qual é sua principal função?</h3>
+
+                                        <button class="browser-opcao" data-feedback="21">a) WHOIS é um sistema que
+                                            armazena as
+                                            chaves criptográficas
+                                            geradas por certificados SSL.</button>
+                                        <button class="browser-opcao" data-feedback="22">b) WHOIS é um serviço de
+                                            hospedagem de
+                                            sites que permite
+                                            registrar domínios de forma anônima.</button>
+                                        <button class="browser-opcao" data-feedback="23">c) WHOIS é um método de geração
+                                            automática
+                                            de certificados
+                                            digitais para servidores web.</button>
+                                        <button class="browser-opcao correta" data-feedback="20">
+                                            d) WHOIS é um protocolo utilizado para consultar informações sobre o
+                                            registro de
+                                            domínios, protegendo os dados dos proprietários com privacidade.
+                                        </button>
+                                        <button class="browser-opcao" data-feedback="24">e) WHOIS é uma ferramenta usada
+                                            para
+                                            verificar se um domínio
+                                            expirou e precisa de renovação.</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="browser-modal-feedback">
+                                <h3>Feedback</h3>
+                                <p class="feedback-text">
+                                    Feedback
+                                </p>
+                                <button class="browser-modal-btn">Fechar</button>
+                            </div>
+                        </div>
+                        <div class="browser-final">
+                            <div class="msg">
+                                <p>Feedback</p>
+                                <button class="browser-restart-btn">Reiniciar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Encerramento</h3>
+
+                    <div class="grafismo">
+                        <div class="destaque gradiente icone conclusao">
+                            <p>Neste conteúdo, foram abordados os principais conceitos de domínio, relacionando-os com
+                                DNS e demonstrando seus diferentes níveis existentes. Também foi visto como realizar o
+                                registro de um domínio e quais serviços ficam disponíveis para uso após seu
+                                cadastramento. </p>
+                        </div>
+                    </div>
+
+
+
 
                 </div>
-            </section>
-            <!-- Paginação-->
-            <footer class="text-center no-print d-flex justify-content-center mx-auto">
-                <ul class="pagination">
-    
-                </ul>
-            </footer>   
+                <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
+
+            </div>
         </section>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
-        <!--Jquery-->
-        <script src="../assets/js/jquery-3.6.0.min.js"></script>
-        <!--Áudio customizado-->
-        <script src="../assets/js/audio-player.js"></script>
-        <!--Splide - slideshow-->
-        <script src="../assets/js/splide.min.js"></script>
-        <!--Prog'n'roll - barra de progresso conforme rola a página-->
-        <script src="../assets/js/prognroll.min.js"></script>
-        <script src="../print/print/template.config.js"></script>
-        <!--Scripts gerais-->
-        <script src="../assets/js/geral.js"></script>
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
 
-        <script>
-            var splide = new Splide( '.splide', {
-                type   : 'slide',
-                perPage: 2,
-                trimSpace: false,
-                focus  : 'center'
-            } );
+            </ul>
+        </footer>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../assets/js/prognroll.min.js"></script>
+    <script src="../print/print/template.config.js"></script>
+    <!--Scripts gerais-->
+    <script src="../assets/js/geral.js"></script>
 
-            splide.mount();
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'slide',
+            perPage: 2,
+            trimSpace: false,
+            focus: 'center'
+        });
 
-            $(function() {
-                $("body").prognroll();
-            });
-        </script>
+        splide.mount();
 
-        <!-- Handtalk -->
-        <script>
-            var scriptElem=document.createElement("script");
-            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
-            scriptElem.charset="UTF-8",
-            scriptElem.onload=function(){
+        $(function () {
+            $("body").prognroll();
+        });
+    </script>
+    <script src="odas/quiz-dominios/assets/js/quiz_ipi.js"></script>
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
                 window.ht = new HT({
-                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
-                    align:"top",
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
                     videoEnabled: true,
-                    ytEmbedReplace: true,           
-                    mobileConfig:{align:"right",
-                                    actionsAlign:"top",
-                                    customButtonStyle:{
-                                        borderRadius:"6px",
-                                        size:"38px",
-                                        horizontalMargin:"13px",
-                                        bottomMargin:"140px",
-                                        rightMargin:"40px"}
-                                    }
-                    });        
-                $('.ht-skip').attr("aria-hidden","true")
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
             },
-        document.body.appendChild(scriptElem);
-        
-        </script>
-    </body>
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
 </html>

@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.quiz_ipi_wrapper {
+  background-color: #cecece;
+  min-height: 600px;
+  width: 100%;
+  max-width: 1366px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+.quiz_ipi_wrapper .browser-start {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.quiz_ipi_wrapper .browser-start .msg {
+  width: 350px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px 16px;
+  box-shadow: 3px 3px 3px #333;
+}
+.quiz_ipi_wrapper .browser-start .msg .browser-start-btn {
+  display: block;
+  margin: auto;
+  padding: 4px 18px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 1px 1px 3px #333;
+  transition-duration: 0.2s;
+}
+.quiz_ipi_wrapper .browser-start .msg .browser-start-btn:hover {
+  background-color: rgb(205, 205, 205);
+}
+.quiz_ipi_wrapper .browser-ui {
+  background-color: #1e1e1e;
+  box-shadow: 3px 3px 3px black;
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+.quiz_ipi_wrapper .browser-ui .browser-header {
+  width: 100%;
+  background-color: #292929;
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .tabs {
+  width: 95%;
+  display: flex;
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .tabs button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 0;
+  font-size: 16px;
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .tabs button.active {
+  background-color: #474747;
+  pointer-events: none;
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .tabs button:hover {
+  background-color: #373737;
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .tabs button.tab-correta {
+  background-color: rgb(147, 181, 97);
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .tabs button.tab-incorreta {
+  background-color: salmon;
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .tabs button.tab-incorreta .question-checkbox:checked {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 15px;
+  background-color: red;
+  color: white;
+  position: relative;
+  border-radius: 2px;
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .tabs button.tab-incorreta .question-checkbox:checked::after {
+  content: "X";
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .tabs button .question-checkbox {
+  margin-left: 10px;
+  pointer-events: none;
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .browser-btn-inicio {
+  padding-left: 10px;
+  padding-right: 15px;
+  height: 100%;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .url {
+  background-color: #474747;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+.quiz_ipi_wrapper .browser-ui .browser-header .url p {
+  margin: 0;
+  background-color: #1e1e1e;
+  padding: 4px;
+  padding-left: 24px;
+  width: 80%;
+  border-radius: 20px;
+}
+.quiz_ipi_wrapper .browser-ui .browser-body {
+  min-height: 575px;
+}
+.quiz_ipi_wrapper .browser-ui .questao {
+  padding-bottom: 40px;
+}
+.quiz_ipi_wrapper .browser-ui .questao .questao-texto {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.quiz_ipi_wrapper .browser-ui .questao .img-capa {
+  background-color: cadetblue;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.quiz_ipi_wrapper .browser-ui .questao .img-capa.capa-1 {
+  background-image: url("../img/questao1.jpg");
+}
+.quiz_ipi_wrapper .browser-ui .questao .img-capa.capa-2 {
+  background-image: url("../img/questao2.jpg");
+}
+.quiz_ipi_wrapper .browser-ui .questao .img-capa.capa-3 {
+  background-image: url("../img/questao3.jpg");
+}
+.quiz_ipi_wrapper .browser-ui .questao .img-capa.capa-4 {
+  background-image: url("../img/questao4.jpg");
+}
+.quiz_ipi_wrapper .browser-ui .questao .img-capa.capa-5 {
+  background-image: url("../img/questao5.jpg");
+}
+.quiz_ipi_wrapper .browser-ui .questao h3 {
+  color: white;
+}
+.quiz_ipi_wrapper .browser-ui .questao .browser-opcao {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 6px 8px;
+  line-height: 18px;
+  display: block;
+}
+.quiz_ipi_wrapper .browser-ui .questao .browser-opcao:hover {
+  text-decoration: underline;
+}
+.quiz_ipi_wrapper .browser-ui .questao .browser-opcao.done {
+  pointer-events: none;
+}
+.quiz_ipi_wrapper .browser-ui .questao .browser-opcao.incorreto {
+  color: rgb(255, 50, 40);
+  pointer-events: none;
+}
+.quiz_ipi_wrapper .browser-ui .questao .browser-opcao.selecionada.correta {
+  color: greenyellow;
+  pointer-events: none;
+}
+.quiz_ipi_wrapper .browser-ui .browser-modal-feedback {
+  position: absolute;
+  top: 90px;
+  right: 10px;
+  background-color: #575757;
+  min-width: 300px;
+  max-width: 450px;
+  border-radius: 6px;
+  padding: 16px;
+  color: white;
+}
+.quiz_ipi_wrapper .browser-ui .browser-modal-feedback .browser-modal-btn {
+  display: block;
+  margin-left: auto;
+  padding: 4px 18px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 1px 1px 3px #333;
+  transition-duration: 0.2s;
+}
+.quiz_ipi_wrapper .browser-ui .browser-modal-feedback .browser-modal-btn:hover {
+  background-color: rgb(195, 195, 195);
+}
+.quiz_ipi_wrapper .browser-final {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.quiz_ipi_wrapper .browser-final .msg {
+  width: 350px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px 16px;
+  box-shadow: 3px 3px 3px #333;
+}
+.quiz_ipi_wrapper .browser-final .msg button {
+  display: block;
+  margin: auto;
+  padding: 4px 18px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 1px 1px 3px #333;
+  transition-duration: 0.2s;
+}
+.quiz_ipi_wrapper .browser-final .msg button:hover {
+  background-color: rgb(205, 205, 205);
+}
+
+@media (max-width: 800px) {
+  .quiz_ipi_wrapper .browser-ui .browser-header .tabs button {
+    font-size: 0px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
